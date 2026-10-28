@@ -15,8 +15,8 @@ def esc(s): return html.escape(s, quote=True)
 def plain(s): return html.unescape(re.sub(r"<[^>]+>", "", s))
 
 CROWN = ('<svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><path d="M14 44 L17 22 L25 32 L32 16 L39 32 L47 22 L50 44 Z" fill="none" '
-         'stroke="#C9A46A" stroke-width="3.4" stroke-linejoin="round"/><line x1="14" y1="50" x2="50" y2="50" stroke="#C9A46A" stroke-width="3.4" stroke-linecap="round"/>'
-         '<circle cx="32" cy="13" r="2.8" fill="#C9A46A"/><circle cx="16.5" cy="19.5" r="2.3" fill="#C9A46A"/><circle cx="47.5" cy="19.5" r="2.3" fill="#C9A46A"/></svg>')
+         'stroke="#E2C08A" stroke-width="3.4" stroke-linejoin="round"/><line x1="14" y1="50" x2="50" y2="50" stroke="#E2C08A" stroke-width="3.4" stroke-linecap="round"/>'
+         '<circle cx="32" cy="13" r="2.8" fill="#E2C08A"/><circle cx="16.5" cy="19.5" r="2.3" fill="#E2C08A"/><circle cx="47.5" cy="19.5" r="2.3" fill="#E2C08A"/></svg>')
 
 def layout(p):
     url = SITE["url"] + p["path"]
@@ -59,11 +59,11 @@ def layout(p):
 <meta property="og:image:alt" content="{esc(plain(p["h1"]))}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE["url"]}{og}">
-<meta name="theme-color" content="#2A1B2D">
+<meta name="theme-color" content="#6E2F4C">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="alternate" type="application/rss+xml" title="Parva Regina" href="/feed.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>

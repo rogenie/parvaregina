@@ -4,11 +4,20 @@
 import os, html, re
 
 W, H = 1200, 630
-INK, GOLD, SOFT, MUTED = (42, 27, 45), (201, 164, 106), (251, 247, 241), (190, 176, 192)
+INK, GOLD, SOFT, MUTED = (110, 47, 76), (226, 192, 138), (255, 249, 246), (240, 210, 220)
 HERE = os.path.dirname(os.path.abspath(__file__))
-SERIF = os.path.join(HERE, "fonts", "cormorant-garamond-latin-700-normal.woff")
-SERIF_LOGO = os.path.join(HERE, "fonts", "cormorant-garamond-latin-600-normal.woff")
+SERIF = os.path.join(HERE, "fonts", "Lora-Variable.ttf")
 SANS = os.path.join(HERE, "fonts", "Inter-SemiBold.otf")
+
+
+def _serif(size, weight="SemiBold"):
+    from PIL import ImageFont
+    f = ImageFont.truetype(SERIF, size)
+    try:
+        f.set_variation_by_name(weight)
+    except Exception:
+        pass
+    return f
 
 
 def _wrap(draw, text, font, width):
@@ -43,18 +52,18 @@ def make_card(out, title, eyebrow="", footer="parvaregina.com  ·  Longevity sci
     title = html.unescape(re.sub(r"<[^>]+>", "", title))
     img = Image.new("RGB", (W, H), INK)
     d = ImageDraw.Draw(img)
-    d.rectangle([24, 24, W - 25, H - 25], outline=(84, 62, 88), width=2)   # fine inner frame
+    d.rectangle([24, 24, W - 25, H - 25], outline=(150, 85, 115), width=2)   # fine inner frame
     x, maxw = 90, W - 180
     _crown(d, x, 66, 40, GOLD)
-    logo = ImageFont.truetype(SERIF_LOGO, 44)
-    d.text((x + 56, 62), "Parva Regina", font=logo, fill=SOFT)
+    logo = _serif(38)
+    d.text((x + 56, 64), "Parva Regina", font=logo, fill=SOFT)
     sans = ImageFont.truetype(SANS, 24)
     if eyebrow:
         d.text((x + 56 + d.textlength("Parva Regina", font=logo) + 24, 78), "/  " + eyebrow.upper(), font=sans, fill=GOLD)
-    for size in (84, 76, 68, 60, 54, 48):
-        f = ImageFont.truetype(SERIF, size)
+    for size in (72, 66, 60, 54, 48, 44):
+        f = _serif(size)
         lines = _wrap(d, title, f, maxw)
-        lh = int(size * 1.12)
+        lh = int(size * 1.22)
         if len(lines) <= 4 and lh * len(lines) <= 320:
             break
     block = lh * len(lines)
