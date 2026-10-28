@@ -11,6 +11,9 @@ from zoneinfo import ZoneInfo
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TODAY = os.environ.get("PR_TODAY") or datetime.datetime.now(ZoneInfo("America/Los_Angeles")).date().isoformat()
 
+import hashlib
+def _v(rel): return hashlib.md5(open(os.path.join(ROOT, rel),'rb').read()).hexdigest()[:8]
+
 def esc(s): return html.escape(s, quote=True)
 def plain(s): return html.unescape(re.sub(r"<[^>]+>", "", s))
 
@@ -60,11 +63,11 @@ def layout(p):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE["url"]}{og}">
 <meta name="theme-color" content="#6E2F4C">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/assets/favicon.svg?v={_v("assets/favicon.svg")}" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={_v("assets/style.css")}">
 <link rel="alternate" type="application/rss+xml" title="Parva Regina" href="/feed.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
