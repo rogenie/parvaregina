@@ -1,0 +1,81 @@
+{
+ "built": "2026-10-28",
+ "cadence": "Mon/Fri: evidence checks and foundations from this calendar. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "items": [
+  {
+   "date": "2026-10-28",
+   "hub": "evidence",
+   "status": "written",
+   "title": "Creatine for women over 40: what the research actually shows",
+   "url": "https://parvaregina.com/evidence/creatine-for-women-over-40/"
+  },
+  {
+   "date": "2026-10-28",
+   "hub": "news",
+   "status": "written",
+   "title": "Menopause brings abrupt changes in bone, liver and blood fats, huge study finds",
+   "url": "https://parvaregina.com/news/menopause-physiological-cliff-study/"
+  },
+  {
+   "date": "2026-10-30",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-02",
+   "hub": "foundations",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-06",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-09",
+   "hub": "foundations",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-13",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-16",
+   "hub": "foundations",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-20",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-23",
+   "hub": "foundations",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-27",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-30",
+   "hub": "foundations",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-04",
+   "hub": "evidence",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-07",
+   "hub": "evidence",
+   "status": "todo"
+  }
+ ],
+ "runs": []
+}

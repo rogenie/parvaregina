@@ -1,0 +1,155 @@
+{
+ "cadence": "Mon/Fri: evidence checks and foundations from this calendar. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "items": [
+  {
+   "date": "2026-10-28",
+   "hub": "evidence",
+   "path": "/evidence/creatine-for-women-over-40/",
+   "title": "Creatine for women over 40: what the research actually shows",
+   "status": "published",
+   "kind": "evergreen",
+   "url": "https://parvaregina.com/evidence/creatine-for-women-over-40/"
+  },
+  {
+   "date": "2026-10-28",
+   "hub": "news",
+   "path": "/news/menopause-physiological-cliff-study/",
+   "title": "Menopause brings abrupt changes in bone, liver and blood fats, huge study finds",
+   "status": "published",
+   "kind": "news",
+   "url": "https://parvaregina.com/news/menopause-physiological-cliff-study/"
+  },
+  {
+   "date": "2026-10-30",
+   "hub": "evidence",
+   "path": "/evidence/red-light-therapy-skin-over-40/",
+   "title": "Red light therapy for skin over 40: what the trials show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Controlled trials of red/near-infrared LED for wrinkles and skin (e.g. Wunsch & Matuschka 2014, Photomed Laser Surg; PMID 24286286), vs. uncontrolled industry studies (e.g. Skin Res Technol 2023, Dior/Lucibel mask, PMC10311288: 20 people, no control group, manufacturer authors). FDA clears some OTC LED masks as Class II for full-face wrinkles (e.g. K214103, 21 CFR 878.4810): clearance is not proof of large effects. Wavelengths tested (630-850 nm), session schedules, eye safety."
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "hub": "foundations",
+   "path": "/foundations/vo2-max-women/",
+   "title": "VO2 max for women: why it matters and how to raise it",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "What VO2 max is, the cohort evidence linking fitness to mortality, how it changes with age in women, training that raises it (intervals and zone 2) per trials, how to estimate it, official activity guidelines (HHS)."
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "hub": "evidence",
+   "path": "/evidence/urolithin-a-evidence/",
+   "title": "Urolithin A: what the human trials show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The human RCTs (muscle endurance, mitochondrial markers), who was studied (sex, age), doses tested, what is animal-only, regulatory status (FDA GRAS notice if any)."
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "hub": "foundations",
+   "path": "/foundations/strength-training-bone-density-menopause/",
+   "title": "Strength training for bone density around menopause",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Bone loss around menopause (NIH/NIAMS), trials of resistance and impact training in postmenopausal women (e.g. LIFTMOR), what to look for, safety and when to get a DEXA scan per USPSTF."
+   }
+  },
+  {
+   "date": "2026-11-13",
+   "hub": "evidence",
+   "path": "/evidence/nmn-nad-supplements-women/",
+   "title": "NMN and NAD+ supplements: what human trials show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Human RCTs of NMN and NR, including the trial in postmenopausal prediabetic women; what improved and what didn't; FDA's position on NMN as a supplement; mouse vs human gap."
+   }
+  },
+  {
+   "date": "2026-11-16",
+   "hub": "foundations",
+   "path": "/foundations/deep-sleep-after-35/",
+   "title": "Deep sleep after 35: what changes and what helps",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "How slow-wave sleep changes with age, menopause and sleep (vasomotor symptoms), CDC sleep guidance, CBT-I as first-line insomnia treatment, what evidence says about common sleep aids."
+   }
+  },
+  {
+   "date": "2026-11-20",
+   "hub": "evidence",
+   "path": "/evidence/fisetin-senolytics-evidence/",
+   "title": "Fisetin and senolytics: where the human evidence stands",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Senescent cells explained, mouse findings, the registered human trials (ClinicalTrials.gov) and their status, dasatinib+quercetin pilot results, why there's no human dose yet."
+   }
+  },
+  {
+   "date": "2026-11-23",
+   "hub": "foundations",
+   "path": "/foundations/zone-2-cardio-women/",
+   "title": "Zone 2 cardio for women: what it is and how much",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Define zone 2 (talk test, heart-rate methods), HHS 150-300 min moderate activity guideline, evidence on mitochondrial adaptations in humans, how to fit it in, what's overclaimed."
+   }
+  },
+  {
+   "date": "2026-11-27",
+   "hub": "evidence",
+   "path": "/evidence/collagen-supplements-skin-evidence/",
+   "title": "Collagen supplements for skin: what trials show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Meta-analyses of oral collagen peptides on skin elasticity/hydration, industry funding caveat, doses tested, women studied, what's unknown."
+   }
+  },
+  {
+   "date": "2026-11-30",
+   "hub": "foundations",
+   "path": "/foundations/protein-needs-women-over-40/",
+   "title": "Protein for women over 40: how much, from official sources",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "RDA 0.8 g/kg (official), research arguing higher needs for older adults, sarcopenia basics, food examples with numbers from USDA FoodData Central, kidney disease caveat."
+   }
+  },
+  {
+   "date": "2026-12-04",
+   "hub": "evidence",
+   "path": "/evidence/facial-lymphatic-drainage-evidence/",
+   "title": "Facial lymphatic drainage: does it work for puffiness and aging?",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "What the lymphatic system does, the limited human evidence on facial massage/gua sha, what's plausible vs claimed, when swelling needs a doctor."
+   }
+  },
+  {
+   "date": "2026-12-07",
+   "hub": "evidence",
+   "path": "/evidence/magnesium-glycinate-vs-threonate/",
+   "title": "Magnesium glycinate vs. L-threonate: what the evidence shows",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Compare forms: what human trials tested each for (sleep, cognition), doses tested, NIH ODS upper limit for supplemental magnesium, who should check with a doctor (kidney disease, medications)."
+   }
+  }
+ ]
+}
