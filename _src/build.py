@@ -4,7 +4,7 @@ Run from the repo root:  python3 _src/build.py
 Jekyll ignores folders starting with "_", so _src is not published."""
 import os, json, html, datetime, sys, re
 sys.path.insert(0, os.path.dirname(__file__))
-from pages import SITE, PAGES, nl_block
+from pages import SITE, PAGES, nl_block, offer_for
 from articles import ARTICLES
 from zoneinfo import ZoneInfo
 
@@ -154,7 +154,7 @@ def main():
             if make_card(os.path.join(og_dir, img), p["h1"]) or os.path.exists(os.path.join(og_dir, img)):
                 p["og_image"] = "/assets/og/" + img
     for a in live:
-        a = dict(a); a["body"] = unlink_future(a["body"]).replace("<!--NEWSLETTER-->", nl_block(a["path"].strip("/").split("/")[-1]))
+        a = dict(a); a["body"] = unlink_future(a["body"]).replace("<!--NEWSLETTER-->", nl_block(a["path"].strip("/").split("/")[-1], offer=offer_for(a["path"])))
         img = a["path"].strip("/").split("/")[-1] + ".png"
         if make_card(os.path.join(og_dir, img), a["h1"], a["hub_name"]) or os.path.exists(os.path.join(og_dir, img)):
             a["og_image"] = "/assets/og/" + img

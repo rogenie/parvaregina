@@ -26,32 +26,57 @@ EVIDENCE_LADDER = '''<ul class="ticks">
 
 RESET_URL = "/ageless-reset/"
 
-RESET_COVER = ('<div class="reset-cover" aria-hidden="true"><span class="rc-kick">Free guide</span>'
-               '<span class="rc-t1">The 30-Day</span><span class="rc-t2">Ageless</span><span class="rc-t1">Reset</span>'
-               '<span class="rc-rule"></span><span class="rc-sub">Wrinkles &middot; Energy &middot; Hair</span>'
-               '<span class="rc-brand">Parva Regina</span></div>')
+# Free downloads, each delivered by its own Kit form. "uid" comes from the form's embed code
+# (data-uid="..."). An offer without a uid falls back to the Ageless Reset.
+OFFERS = {
+  "reset": {"uid": "0ec8af6ff3", "cover": ("The 30-Day", "Ageless", "Reset"), "sub": "Wrinkles &middot; Energy &middot; Hair",
+            "heading": "Get the free 30-Day Ageless Reset",
+            "text": "Wrinkles, the 3 p.m. energy crash, and grey or thinning hair often grow from the same roots. This free guide for women 38&ndash;55 shows how they connect, and gives you a simple 30-day plan that works on all three at once."},
+  "meal":   {"uid": "e3fe7aed18", "cover": ("The 7-Day", "Ageless", "Meal Plan"), "sub": "Breakfast &middot; Lunch &middot; Dinner",
+            "heading": "Get the free 7-Day Ageless Meal Plan",
+            "text": "A week of simple, protein-first meals for women 35+, built from real food you can buy in one shopping trip. Free, straight to your inbox."},
+  "workout":{"uid": "1b1967078b", "cover": ("The 7-Day", "Workout", "Plan"), "sub": "Strength &middot; Cardio &middot; Mobility",
+            "heading": "Get the free 7-Day Workout Plan",
+            "text": "A week of workouts for women 35+ that build strength and protect your bones, with an easier option for every move. Free, straight to your inbox."},
+  "tracker":{"uid": "094868d97b", "cover": ("The Midlife", "Tracker", "Guide"), "sub": "Sleep &middot; Food &middot; Labs",
+            "heading": "Get the free Midlife Tracker Guide",
+            "text": "What&rsquo;s worth tracking after 35 &mdash; sleep, food, workouts and labs &mdash; and how to make sense of the numbers. Free, straight to your inbox."},
+}
+# Which download each section offers (anything not listed gets the Ageless Reset)
+OFFER_BY_HUB = {"/meal-plans/": "meal", "/fitness/": "workout", "/bones/": "workout", "/health-trackers/": "tracker"}
 
-def kit_form(campaign, button="Send me the free guide"):
-    fid = SITE["kit_form_id"]
-    if fid:
-        return (f'<form class="nl-form" action="https://app.kit.com/forms/{fid}/subscriptions" method="post">'
-                f'<label class="skip" for="nl-{campaign}">Email address</label>'
-                f'<input id="nl-{campaign}" type="email" name="email_address" placeholder="Your email" required autocomplete="email">'
-                f'<input type="hidden" name="fields[source]" value="{campaign}">'
-                f'<button type="submit">{button}</button></form>')
-    if SITE.get("kit_embed_uid"):
-        uid, dom = SITE["kit_embed_uid"], SITE["kit_domain"]
+def offer_for(path):
+    for prefix, key in OFFER_BY_HUB.items():
+        if path.startswith(prefix) and OFFERS[key]["uid"]:
+            return key
+    return "reset"
+
+def cover(key):
+    t1, t2, t3 = OFFERS[key]["cover"]
+    return (f'<div class="reset-cover" aria-hidden="true"><span class="rc-kick">Free download</span>'
+            f'<span class="rc-t1">{t1}</span><span class="rc-t2">{t2}</span><span class="rc-t1">{t3}</span>'
+            f'<span class="rc-rule"></span><span class="rc-sub">{OFFERS[key]["sub"]}</span>'
+            f'<span class="rc-brand">Parva Regina</span></div>')
+
+RESET_COVER = cover("reset")
+
+def kit_form(campaign, uid=None):
+    uid = uid or SITE.get("kit_embed_uid")
+    if uid:
+        dom = SITE["kit_domain"]
         return (f'<div class="nl-kit"><script async data-uid="{uid}" src="{dom}/{uid}/index.js"></script>'
-                f'<noscript><p><a class="btn" href="{dom}/{uid}">Get the free guide</a></p></noscript></div>')
+                f'<noscript><p><a class="btn" href="{dom}/{uid}">Download free</a></p></noscript></div>')
     return f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Coming soon &middot; follow on TikTok meanwhile</a></p>'
 
-def nl_block(campaign, anchor="", heading="Get the free 30-Day Ageless Reset",
-             text="Wrinkles, the 3 p.m. energy crash, and grey or thinning hair often grow from the same roots. This free guide for women 38&ndash;55 shows how they connect, and gives you a simple 30-day plan that works on all three at once."):
-    """Call-to-action band: download the free 30-Day Ageless Reset (delivered by email through Kit)."""
-    return (f'<div class="nl-band reset-band"{f' id="{anchor}"' if anchor else ""}><div class="reset-grid">{RESET_COVER}<div>'
-            f'<p class="eyebrow">Free download</p><h2>{heading}</h2><p>{text}</p>'
-            f'{kit_form(campaign)}'
-            f'<p class="reset-fine">Enter your email and we&rsquo;ll send the guide straight to your inbox, along with our weekly longevity email. Unsubscribe anytime.</p>'
+def nl_block(campaign, anchor="", heading=None, text=None, offer="reset"):
+    """Download band for one of OFFERS (each delivered by email through its own Kit form)."""
+    if not OFFERS.get(offer, {}).get("uid"):
+        offer = "reset"
+    o = OFFERS[offer]
+    return (f'<div class="nl-band reset-band"{f' id="{anchor}"' if anchor else ""}><div class="reset-grid">{cover(offer)}<div>'
+            f'<p class="eyebrow">Free download</p><h2>{heading or o["heading"]}</h2><p>{text or o["text"]}</p>'
+            f'{kit_form(campaign, o["uid"])}'
+            f'<p class="reset-fine">Enter your email and we&rsquo;ll send it straight to your inbox, along with our weekly longevity email. Unsubscribe anytime.</p>'
             f'</div></div></div>')
 
 def hub(path, name, title, desc, intro, covers):
@@ -64,7 +89,7 @@ def hub(path, name, title, desc, intro, covers):
 <section class="alt"><div class="wrap narrow">
 <h2>What you&rsquo;ll find here</h2><ul class="ticks">{lis}</ul>
 <p class="muted">Every article links the studies behind it and labels how strong the evidence is. <a href="/editorial-policy/">How we work</a>.</p>
-{nl_block("hub-" + path.strip("/"))}
+{nl_block("hub-" + path.strip("/"), offer=offer_for(path))}
 </div></section>'''
     return {"path":path,"title":title,"desc":desc,"h1":name,"body":body}
 
