@@ -8,6 +8,33 @@ The publisher (`_src/PUBLISHING.md`) writes and fact-checks each article on its 
 
 - **Wed:** news, chosen by the scout. Keep the next 2 Wednesdays filled.
 - **Mon/Fri:** evidence checks and foundations, pre-planned. If fewer than 3 weeks of Mon/Fri items remain, add evergreen topics (see "Evergreen ideas"). Add at most 4 items per run.
+- **Trending topics take priority** over evergreen Mon/Fri items (see "Trend check"). Publishing stays at 3 a week until the owner changes it.
+
+## Trend check (Sunday and Wednesday runs)
+
+Goal: when women 35-50 are suddenly searching or watching something about aging, Parva Regina publishes the evidence-based answer that week. The Sunday run does this check as well as the full scout; the Wednesday run does only this check.
+
+**Where to look (last 7 days):**
+- Google Trends: search `trends.google.com` for rising topics in health, skin, menopause and supplements; also WebSearch phrases like "trending wellness 2026", "viral skincare trend", "menopause TikTok trend", "longevity supplement news this week".
+- News coverage: WebSearch restricted to major outlets (nytimes.com, washingtonpost.com, today.com, health.com, womenshealthmag.com, self.com, npr.org, cnn.com/health). Several outlets covering the same thing in the same week is the strongest signal.
+- Video platforms, through search: WebSearch restricted to youtube.com and tiktok.com for the same phrases. You can't log in, so judge by how many recent results and articles about the trend you find.
+- Your own audience: with the Metricool connector (brand id 2896902, "parvaregina"), check which recent TikTok and YouTube posts got the most views (use getAnalyticsAvailableMetrics for the posts connector to find the field IDs). A topic that over-performed on the account counts as trending for our readers.
+
+**A trend qualifies only if all are true:**
+1. Several independent sources show a rise in the last 7 days (not one viral post).
+2. It touches women about 35-50: skin, menopause, muscle, bone, sleep, weight, heart, brain, or a product or routine they're being sold.
+3. There is research to check it against: at least one peer-reviewed human study, a review, or an official agency statement you can open in this run. If the trend has no research behind it, it can still qualify; the angle is then "what the evidence does and doesn't show", and the brief must name the closest real studies.
+4. It doesn't repeat a published article or calendar item. If it overlaps, the angle is what's new, and the article links the older one.
+
+**Swapping it in:**
+- Put the best qualifying trend in the next Mon or Fri slot that is at least 2 days away (on Sunday: Monday is too soon, so use Friday unless the trend is fading fast; on Wednesday: Friday is fine). Never touch a slot dated within 2 days, and never move a Wednesday news item.
+- Move the evergreen item it replaces to the first empty Mon or Fri after the last calendar item. Don't delete it.
+- Trend items use `"kind": "trend"`, `"hub": "evidence"` (checking a claim or product) or `"foundations"` (a habit), and a brief with: `"trend"` (what people are searching or watching, and where you saw it), `"sources"` (the URLs that showed the rise), plus the usual `"angle"` and the key studies to find.
+- At most 2 trend swaps per week. If nothing qualifies, change nothing; that's a normal result.
+
+**Report:** Wednesday runs send one push notification titled "Parva Regina: trending this week": what's trending (2-4 items, one line each), whether one was swapped in and for which date, and which evergreen item moved where. If nothing qualified, say so in one line. Sunday runs add a "Trending" line to their usual digest instead of sending a second notification.
+
+Wednesday-only runs: run `python3 _src/build.py`, then commit `_src/calendar.json` and `status.json` with author `Rogenie Cordero <rogenie@gmail.com>` and message `Trend: <date swapped>`, push to `main`. Don't touch the newsletter on Wednesdays. If nothing changed, don't commit.
 
 ## Where to look (last 10 days)
 
