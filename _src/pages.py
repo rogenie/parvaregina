@@ -183,7 +183,7 @@ PAGES = [
   "body":'''<section class="hero small"><div class="wrap narrow"><h1>This page has moved</h1><p class="lede"><a href="/ageless-reset/">Get the free 30-Day Ageless Reset &rarr;</a></p></div></section>'''},
  {"path":"/about/","title":"About Parva Regina","h1":"About Parva Regina",
   "desc":"Who publishes Parva Regina, how articles are researched and written, and what the site is and isn't.",
-  "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">About</p><h1>About Parva Regina</h1>
+  "body":f'''<section class="hero small"><div class="wrap narrow"><img class="about-logo" src="/assets/brand/logo-dark.png" alt="Parva Regina: longevity for women" width="900" height="289"><h1>About Parva Regina</h1>
 <p class="lede"><i>Parva regina</i> is Latin for &ldquo;little queen.&rdquo; It&rsquo;s a reminder that aging well is something you rule over, one well-informed decision at a time.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we do</h2>

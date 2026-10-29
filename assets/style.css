@@ -223,3 +223,10 @@ header .nl:hover{background:var(--gold-soft);color:var(--berry)}
 
 .rc-kick,.rc-t2{color:#9E5862!important}
 .rc-brand{color:#7E5F2C!important}
+
+/* New logo set */
+.brand img{display:block;height:30px;width:auto}
+.flogo{display:block;width:220px;height:auto;margin:0 0 14px}
+.about-logo{display:block;width:300px;max-width:80%;height:auto;margin:0 0 18px}
+@media (max-width:700px){.brand img{height:22px}}
+@media (max-width:420px){.nl-long{display:none}.brand img{height:20px}}

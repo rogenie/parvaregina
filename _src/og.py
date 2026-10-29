@@ -8,6 +8,7 @@ INK, GOLD, SOFT, MUTED = (110, 47, 76), (226, 192, 138), (255, 249, 246), (240, 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SERIF = os.path.join(HERE, "fonts", "Lora-Variable.ttf")
 SANS = os.path.join(HERE, "fonts", "Inter-SemiBold.otf")
+LOCKUP = os.path.join(os.path.dirname(HERE), "assets", "brand", "lockup-light.png")
 
 
 def _serif(size, weight="SemiBold"):
@@ -54,12 +55,12 @@ def make_card(out, title, eyebrow="", footer="parvaregina.com  ·  Longevity sci
     d = ImageDraw.Draw(img)
     d.rectangle([24, 24, W - 25, H - 25], outline=(150, 85, 115), width=2)   # fine inner frame
     x, maxw = 90, W - 180
-    _crown(d, x, 66, 40, GOLD)
-    logo = _serif(38)
-    d.text((x + 56, 64), "Parva Regina", font=logo, fill=SOFT)
+    lock = Image.open(LOCKUP).convert("RGBA")
+    lw = 360; lock = lock.resize((lw, round(lock.height * lw / lock.width)), Image.LANCZOS)
+    img.paste(lock, (x, 66), lock)
     sans = ImageFont.truetype(SANS, 24)
     if eyebrow:
-        d.text((x + 56 + d.textlength("Parva Regina", font=logo) + 24, 78), "/  " + eyebrow.upper(), font=sans, fill=GOLD)
+        d.text((x + lw + 28, 66 + lock.height // 2 - 14), "/  " + eyebrow.upper(), font=sans, fill=GOLD)
     for size in (72, 66, 60, 54, 48, 44):
         f = _serif(size)
         lines = _wrap(d, title, f, maxw)

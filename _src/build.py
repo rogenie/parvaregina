@@ -29,7 +29,7 @@ def layout(p):
     if p["path"] != "/":
         crumbs.append({"@type":"ListItem","position":len(crumbs)+1,"name":plain(p["h1"]),"item":url})
     ld = [{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":crumbs}]
-    org = {"@type":"Organization","name":SITE["name"],"url":SITE["url"]+"/","logo":SITE["url"]+"/assets/favicon.svg",
+    org = {"@type":"Organization","name":SITE["name"],"url":SITE["url"]+"/","logo":SITE["url"]+"/assets/brand/icon-512.png",
            "sameAs":[SITE["tiktok"]],"publishingPrinciples":SITE["url"]+"/editorial-policy/"}
     if p["path"] == "/":
         ld.append({"@context":"https://schema.org","@type":"WebSite","name":SITE["name"],"url":SITE["url"]+"/","description":SITE["desc"]})
@@ -71,7 +71,9 @@ def layout(p):
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{SITE["url"]}{og}">
 <meta name="theme-color" content="#6E2F4C">
-<link rel="icon" href="/assets/favicon.svg?v={_v("assets/favicon.svg")}" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="/assets/brand/favicon-32.png?v={_v("assets/brand/favicon-32.png")}" sizes="32x32" type="image/png">
+<link rel="icon" href="/assets/brand/icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-title" content="Parva Regina">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -85,7 +87,7 @@ def layout(p):
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
-<a class="brand" href="/">{CROWN}<span>Parva Regina</span></a>
+<a class="brand" href="/" aria-label="Parva Regina home"><img src="/assets/brand/lockup-light.png" alt="Parva Regina" width="1000" height="117"></a>
 <nav aria-label="Main">{nav}</nav>
 <a class="nl" href="/ageless-reset/"><span class="nl-long">Ageless Reset </span>Download</a>
 </div></header>
@@ -94,7 +96,7 @@ def layout(p):
 </main>
 <footer class="site"><div class="wrap">
 <div class="fgrid">
-<div><b>Parva Regina</b><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
+<div><img class="flogo" src="/assets/brand/logo-light.png" alt="Parva Regina: longevity for women" width="900" height="289" loading="lazy"><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
 {"".join(f'<div><b>{esc(n)}</b>' + "".join(f'<a href="{k}">{kn}</a>' for k, kn in kids) + '</div>' for n, kids in SITE["nav"])}
 <div><b>Trust</b><a href="/editorial-policy/">Editorial policy</a><a href="/corrections/">Corrections</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></div>
 </div>
