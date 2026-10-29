@@ -147,3 +147,5 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
 .nl-kit .formkit-submit:hover{background:#fff!important}
 .nl-kit .formkit-guarantee{display:none!important}
 .nl-kit .formkit-alert-success{background:#fff!important;color:var(--ink)!important;border-radius:10px!important}
+.nl-kit [data-element="fields"],.nl-kit .formkit-fields,.nl-kit .seva-fields{padding:0!important;margin:0!important;width:100%!important}
+@media (max-width:600px){.nl-kit .formkit-field,.nl-kit .formkit-submit{flex:1 1 100%!important;width:100%!important}.reset-cover{width:104px}}
