@@ -1,5 +1,5 @@
 {
- "cadence": "Mon/Fri: evidence checks and foundations from this calendar. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "cadence": "Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity, led by Skin, Supplements, Bones & Strength and Sleep & Foundations. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
  "items": [
   {
    "date": "2026-10-28",
@@ -87,13 +87,13 @@
   },
   {
    "date": "2026-11-20",
-   "hub": "supplements",
-   "path": "/supplements/fisetin-senolytics-evidence/",
-   "title": "Fisetin and senolytics: where the human evidence stands",
+   "hub": "hair",
+   "path": "/hair/hair-thinning-perimenopause/",
+   "title": "Hair thinning in perimenopause: causes and what helps",
    "status": "todo",
    "kind": "evergreen",
    "brief": {
-    "angle": "Senescent cells explained, mouse findings, the registered human trials (ClinicalTrials.gov) and their status, dasatinib+quercetin pilot results, why there's no human dose yet."
+    "angle": "Female pattern hair loss vs. telogen effluvium; how hormones change around menopause; the medical causes worth ruling out (iron/ferritin, thyroid, B12, vitamin D) per NIH and dermatology society sources; topical minoxidil (FDA-approved for women) and the trial evidence; what's known about oral minoxidil, spironolactone, PRP and low-level light from trials; biotin and 'hair vitamins' (NIH ODS; FDA warning on biotin interfering with lab tests). When to see a dermatologist."
    }
   },
   {
@@ -131,6 +131,39 @@
   },
   {
    "date": "2026-12-04",
+   "hub": "procedures",
+   "path": "/procedures/microneedling-skin-over-40/",
+   "title": "Microneedling for skin over 40: what studies show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "What microneedling does (controlled skin injury, collagen remodeling), the controlled trials and reviews for wrinkles, texture and acne scars; in-office vs at-home rollers (FDA classifies microneedling devices; at-home use and infection risk); with or without PRP or radiofrequency; downtime, side effects and who should avoid it (active acne, keloids, isotretinoin) per AAD and FDA sources; questions to ask a board-certified dermatologist. No prices, providers or brands."
+   }
+  },
+  {
+   "date": "2026-12-07",
+   "hub": "health-trackers",
+   "path": "/health-trackers/sleep-tracker-accuracy/",
+   "title": "Sleep trackers: how accurate are they for deep sleep?",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "How wearables estimate sleep stages (movement, heart rate, HRV) vs. polysomnography; validation studies comparing named devices (Oura, Apple Watch, Fitbit, Whoop, Garmin) to sleep-lab results, with each device named only where a study tested it; what they get right (total sleep time) and wrong (stages, wake); orthosomnia; what's worth tracking; links to Deep sleep after 35 (/foundations/deep-sleep-after-35/). Never interpret personal results."
+   }
+  },
+  {
+   "date": "2026-12-11",
+   "hub": "supplements",
+   "path": "/supplements/fisetin-senolytics-evidence/",
+   "title": "Fisetin and senolytics: where the human evidence stands",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Senescent cells explained, mouse findings, the registered human trials (ClinicalTrials.gov) and their status, dasatinib+quercetin pilot results, why there's no human dose yet."
+   }
+  },
+  {
+   "date": "2026-12-14",
    "hub": "skin",
    "path": "/skin/facial-lymphatic-drainage-evidence/",
    "title": "Facial lymphatic drainage: does it work for puffiness and aging?",
@@ -141,7 +174,7 @@
    }
   },
   {
-   "date": "2026-12-07",
+   "date": "2026-12-18",
    "hub": "supplements",
    "path": "/supplements/magnesium-glycinate-vs-threonate/",
    "title": "Magnesium glycinate vs. L-threonate: what the evidence shows",

@@ -1,6 +1,6 @@
 {
  "built": "2026-10-29",
- "cadence": "Mon/Fri: evidence checks and foundations from this calendar. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "cadence": "Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity, led by Skin, Supplements, Bones & Strength and Sleep & Foundations. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
  "items": [
   {
    "date": "2026-10-28",
@@ -48,7 +48,7 @@
   },
   {
    "date": "2026-11-20",
-   "hub": "supplements",
+   "hub": "hair",
    "status": "todo"
   },
   {
@@ -68,11 +68,26 @@
   },
   {
    "date": "2026-12-04",
-   "hub": "skin",
+   "hub": "procedures",
    "status": "todo"
   },
   {
    "date": "2026-12-07",
+   "hub": "health-trackers",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-11",
+   "hub": "supplements",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-14",
+   "hub": "skin",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-18",
    "hub": "supplements",
    "status": "todo"
   }
