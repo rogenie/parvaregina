@@ -10,7 +10,12 @@ SITE = {
   # Kit embed script uid (from the form's JavaScript embed code). Used when kit_form_id is None.
   "kit_embed_uid": "0ec8af6ff3",
   "kit_domain": "https://rogenie.kit.com",
-  "nav": [("/news/","Longevity News"),("/evidence/","Evidence Checks"),("/foundations/","Foundations"),("/about/","About")],
+  # Main menu: (href, label, [(href, label), ...] dropdown items or [])
+  "nav": [("/fitness/","Fitness",[]),
+          ("/meal-plans/","Meal Plans",[]),
+          ("/health-trackers/","Health Trackers",[]),
+          ("/news/","Longevity Updates",[("/news/","Latest research"),("/evidence/","Evidence checks")]),
+          ("/about/","About",[("/about/","About Parva Regina"),("/foundations/","Foundations"),("/editorial-policy/","Editorial policy")])],
 }
 
 EVIDENCE_LADDER = '''<ul class="ticks">
@@ -78,9 +83,10 @@ PAGES = [
 <section><div class="wrap">
 <h2>Start here</h2>
 <div class="cards">
-<a class="card" href="/news/"><p class="eyebrow">Weekly</p><h3>Longevity News</h3><p>New studies on aging, explained: what was tested, in whom, and whether it applies to you.</p></a>
-<a class="card" href="/evidence/"><p class="eyebrow">Does it work?</p><h3>Evidence Checks</h3><p>Red light, creatine, NMN, magnesium, zone 2: what human trials show for women, and what they don&rsquo;t.</p></a>
-<a class="card" href="/foundations/"><p class="eyebrow">The basics</p><h3>Foundations</h3><p>Sleep, strength, protein, VO2 max and the perimenopause decade, explained once and well.</p></a>
+<a class="card" href="/fitness/"><p class="eyebrow">Move</p><h3>Fitness</h3><p>Strength, cardio and daily routines for women 35+, built on the exercise research and official activity guidelines.</p></a>
+<a class="card" href="/meal-plans/"><p class="eyebrow">Eat</p><h3>Meal Plans</h3><p>Simple 7-day meal plans and protein-first recipes, with the numbers taken from official nutrition data.</p></a>
+<a class="card" href="/health-trackers/"><p class="eyebrow">Measure</p><h3>Health Trackers</h3><p>Sleep, steps, macros, workouts and lab results: what&rsquo;s worth tracking after 35, and what the numbers mean.</p></a>
+<a class="card" href="/news/"><p class="eyebrow">Learn</p><h3>Longevity Updates</h3><p>New research on aging and evidence checks on what&rsquo;s trending, with every study labeled by how strong it is.</p></a>
 </div></div></section>
 <section class="alt"><div class="wrap narrow">
 <h2>Why women 35+?</h2>
@@ -90,10 +96,22 @@ PAGES = [
 <p><a href="/editorial-policy/">Our editorial policy</a></p>
 {nl_block("home")}
 </div></section>'''},
- hub("/news/","Longevity News","Longevity News for Women 35+: New Aging Research, Explained | Parva Regina",
+ hub("/news/","Longevity Updates","Longevity Updates for Women 35+: New Aging Research, Explained | Parva Regina",
      "New longevity and aging research explained for women 35+: what each study tested, who was in it, how strong the evidence is, and what it means for you.",
      "New research on aging, explained the day it matters: what was tested, who was studied, how strong the result is, and what changes for you (often, nothing yet).",
      ["New human trials on sleep, exercise, nutrition and supplements","Menopause and perimenopause research with longevity implications","Aging biomarkers and &ldquo;biological age&rdquo; tests, and how far to trust them","Big lab or animal findings, labeled clearly as early"]),
+ hub("/fitness/","Fitness","Fitness for Women 35+: Strength, Cardio and Daily Routines | Parva Regina",
+     "Strength training, cardio and daily workout routines for women 35+, built on exercise research and official physical activity guidelines.",
+     "Muscle, bone and heart fitness are some of the best-studied tools for aging well. Here&rsquo;s how to train for them from your mid-30s on, with routines you can actually fit into a week.",
+     ["Strength training for muscle and bone, including around menopause","VO2 max, zone 2 and cardio that fits a busy week","Daily routines you can do at home in 20 minutes","How much activity official guidelines recommend, and how to build up to it"]),
+ hub("/meal-plans/","Meal Plans","Meal Plans for Women 35+: 7-Day Plans and Protein-First Recipes | Parva Regina",
+     "Simple 7-day meal plans and protein-first recipes for women 35+, with nutrition numbers from official sources like USDA FoodData Central.",
+     "Simple, realistic weeks of eating built around protein, fiber and plants, with the numbers checked against official nutrition data. No crash diets.",
+     ["7-day meal plans you can shop for in one trip","Protein-first breakfasts and easy lunches","How much protein, fiber and calcium official sources recommend","What the research says about popular eating patterns for women in midlife"]),
+ hub("/health-trackers/","Health Trackers","Health Trackers for Women 35+: Sleep, Macros, Workouts and Labs | Parva Regina",
+     "What's worth tracking after 35: sleep, steps, macros, workouts and lab results, how accurate wearables are, and what the numbers mean.",
+     "Sleep scores, step counts, macros, heart rate, lab results. Here&rsquo;s what&rsquo;s worth measuring from your mid-30s on, how accurate the tools are, and what to ask your doctor about.",
+     ["Sleep and wearable data: what the numbers mean and how accurate they are","Tracking macros and protein without obsessing","Workout logs, steps and heart-rate zones","Lab tests worth discussing with your doctor, and &ldquo;biological age&rdquo; tests"]),
  hub("/evidence/","Evidence Checks","Evidence Checks: Do Longevity Supplements and Protocols Work for Women? | Parva Regina",
      "Does it work? Evidence checks on trending longevity supplements and protocols for women 35+, from red light therapy to creatine, NMN and magnesium.",
      "The trend is everywhere. Here&rsquo;s what the human trials show, whether women were studied, the dose that was tested, and the honest bottom line.",

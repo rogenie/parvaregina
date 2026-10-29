@@ -32,8 +32,8 @@
   },
   {
    "date": "2026-11-02",
-   "hub": "foundations",
-   "path": "/foundations/vo2-max-women/",
+   "hub": "fitness",
+   "path": "/fitness/vo2-max-women/",
    "title": "VO2 max for women: why it matters and how to raise it",
    "status": "todo",
    "kind": "evergreen",
@@ -54,8 +54,8 @@
   },
   {
    "date": "2026-11-09",
-   "hub": "foundations",
-   "path": "/foundations/strength-training-bone-density-menopause/",
+   "hub": "fitness",
+   "path": "/fitness/strength-training-bone-density-menopause/",
    "title": "Strength training for bone density around menopause",
    "status": "todo",
    "kind": "evergreen",
@@ -98,8 +98,8 @@
   },
   {
    "date": "2026-11-23",
-   "hub": "foundations",
-   "path": "/foundations/zone-2-cardio-women/",
+   "hub": "fitness",
+   "path": "/fitness/zone-2-cardio-women/",
    "title": "Zone 2 cardio for women: what it is and how much",
    "status": "todo",
    "kind": "evergreen",
@@ -120,8 +120,8 @@
   },
   {
    "date": "2026-11-30",
-   "hub": "foundations",
-   "path": "/foundations/protein-needs-women-over-40/",
+   "hub": "meal-plans",
+   "path": "/meal-plans/protein-needs-women-over-40/",
    "title": "Protein for women over 40: how much, from official sources",
    "status": "todo",
    "kind": "evergreen",

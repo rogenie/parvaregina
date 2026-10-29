@@ -36,9 +36,12 @@ Allowed as sources: peer-reviewed papers (PubMed, PubMed Central, Europe PMC, th
 
 ### Kinds of articles
 
-- **News** (`hub` `/news/`, `kind` `news`, chosen by the topic scout): one new study or official action from the last 21 days. Lead with what was found, then who was studied, then limits, then "What this means for you". Use `NewsArticle`-style headlines: what happened, in plain words. Don't call a study "new" if it was published more than 30 days before the article date.
+- **News** (`hub` `/news/`, hub name "Longevity Updates", `kind` `news`, chosen by the topic scout): one new study or official action from the last 21 days. Lead with what was found, then who was studied, then limits, then "What this means for you". Use `NewsArticle`-style headlines: what happened, in plain words. Don't call a study "new" if it was published more than 30 days before the article date.
 - **Evidence checks** (`/evidence/`): "Does X work?" for a trending supplement, device or protocol. Separate human trials from animal and cell work. Give the honest bottom line by goal (skin, muscle, bone, sleep, brain).
 - **Foundations** (`/foundations/`): the habits with the strongest evidence. Use official guidelines for any number a reader would act on (activity minutes, protein RDA, screening ages).
+- **Fitness** (`/fitness/`, hub name "Fitness"): strength, cardio, mobility and daily routines. Base volume and intensity on official guidelines (HHS Physical Activity Guidelines) and trials. Routines list exercises, sets and reps, give an easier option for each move, and tell readers to check with their clinician before starting if they have a health condition, injury or haven't been active.
+- **Meal Plans** (`/meal-plans/`, hub name "Meal Plans"): 7-day plans, recipes and nutrition basics. Every calorie, protein, fiber or nutrient number comes from USDA FoodData Central or another official source opened in the run. Build plans around protein, fiber, plants and calcium. No calorie-restriction targets, weight-loss promises, "detox", cleanses or skipped meals. Give swaps for common allergies and vegetarian eaters.
+- **Health Trackers** (`/health-trackers/`, hub name "Health Trackers"): what to measure (sleep, steps, heart rate, macros, workouts, lab results), how accurate devices and tests are according to validation studies, and what the numbers can and can't tell you. Name a device only when the study tested that device. Never interpret someone's personal results; point to their clinician.
 
 ## Never
 

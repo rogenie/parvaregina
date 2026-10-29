@@ -7,7 +7,7 @@ The publisher (`_src/PUBLISHING.md`) writes and fact-checks each article on its 
 ## Cadence it fills
 
 - **Wed:** news, chosen by the scout. Keep the next 2 Wednesdays filled.
-- **Mon/Fri:** evidence checks and foundations, pre-planned. If fewer than 3 weeks of Mon/Fri items remain, add evergreen topics (see "Evergreen ideas"). Add at most 4 items per run.
+- **Mon/Fri:** evergreen articles, pre-planned, rotating across the site's sections so each gets new articles regularly: Fitness (`/fitness/`), Meal Plans (`/meal-plans/`), Health Trackers (`/health-trackers/`), Evidence Checks (`/evidence/`), and occasionally Foundations (`/foundations/`, for habits that don't fit the other sections, such as sleep). Don't schedule two items from the same section back to back when another section has none in the next 2 weeks. If fewer than 3 weeks of Mon/Fri items remain, add evergreen topics (see "Evergreen ideas"). Add at most 4 items per run.
 - **Trending topics take priority** over evergreen Mon/Fri items (see "Trend check"). Publishing stays at 3 a week until the owner changes it.
 
 ## Trend check (Sunday and Wednesday runs)
@@ -29,7 +29,7 @@ Goal: when women 35-50 are suddenly searching or watching something about aging,
 **Swapping it in:**
 - Put the best qualifying trend in the next Mon or Fri slot that is at least 2 days away (on Sunday: Monday is too soon, so use Friday unless the trend is fading fast; on Wednesday: Friday is fine). Never touch a slot dated within 2 days, and never move a Wednesday news item.
 - Move the evergreen item it replaces to the first empty Mon or Fri after the last calendar item. Don't delete it.
-- Trend items use `"kind": "trend"`, `"hub": "evidence"` (checking a claim or product) or `"foundations"` (a habit), and a brief with: `"trend"` (what people are searching or watching, and where you saw it), `"sources"` (the URLs that showed the rise), plus the usual `"angle"` and the key studies to find.
+- Trend items use `"kind": "trend"` and the section that fits: `"hub": "evidence"` (checking a claim or product), `"fitness"` (a workout or exercise trend), `"meal-plans"` (a food or eating trend), `"health-trackers"` (a wearable, test or tracking trend) or `"foundations"` (any other habit), and a brief with: `"trend"` (what people are searching or watching, and where you saw it), `"sources"` (the URLs that showed the rise), plus the usual `"angle"` and the key studies to find.
 - At most 2 trend swaps per week. If nothing qualifies, change nothing; that's a normal result.
 
 **Report:** Wednesday runs send one push notification titled "Parva Regina: trending this week": what's trending (2-4 items, one line each), whether one was swapped in and for which date, and which evergreen item moved where. If nothing qualified, say so in one line. Sunday runs add a "Trending" line to their usual digest instead of sending a second notification.
@@ -69,15 +69,19 @@ Add to `_src/calendar.json` `items`, kept in date order:
            "links": ["<2-3 Parva Regina paths>"]}}
 ```
 
-Evergreen items use `"hub": "evidence"` or `"foundations"`, `"kind": "evergreen"`, and a `brief.angle` naming the key sources to find.
+Evergreen items use `"hub"` set to `"fitness"`, `"meal-plans"`, `"health-trackers"`, `"evidence"` or `"foundations"` (with `"path": "/<hub>/<slug>/"`), `"kind": "evergreen"`, and a `brief.angle` naming the key sources to find.
 
 ## Evergreen ideas (use, then remove from this list)
+
+Fitness: a 20-minute home strength routine for women 40+ · Walking, steps per day and health · Balance and fall prevention after 40 · Hormones and training around the menopause transition · Recovery and rest days.
+Meal Plans: a 7-day protein-first meal plan (every number from USDA FoodData Central; built around protein, fiber, calcium and plants; no calorie-restriction or weight-loss targets) · High-protein breakfasts · Fiber for women 35+ · Calcium and vitamin D from food · A week of anti-inflammatory-style eating: what the research shows.
+Health Trackers: Sleep trackers and wearables: how accurate are they? · What to track after 35, and what to skip · Tracking protein and macros without obsessing · Heart-rate zones explained · Lab tests to discuss with your doctor in your 40s · Continuous glucose monitors for people without diabetes: the evidence.
 
 Hormone therapy and long-term health: what trials show (WHI and after) · Vitamin D for women over 40 · Omega-3 and the heart · Cold plunge and sauna evidence · Intermittent fasting for women · Biological age tests: worth it? · Retinoids and skin aging · Sunscreen and photoaging · Alcohol and aging · Walking steps per day and mortality · Grip strength as a health marker · Iron and ferritin in perimenopause.
 
 ## Newsletter draft
 
-Write `_src/newsletter/<next Monday's date>.md`: "The Little Queen Brief". Subject line under 50 characters; a 1-line opener; the 3 most useful findings of the past week (published articles and other kept items), each a short paragraph with its evidence label and a link to the article or source; one "habit with strong evidence" line linking a Foundations article; sign-off "The Parva Regina Research Desk". Same "Never" rules as `PUBLISHING.md`. Commit it with the calendar.
+Write `_src/newsletter/<next Monday's date>.md`: "The Little Queen Brief". Subject line under 50 characters; a 1-line opener; the 3 most useful findings of the past week (published articles and other kept items), each a short paragraph with its evidence label and a link to the article or source; one "habit with strong evidence" line linking a Fitness, Meal Plans or Foundations article; sign-off "The Parva Regina Research Desk". Same "Never" rules as `PUBLISHING.md`. Commit it with the calendar.
 
 ## Commit and report
 

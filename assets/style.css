@@ -114,7 +114,7 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
 @media (max-width:600px){
   body{font-size:17px}
   .hero{padding:44px 0 36px}
-  .bar{padding:6px 0}
+  .bar{padding:6px 20px}
   header nav{gap:2px 14px}
   .nl-band{padding:24px 18px}
 }
@@ -152,3 +152,16 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
 /* Always label the Kit button "Download", whatever the form's own button text is */
 .nl-kit .formkit-submit>span{font-size:0!important;line-height:1.2!important}
 .nl-kit .formkit-submit>span::before{content:"Download";font:600 1rem/1.2 var(--sans)}
+
+/* Main menu dropdowns */
+header nav{align-items:center}
+.dd{position:relative}
+.dd summary{list-style:none;cursor:pointer;color:#F6E6EA;font-size:.95rem;display:flex;align-items:center;gap:5px}
+.dd summary::-webkit-details-marker{display:none}
+.dd summary::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.8}
+.dd summary:hover,.dd.on summary{color:var(--gold-soft)}
+.dd-menu{position:absolute;top:100%;margin-top:0;left:-14px;min-width:200px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(58,37,48,.16);padding:8px;z-index:20;display:flex;flex-direction:column}
+.dd-menu a{color:var(--ink)!important;padding:9px 12px;border-radius:8px;font-size:.95rem;text-decoration:none}
+.dd-menu a:hover{background:var(--paper-2);color:var(--plum)!important}
+@media (max-width:600px){header nav{position:relative}.dd{position:static}.dd-menu{left:0;right:auto;top:auto}}
+.dd{padding:8px 0}
