@@ -39,20 +39,16 @@ def layout(p):
                    "author":{"@type":"Organization","name":SITE["author"],"url":SITE["url"]+"/about/"},"publisher":org,
                    "image":SITE["url"]+p.get("og_image","/assets/og/default.png"),
                    "datePublished":p["published"],"dateModified":p.get("reviewed",p["published"]),"mainEntityOfPage":url})
-    def _cur(h): return ' aria-current="page"' if p["path"].startswith(h) else ""
     nav = ""
-    for h, n, kids in SITE["nav"]:
-        if not kids:
-            nav += f'<a href="{h}"{_cur(h)}>{esc(n)}</a>'
-        else:
-            on = any(p["path"].startswith(k) for k, _ in kids)
-            items = "".join(f'<a href="{k}">{esc(kn)}</a>' for k, kn in kids)
-            nav += (f'<details class="dd{" on" if on else ""}"><summary>{esc(n)}</summary>'
-                    f'<div class="dd-menu">{items}</div></details>')
+    for n, kids in SITE["nav"]:
+        on = any(p["path"].startswith(k) for k, _ in kids)
+        items = "".join(f'<a href="{k}"{" aria-current=\"page\"" if p["path"].startswith(k) else ""}>{kn}</a>' for k, kn in kids)
+        nav += (f'<details class="dd{" on" if on else ""}"><summary>{esc(n)}</summary>'
+                f'<div class="dd-menu">{items}</div></details>')
     robots = '<meta name="robots" content="noindex">' if p.get("noindex") else '<meta name="robots" content="max-image-preview:large">'
     if p.get("redirect"):
         url = SITE["url"] + p["redirect"]
-        robots += f'<meta http-equiv="refresh" content="0; url={p["redirect"]}">'
+        robots += f'<meta http-equiv="refresh" content="0; url={p["redirect"]}"><script>location.replace("{p["redirect"]}"+location.search+location.hash)</script>'
     og = p.get("og_image", "/assets/og/default.png")
     return f'''<!doctype html>
 <html lang="en">
@@ -95,7 +91,7 @@ def layout(p):
 <footer class="site"><div class="wrap">
 <div class="fgrid">
 <div><b>Parva Regina</b><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
-<div><b>Read</b><a href="/fitness/">Fitness</a><a href="/meal-plans/">Meal Plans</a><a href="/health-trackers/">Health Trackers</a><a href="/news/">Longevity Updates</a><a href="/evidence/">Evidence checks</a><a href="/foundations/">Foundations</a></div>
+{"".join(f'<div><b>{esc(n)}</b>' + "".join(f'<a href="{k}">{kn}</a>' for k, kn in kids) + '</div>' for n, kids in SITE["nav"])}
 <div><b>Trust</b><a href="/editorial-policy/">Editorial policy</a><a href="/corrections/">Corrections</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></div>
 </div>
 <p class="legal">Wellness education, not medical advice. We&rsquo;re not doctors; talk to your clinician before starting a supplement or changing your care. Studies can be wrong and science changes; check the date and sources on each article. &middot; &copy; {datetime.date.today().year} Parva Regina, published by {SITE["publisher"]}</p>

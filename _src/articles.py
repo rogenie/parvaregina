@@ -60,7 +60,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, quick, evide
             "article": True, "published": published, "reviewed": published, "evidence": (evidence, EV[evidence])}
 
 ARTICLES = [
-article("/evidence/creatine-for-women-over-40/", "/evidence/", "Evidence Checks",
+article("/supplements/creatine-for-women-over-40/", "/supplements/", "Supplements",
  "Creatine for Women Over 40: What the Research Shows",
  "Creatine for women over 40: what the research actually shows",
  "Does creatine help women over 40 with muscle, bone or brain? What the human trials found, the doses they tested, and the honest bottom line.",
@@ -86,7 +86,7 @@ article("/evidence/creatine-for-women-over-40/", "/evidence/", "Evidence Checks"
 <li><b>Lean mass:</b> a small edge for creatine only among women who stuck closely to the program; in the full group, it wasn&rsquo;t significant.</li>
 <li><b>Walking speed:</b> the creatine group got slightly faster over an 80-meter walk.</li>
 </ul>
-<p>Notice what the trial design tells you: everyone trained, and everyone got stronger. <a href="/fitness/strength-training-bone-density-menopause/">Strength training itself</a> is the better-studied tool for muscle and bone.</p>
+<p>Notice what the trial design tells you: everyone trained, and everyone got stronger. <a href="/bones/strength-training-bone-density-menopause/">Strength training itself</a> is the better-studied tool for muscle and bone.</p>
 
 <h2>Does creatine build muscle in women after menopause?</h2>
 <p>A 2026 review pooled trials that combined supplements with exercise in women across reproductive stages. It included three creatine trials, all in postmenopausal women, with about 300 women analyzed. Its findings:</p>
@@ -116,11 +116,11 @@ article("/evidence/creatine-for-women-over-40/", "/evidence/", "Evidence Checks"
 <li><b>If your goal is your brain:</b> it&rsquo;s too early to say.</li>
 </ul>
 <p>Creatine is one of the most-studied supplements in sport, but most of that research is in young men. Talk to your clinician before starting it, especially if you have kidney disease, take medication that affects your kidneys, or are pregnant or nursing.</p>
-<p>Next up in our evidence checks: <a href="/evidence/magnesium-glycinate-vs-threonate/">magnesium glycinate vs. L-threonate</a> and <a href="/evidence/urolithin-a-evidence/">urolithin A</a>. For the basics, see <a href="/foundations/">Foundations</a>.</p>""",
+<p>Next up in our evidence checks: <a href="/supplements/magnesium-glycinate-vs-threonate/">magnesium glycinate vs. L-threonate</a> and <a href="/supplements/urolithin-a-evidence/">urolithin A</a>. For the basics, see <a href="/foundations/">Foundations</a>.</p>""",
  [("Chilibeck PD et al. A 2-yr randomized controlled trial on creatine supplementation during exercise for postmenopausal bone health. Med Sci Sports Exerc, 2023", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10487398/"),
   ("Chen et al. Nutritional supplementation combined with exercise for musculoskeletal health in women: a systematic review and meta-analysis. Int J Med Sci, 2026", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13181379/"),
   ("CONCRET-MENOPA: creatine hydrochloride and creatine ethyl ester in perimenopausal and menopausal women, randomized controlled trial. J Am Nutr Assoc, 2025", "https://pubmed.ncbi.nlm.nih.gov/40854087/")]),
-article("/news/menopause-physiological-cliff-study/", "/news/", "Longevity Updates",
+article("/news/menopause-physiological-cliff-study/", "/news/", "Latest Research",
  "Menopause Brings Abrupt Body-Wide Changes, Huge Study Finds",
  "Menopause brings abrupt changes in bone, liver and blood fats, huge study finds",
  "A Nature Medicine study of 300 million lab tests from over a million women found a sudden shift at the final period, with hormones changing 12-15 years earlier.",
@@ -164,10 +164,10 @@ article("/news/menopause-physiological-cliff-study/", "/news/", "Longevity Updat
 <p>Nothing here calls for a new supplement or test. What it does support is paying attention before menopause, not after:</p>
 <ul class="ticks">
 <li>Ask your clinician how they&rsquo;d monitor bone health and cholesterol as you move through your 40s, and what your personal risk factors are.</li>
-<li>Keep building muscle and bone with <a href="/fitness/strength-training-bone-density-menopause/">strength training</a>, which has the strongest evidence of any habit for both.</li>
+<li>Keep building muscle and bone with <a href="/bones/strength-training-bone-density-menopause/">strength training</a>, which has the strongest evidence of any habit for both.</li>
 <li>If you&rsquo;re weighing hormone therapy, that&rsquo;s a conversation about your own risks and benefits with your doctor, not a decision to make from one observational study.</li>
 </ul>
-<p>Related: our evidence check on <a href="/evidence/creatine-for-women-over-40/">creatine for women over 40</a>.</p>""",
+<p>Related: our evidence check on <a href="/supplements/creatine-for-women-over-40/">creatine for women over 40</a>.</p>""",
  [("Pridham G, Hayut Y, Lavi-Shoseyov N, et al. Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period. Nature Medicine, 2026. doi:10.1038/s41591-026-04614-0", "https://www.nature.com/articles/s41591-026-04614-0"),
   ("Nature Portfolio press release on the study, October 13, 2026", "https://www.natureasia.com/en/info/press-releases/detail/9458"),
   ("ScienceAlert: coverage including comments from independent experts, October 13, 2026", "https://sciencealert.com/bones-liver-and-blood-fats-all-shift-abruptly-at-menopause-huge-study-finds")]),

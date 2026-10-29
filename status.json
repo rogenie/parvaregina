@@ -4,10 +4,10 @@
  "items": [
   {
    "date": "2026-10-28",
-   "hub": "evidence",
+   "hub": "supplements",
    "status": "written",
    "title": "Creatine for women over 40: what the research actually shows",
-   "url": "https://parvaregina.com/evidence/creatine-for-women-over-40/"
+   "url": "https://parvaregina.com/supplements/creatine-for-women-over-40/"
   },
   {
    "date": "2026-10-28",
@@ -18,7 +18,7 @@
   },
   {
    "date": "2026-10-30",
-   "hub": "evidence",
+   "hub": "skin",
    "status": "todo"
   },
   {
@@ -28,17 +28,17 @@
   },
   {
    "date": "2026-11-06",
-   "hub": "evidence",
+   "hub": "supplements",
    "status": "todo"
   },
   {
    "date": "2026-11-09",
-   "hub": "fitness",
+   "hub": "bones",
    "status": "todo"
   },
   {
    "date": "2026-11-13",
-   "hub": "evidence",
+   "hub": "supplements",
    "status": "todo"
   },
   {
@@ -48,7 +48,7 @@
   },
   {
    "date": "2026-11-20",
-   "hub": "evidence",
+   "hub": "supplements",
    "status": "todo"
   },
   {
@@ -58,7 +58,7 @@
   },
   {
    "date": "2026-11-27",
-   "hub": "evidence",
+   "hub": "skin",
    "status": "todo"
   },
   {
@@ -68,12 +68,12 @@
   },
   {
    "date": "2026-12-04",
-   "hub": "evidence",
+   "hub": "skin",
    "status": "todo"
   },
   {
    "date": "2026-12-07",
-   "hub": "evidence",
+   "hub": "supplements",
    "status": "todo"
   }
  ],

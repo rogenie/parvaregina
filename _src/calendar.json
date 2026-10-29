@@ -3,12 +3,12 @@
  "items": [
   {
    "date": "2026-10-28",
-   "hub": "evidence",
-   "path": "/evidence/creatine-for-women-over-40/",
+   "hub": "supplements",
+   "path": "/supplements/creatine-for-women-over-40/",
    "title": "Creatine for women over 40: what the research actually shows",
    "status": "published",
    "kind": "evergreen",
-   "url": "https://parvaregina.com/evidence/creatine-for-women-over-40/"
+   "url": "https://parvaregina.com/supplements/creatine-for-women-over-40/"
   },
   {
    "date": "2026-10-28",
@@ -21,8 +21,8 @@
   },
   {
    "date": "2026-10-30",
-   "hub": "evidence",
-   "path": "/evidence/red-light-therapy-skin-over-40/",
+   "hub": "skin",
+   "path": "/skin/red-light-therapy-skin-over-40/",
    "title": "Red light therapy for skin over 40: what the trials show",
    "status": "todo",
    "kind": "evergreen",
@@ -43,8 +43,8 @@
   },
   {
    "date": "2026-11-06",
-   "hub": "evidence",
-   "path": "/evidence/urolithin-a-evidence/",
+   "hub": "supplements",
+   "path": "/supplements/urolithin-a-evidence/",
    "title": "Urolithin A: what the human trials show",
    "status": "todo",
    "kind": "evergreen",
@@ -54,8 +54,8 @@
   },
   {
    "date": "2026-11-09",
-   "hub": "fitness",
-   "path": "/fitness/strength-training-bone-density-menopause/",
+   "hub": "bones",
+   "path": "/bones/strength-training-bone-density-menopause/",
    "title": "Strength training for bone density around menopause",
    "status": "todo",
    "kind": "evergreen",
@@ -65,8 +65,8 @@
   },
   {
    "date": "2026-11-13",
-   "hub": "evidence",
-   "path": "/evidence/nmn-nad-supplements-women/",
+   "hub": "supplements",
+   "path": "/supplements/nmn-nad-supplements-women/",
    "title": "NMN and NAD+ supplements: what human trials show",
    "status": "todo",
    "kind": "evergreen",
@@ -87,8 +87,8 @@
   },
   {
    "date": "2026-11-20",
-   "hub": "evidence",
-   "path": "/evidence/fisetin-senolytics-evidence/",
+   "hub": "supplements",
+   "path": "/supplements/fisetin-senolytics-evidence/",
    "title": "Fisetin and senolytics: where the human evidence stands",
    "status": "todo",
    "kind": "evergreen",
@@ -109,8 +109,8 @@
   },
   {
    "date": "2026-11-27",
-   "hub": "evidence",
-   "path": "/evidence/collagen-supplements-skin-evidence/",
+   "hub": "skin",
+   "path": "/skin/collagen-supplements-skin-evidence/",
    "title": "Collagen supplements for skin: what trials show",
    "status": "todo",
    "kind": "evergreen",
@@ -131,8 +131,8 @@
   },
   {
    "date": "2026-12-04",
-   "hub": "evidence",
-   "path": "/evidence/facial-lymphatic-drainage-evidence/",
+   "hub": "skin",
+   "path": "/skin/facial-lymphatic-drainage-evidence/",
    "title": "Facial lymphatic drainage: does it work for puffiness and aging?",
    "status": "todo",
    "kind": "evergreen",
@@ -142,8 +142,8 @@
   },
   {
    "date": "2026-12-07",
-   "hub": "evidence",
-   "path": "/evidence/magnesium-glycinate-vs-threonate/",
+   "hub": "supplements",
+   "path": "/supplements/magnesium-glycinate-vs-threonate/",
    "title": "Magnesium glycinate vs. L-threonate: what the evidence shows",
    "status": "todo",
    "kind": "evergreen",

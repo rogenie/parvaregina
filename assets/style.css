@@ -165,3 +165,9 @@ header nav{align-items:center}
 .dd-menu a:hover{background:var(--paper-2);color:var(--plum)!important}
 @media (max-width:600px){header nav{position:relative}.dd{position:static}.dd-menu{left:0;right:auto;top:auto}}
 .dd{padding:8px 0}
+
+.card.pillar ul{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.card.pillar li a{display:inline-block;padding:5px 12px;border-radius:99px;background:var(--paper-2);color:var(--plum);text-decoration:none;font-size:.88rem;font-weight:600}
+.card.pillar li a:hover{background:var(--plum);color:#fff}
+.card.pillar:hover{transform:none;border-color:var(--line)}
+.fgrid{grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}

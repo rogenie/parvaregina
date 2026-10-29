@@ -10,12 +10,10 @@ SITE = {
   # Kit embed script uid (from the form's JavaScript embed code). Used when kit_form_id is None.
   "kit_embed_uid": "0ec8af6ff3",
   "kit_domain": "https://rogenie.kit.com",
-  # Main menu: (href, label, [(href, label), ...] dropdown items or [])
-  "nav": [("/fitness/","Fitness",[]),
-          ("/meal-plans/","Meal Plans",[]),
-          ("/health-trackers/","Health Trackers",[]),
-          ("/news/","Longevity Updates",[("/news/","Latest research"),("/evidence/","Evidence checks")]),
-          ("/about/","About",[("/about/","About Parva Regina"),("/foundations/","Foundations"),("/editorial-policy/","Editorial policy")])],
+  # Main menu: three dropdowns (label, [(href, label), ...])
+  "nav": [("Body",[("/fitness/","Fitness"),("/meal-plans/","Meal plans"),("/bones/","Bones &amp; strength"),("/foundations/","Sleep &amp; foundations")]),
+          ("Beauty",[("/skin/","Skin"),("/hair/","Hair"),("/procedures/","Procedures")]),
+          ("Longevity",[("/news/","Latest research"),("/supplements/","Supplements"),("/health-trackers/","Health trackers")])],
 }
 
 EVIDENCE_LADDER = '''<ul class="ticks">
@@ -77,16 +75,15 @@ PAGES = [
 <p class="eyebrow">Longevity science for women 35+</p>
 <h1>Age on your own terms, <em>with the evidence in hand.</em></h1>
 <p class="lede">New longevity research, evidence checks on what&rsquo;s trending, and the habits with the strongest science for women in their late 30s, 40s and beyond. Every claim links to its study and says how strong the evidence is.</p>
-<p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a> &nbsp; <a class="btn ghost" href="/evidence/">Read the evidence checks</a></p>
+<p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a> &nbsp; <a class="btn ghost" href="/news/">Read the latest research</a></p>
 </div></section>
 <!--LATEST-->
 <section><div class="wrap">
 <h2>Start here</h2>
 <div class="cards">
-<a class="card" href="/fitness/"><p class="eyebrow">Move</p><h3>Fitness</h3><p>Strength, cardio and daily routines for women 35+, built on the exercise research and official activity guidelines.</p></a>
-<a class="card" href="/meal-plans/"><p class="eyebrow">Eat</p><h3>Meal Plans</h3><p>Simple 7-day meal plans and protein-first recipes, with the numbers taken from official nutrition data.</p></a>
-<a class="card" href="/health-trackers/"><p class="eyebrow">Measure</p><h3>Health Trackers</h3><p>Sleep, steps, macros, workouts and lab results: what&rsquo;s worth tracking after 35, and what the numbers mean.</p></a>
-<a class="card" href="/news/"><p class="eyebrow">Learn</p><h3>Longevity Updates</h3><p>New research on aging and evidence checks on what&rsquo;s trending, with every study labeled by how strong it is.</p></a>
+<div class="card pillar"><p class="eyebrow">Move, eat, rest</p><h3>Body</h3><p>The daily habits with the strongest evidence: strength, cardio, food, sleep and keeping your bones strong.</p><ul><li><a href="/fitness/">Fitness</a></li><li><a href="/meal-plans/">Meal plans</a></li><li><a href="/bones/">Bones &amp; strength</a></li><li><a href="/foundations/">Sleep &amp; foundations</a></li></ul></div>
+<div class="card pillar"><p class="eyebrow">What you see in the mirror</p><h3>Beauty</h3><p>Skin, hair and the treatments you&rsquo;re being sold, checked against the research and dermatology guidance.</p><ul><li><a href="/skin/">Skin</a></li><li><a href="/hair/">Hair</a></li><li><a href="/procedures/">Procedures</a></li></ul></div>
+<div class="card pillar"><p class="eyebrow">The science</p><h3>Longevity</h3><p>New studies on aging, supplement evidence checks, and what&rsquo;s worth tracking and testing after 35.</p><ul><li><a href="/news/">Latest research</a></li><li><a href="/supplements/">Supplements</a></li><li><a href="/health-trackers/">Health trackers</a></li></ul></div>
 </div></div></section>
 <section class="alt"><div class="wrap narrow">
 <h2>Why women 35+?</h2>
@@ -96,7 +93,7 @@ PAGES = [
 <p><a href="/editorial-policy/">Our editorial policy</a></p>
 {nl_block("home")}
 </div></section>'''},
- hub("/news/","Longevity Updates","Longevity Updates for Women 35+: New Aging Research, Explained | Parva Regina",
+ hub("/news/","Latest Research","Latest Longevity Research for Women 35+: New Aging Studies, Explained | Parva Regina",
      "New longevity and aging research explained for women 35+: what each study tested, who was in it, how strong the evidence is, and what it means for you.",
      "New research on aging, explained the day it matters: what was tested, who was studied, how strong the result is, and what changes for you (often, nothing yet).",
      ["New human trials on sleep, exercise, nutrition and supplements","Menopause and perimenopause research with longevity implications","Aging biomarkers and &ldquo;biological age&rdquo; tests, and how far to trust them","Big lab or animal findings, labeled clearly as early"]),
@@ -112,11 +109,27 @@ PAGES = [
      "What's worth tracking after 35: sleep, steps, macros, workouts and lab results, how accurate wearables are, and what the numbers mean.",
      "Sleep scores, step counts, macros, heart rate, lab results. Here&rsquo;s what&rsquo;s worth measuring from your mid-30s on, how accurate the tools are, and what to ask your doctor about.",
      ["Sleep and wearable data: what the numbers mean and how accurate they are","Tracking macros and protein without obsessing","Workout logs, steps and heart-rate zones","Lab tests worth discussing with your doctor, and &ldquo;biological age&rdquo; tests"]),
- hub("/evidence/","Evidence Checks","Evidence Checks: Do Longevity Supplements and Protocols Work for Women? | Parva Regina",
-     "Does it work? Evidence checks on trending longevity supplements and protocols for women 35+, from red light therapy to creatine, NMN and magnesium.",
-     "The trend is everywhere. Here&rsquo;s what the human trials show, whether women were studied, the dose that was tested, and the honest bottom line.",
-     ["Supplements: creatine, magnesium, NMN and NAD+, urolithin A, collagen, fisetin","Devices and protocols: red light therapy, cold and heat, fasting","Head-to-head comparisons, like magnesium glycinate vs. threonate","What the research says, what it doesn&rsquo;t, and what to ask your doctor"]),
- hub("/foundations/","Foundations","Longevity Foundations for Women 35+: Sleep, Strength, Bone and More | Parva Regina",
+ hub("/supplements/","Supplements","Supplements for Women 35+: What the Research Actually Shows | Parva Regina",
+     "Do longevity supplements work for women 35+? Evidence checks on creatine, magnesium, NMN, urolithin A, collagen and more: what human trials found.",
+     "The supplement is everywhere. Here&rsquo;s what the human trials show, whether women were studied, the dose that was tested, and the honest bottom line.",
+     ["Creatine, magnesium, NMN and NAD+, urolithin A, fisetin and other longevity supplements","Head-to-head comparisons, like magnesium glycinate vs. threonate","Whether women were included in the studies, and what dose was tested","What to ask your doctor or pharmacist before you start"]),
+ hub("/skin/","Skin","Skin After 35: Wrinkles, Collagen and What Works | Parva Regina",
+     "What actually helps skin after 35: collagen loss, wrinkles, sunscreen, retinoids, red light and skincare trends, checked against the research.",
+     "Lines that don&rsquo;t leave anymore, thinner skin, a duller complexion. Here&rsquo;s what&rsquo;s happening from your mid-30s on, and what the evidence says actually helps.",
+     ["Collagen loss around menopause, and why it can feel sudden","Sunscreen, retinoids and the skincare with the strongest evidence","Red light therapy, facial massage and other trending tools","Collagen and other &ldquo;beauty from within&rdquo; supplements"]),
+ hub("/hair/","Hair","Hair After 35: Thinning, Shedding and Grey Hair | Parva Regina",
+     "Thinning, shedding and grey hair in women 35+: common causes, the checks worth asking your doctor about, and treatments with real evidence.",
+     "A wider part, more hair in the drain, greys coming back faster. Here&rsquo;s what the research says about why it happens in midlife and what helps.",
+     ["Hair thinning around perimenopause and menopause","Shedding: iron, thyroid, stress and the labs worth asking about","Grey hair: what&rsquo;s genetic and what isn&rsquo;t","Treatments with evidence, and supplements that rarely help"]),
+ hub("/procedures/","Procedures","Beauty Procedures After 35: What the Evidence Shows | Parva Regina",
+     "Lasers, microneedling, injectables, peels and in-office treatments for women 35+: what the studies show, the risks, and questions to ask before you book.",
+     "Before you book: what the studies show for popular in-office treatments, how long results last, the risks, and the questions to ask a board-certified provider.",
+     ["Lasers, light treatments and microneedling","Injectables and fillers: what&rsquo;s known about results and risks","Chemical peels and prescription-strength options","How to choose a qualified provider and what to ask"]),
+ hub("/bones/","Bones &amp; Strength","Bone Health for Women 35+: Strength, Density and Menopause | Parva Regina",
+     "Protecting bone and muscle from your mid-30s on: strength and impact training, bone density around menopause, calcium, vitamin D and screening.",
+     "Bone and muscle are easier to keep than to rebuild. Here&rsquo;s what the research shows about protecting both, before and after menopause.",
+     ["Strength and impact training for bone density","What changes around menopause, and when to ask about a bone-density scan","Calcium, vitamin D and protein from food","Balance and fall prevention"]),
+ hub("/foundations/","Sleep &amp; Foundations","Sleep and Longevity Foundations for Women 35+ | Parva Regina",
      "The habits with the strongest evidence for healthy aging in women 35+: sleep, strength training, protein, aerobic fitness, bone health and the menopause transition.",
      "The unglamorous habits with the strongest evidence behind them, explained once and well, with what changes for women from the mid-30s on.",
      ["Sleep and deep sleep across the 30s, 40s and 50s","Strength training, muscle and bone density","VO2 max, zone 2 and cardiorespiratory fitness","Protein and nutrition basics with real numbers from official sources","The perimenopause and menopause transition: what&rsquo;s established and what&rsquo;s hype"]),
@@ -204,4 +217,10 @@ PAGES = [
  {"path":"/404","title":"Page not found | Parva Regina","h1":"Page not found","noindex":True,
   "desc":"This page doesn't exist.",
   "body":'''<section class="hero small"><div class="wrap"><h1>Page not found</h1><p class="lede">That page doesn&rsquo;t exist, or it has moved.</p><a class="btn" href="/">Go to the home page</a></div></section>'''},
+ {"path":"/evidence/","title":"Supplements | Parva Regina","h1":"Supplements","noindex":True,"redirect":"/supplements/",
+  "desc":"This section has moved to Supplements.",
+  "body":'''<section class="hero small"><div class="wrap narrow"><h1>This section has moved</h1><p class="lede"><a href="/supplements/">Go to Supplements &rarr;</a></p></div></section>'''},
+ {"path":"/evidence/creatine-for-women-over-40/","title":"Creatine for Women Over 40 | Parva Regina","h1":"Creatine for women over 40","noindex":True,"redirect":"/supplements/creatine-for-women-over-40/",
+  "desc":"This article has moved.",
+  "body":'''<section class="hero small"><div class="wrap narrow"><h1>This article has moved</h1><p class="lede"><a href="/supplements/creatine-for-women-over-40/">Read it here &rarr;</a></p></div></section>'''},
 ]
