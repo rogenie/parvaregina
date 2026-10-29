@@ -54,7 +54,7 @@ def layout(p):
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(p["title"])}</title>
 <meta name="description" content="{esc(p["desc"])}">
 <link rel="canonical" href="{url}">
@@ -72,9 +72,12 @@ def layout(p):
 <meta name="twitter:image" content="{SITE["url"]}{og}">
 <meta name="theme-color" content="#6E2F4C">
 <link rel="icon" href="/assets/favicon.svg?v={_v("assets/favicon.svg")}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Parva Regina">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;600&display=swap"></noscript>
 <link rel="stylesheet" href="/assets/style.css?v={_v("assets/style.css")}">
 <link rel="alternate" type="application/rss+xml" title="Parva Regina" href="/feed.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
@@ -83,7 +86,8 @@ def layout(p):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
 <a class="brand" href="/">{CROWN}<span>Parva Regina</span></a>
-<nav aria-label="Main">{nav}<a class="nl" href="/ageless-reset/">Ageless Reset Download</a></nav>
+<nav aria-label="Main">{nav}</nav>
+<a class="nl" href="/ageless-reset/"><span class="nl-long">Ageless Reset </span>Download</a>
 </div></header>
 <main id="main">
 {p["body"]}
@@ -97,6 +101,12 @@ def layout(p):
 <p class="legal">Wellness education, not medical advice. We&rsquo;re not doctors; talk to your clinician before starting a supplement or changing your care. Studies can be wrong and science changes; check the date and sources on each article. &middot; &copy; {datetime.date.today().year} Parva Regina, published by {SITE["publisher"]}</p>
 </div></footer>
 <script>(function(){{var dds=document.querySelectorAll("details.dd");document.addEventListener("click",function(e){{dds.forEach(function(d){{if(!d.contains(e.target))d.removeAttribute("open")}})}});if(window.matchMedia("(hover:hover)").matches){{dds.forEach(function(d){{d.addEventListener("mouseenter",function(){{d.setAttribute("open","")}});d.addEventListener("mouseleave",function(){{d.removeAttribute("open")}})}})}}}})();</script>
+{"" if p.get("redirect") else '<div class="mcta" id="mcta" hidden><a class="mcta-link" href="/ageless-reset/#get"><span class="mcta-k">Free guide</span><span class="mcta-t">The 30-Day Ageless Reset</span></a><a class="mcta-btn" href="/ageless-reset/#get">Download</a><button class="mcta-x" type="button" aria-label="Close">&times;</button></div>'}
+<script>(function(){{var h=document.querySelector("header.site"),m=document.getElementById("mcta"),last=scrollY,bands=[...document.querySelectorAll(".reset-band")],seen=false,closed=false;try{{closed=sessionStorage.getItem("mcta")==="x"}}catch(e){{}}
+if(m&&!closed&&window.matchMedia("(max-width:700px)").matches){{if("IntersectionObserver" in window&&bands.length){{var io=new IntersectionObserver(function(es){{seen=es.some(function(x){{return x.isIntersecting}});upd()}});bands.forEach(function(b){{io.observe(b)}})}}
+m.querySelector(".mcta-x").addEventListener("click",function(){{m.hidden=true;closed=true;try{{sessionStorage.setItem("mcta","x")}}catch(e){{}}}})}}
+function upd(){{if(m&&!closed)m.hidden=!(scrollY>500&&!seen&&window.matchMedia("(max-width:700px)").matches)}}
+addEventListener("scroll",function(){{var y=scrollY;if(window.matchMedia("(max-width:700px)").matches){{if(y>last+6&&y>140){{h.classList.add("hide");document.querySelectorAll("details.dd[open]").forEach(function(d){{d.removeAttribute("open")}})}}else if(y<last-6||y<140){{h.classList.remove("hide")}}}}last=y;upd()}},{{passive:true}});upd()}})();</script>
 <script data-goatcounter="https://parvaregina.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
@@ -128,7 +138,7 @@ def main():
         p = dict(p)
         if "<!--HUB_ARTICLES-->" in p["body"]:
             mine = [a for a in live if a["hub"] == p["path"]]
-            p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", card_list(mine) if mine else '<p class="muted">The first articles in this section are on their way.</p>')
+            p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", card_list(mine) if mine else ('<p class="muted">The first articles in this section are on their way. In the meantime, here&rsquo;s what&rsquo;s new:</p>' + card_list(live[:3])))
         if "<!--LATEST-->" in p["body"]:
             p["body"] = p["body"].replace("<!--LATEST-->", ('<section><div class="wrap"><h2>Latest</h2>' + card_list(live[:6]) + '</div></section>') if live else "")
         if "<!--CORRECTIONS-->" in p["body"]:

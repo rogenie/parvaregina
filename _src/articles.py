@@ -26,7 +26,10 @@ def share_box(path, h1):
     a = "".join(f'<a href="{h}"{"" if n == "Email" else " target=\"_blank\" rel=\"noopener\""}>{n}</a>' for n, h in links)
     copy = (f'<button type="button" data-url="{url}" onclick="var b=this;navigator.clipboard.writeText(b.dataset.url)'
             f'.then(function(){{b.textContent=\'Link copied\'}},function(){{prompt(\'Copy this link:\',b.dataset.url)}})">Copy link</button>')
-    return f'<div class="share" aria-label="Share this article"><b>Share:</b> {a}{copy}</div>'
+    native = (f'<button type="button" class="share-native" hidden data-url="{url}" data-title="{unescape(h1)}" '
+              f'onclick="navigator.share({{title:this.dataset.title,url:this.dataset.url}}).catch(function(){{}})">Share</button>'
+              f'<script>if(navigator.share)document.currentScript.previousElementSibling.hidden=false</script>')
+    return f'<div class="share" aria-label="Share this article"><b>Share:</b> {native}{a}{copy}</div>'
 
 def article(path, hub, hub_name, title, h1, desc, published, intro, quick, evidence, glance, sections, sources, updates=""):
     """

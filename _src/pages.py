@@ -45,10 +45,10 @@ def kit_form(campaign, button="Send me the free guide"):
                 f'<noscript><p><a class="btn" href="{dom}/{uid}">Get the free guide</a></p></noscript></div>')
     return f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Coming soon &middot; follow on TikTok meanwhile</a></p>'
 
-def nl_block(campaign, heading="Get the free 30-Day Ageless Reset",
+def nl_block(campaign, anchor="", heading="Get the free 30-Day Ageless Reset",
              text="Wrinkles, the 3 p.m. energy crash, and grey or thinning hair often grow from the same roots. This free guide for women 38&ndash;55 shows how they connect, and gives you a simple 30-day plan that works on all three at once."):
     """Call-to-action band: download the free 30-Day Ageless Reset (delivered by email through Kit)."""
-    return (f'<div class="nl-band reset-band"><div class="reset-grid">{RESET_COVER}<div>'
+    return (f'<div class="nl-band reset-band"{f' id="{anchor}"' if anchor else ""}><div class="reset-grid">{RESET_COVER}<div>'
             f'<p class="eyebrow">Free download</p><h2>{heading}</h2><p>{text}</p>'
             f'{kit_form(campaign)}'
             f'<p class="reset-fine">Enter your email and we&rsquo;ll send the guide straight to your inbox, along with our weekly longevity email. Unsubscribe anytime.</p>'
@@ -75,7 +75,7 @@ PAGES = [
 <p class="eyebrow">Longevity science for women 35+</p>
 <h1>Age on your own terms, <em>with the evidence in hand.</em></h1>
 <p class="lede">New longevity research, evidence checks on what&rsquo;s trending, and the habits with the strongest science for women in their late 30s, 40s and beyond. Every claim links to its study and says how strong the evidence is.</p>
-<p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a> &nbsp; <a class="btn ghost" href="/news/">Read the latest research</a></p>
+<p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a><a class="btn ghost" href="/news/">Read the latest research</a></p>
 </div></section>
 <!--LATEST-->
 <section><div class="wrap">
@@ -136,9 +136,10 @@ PAGES = [
  {"path":"/ageless-reset/","title":"The 30-Day Ageless Reset: Free Guide for Women 38-55 | Parva Regina","h1":"The 30-Day Ageless Reset",
   "desc":"Free guide for women 38-55: why wrinkles, the afternoon energy crash and grey or thinning hair often share the same roots, plus a 30-day plan for all three.",
   "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Free guide for women 38&ndash;55</p><h1>The 30-Day Ageless Reset</h1>
-<p class="lede">The lines that don&rsquo;t leave anymore. The 3 p.m. wall. The extra hair in the drain. They feel like three separate problems, so you&rsquo;ve been fighting them with three shelves of products. This guide shows why they&rsquo;re connected, and what to do about all three at once.</p></div></section>
+<p class="lede">The lines that don&rsquo;t leave anymore. The 3 p.m. wall. The extra hair in the drain. They feel like three separate problems, so you&rsquo;ve been fighting them with three shelves of products. This guide shows why they&rsquo;re connected, and what to do about all three at once.</p>
+<p><a class="btn" href="#get">Send me the free guide</a></p></div></section>
 <section><div class="wrap narrow prose">
-{nl_block("reset-page", heading="Send me the free guide", text="A 13-page guide you can read in one sitting, with a 30-day checklist and a list to take to your doctor.")}
+{nl_block("reset-page", anchor="get", heading="Send me the free guide", text="A 13-page guide you can read in one sitting, with a 30-day checklist and a list to take to your doctor.")}
 <h2>What&rsquo;s inside</h2>
 <ul class="ticks">
 <li><b>Why it feels like it happened overnight:</b> what changes in your skin&rsquo;s collagen around menopause, and why creams on the surface can&rsquo;t reach it</li>
