@@ -119,3 +119,6 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
   .nl-band{padding:24px 18px}
 }
 .card .eyebrow{letter-spacing:.08em;font-size:.72rem;color:var(--plum)}
+
+.nl-kit{margin-top:14px;max-width:560px}
+.nl-kit .formkit-form{margin:0!important;max-width:100%!important}

@@ -7,6 +7,9 @@ SITE = {
   "tiktok": "https://www.tiktok.com/@parvaregina",
   # Kit form id for the newsletter (a number from the Kit form's embed code). None = signup not live yet.
   "kit_form_id": None,
+  # Kit embed script uid (from the form's JavaScript embed code). Used when kit_form_id is None.
+  "kit_embed_uid": "0ec8af6ff3",
+  "kit_domain": "https://rogenie.kit.com",
   "nav": [("/news/","Longevity News"),("/evidence/","Evidence Checks"),("/foundations/","Foundations"),("/about/","About")],
 }
 
@@ -26,6 +29,10 @@ def nl_block(campaign, heading="The Little Queen Brief", text="One email a week:
                 f'<input id="nl-{campaign}" type="email" name="email_address" placeholder="Your email" required autocomplete="email">'
                 f'<input type="hidden" name="fields[source]" value="{campaign}">'
                 f'<button type="submit">Subscribe</button></form>')
+    elif SITE.get("kit_embed_uid"):
+        uid, dom = SITE["kit_embed_uid"], SITE["kit_domain"]
+        form = (f'<div class="nl-kit"><script async data-uid="{uid}" src="{dom}/{uid}/index.js"></script>'
+                f'<noscript><p><a class="btn" href="{dom}/{uid}">Subscribe free</a></p></noscript></div>')
     else:
         form = f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Launching soon &middot; follow on TikTok meanwhile</a></p>'
     return f'<div class="nl-band"><p class="eyebrow">Free weekly newsletter</p><h2>{heading}</h2><p>{text}</p>{form}</div>'
@@ -146,7 +153,7 @@ PAGES = [
 <h2>Newsletter</h2>
 <p>If you join the newsletter, your email address is collected and stored by Kit, the service that sends it, under its own privacy policy. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
-<p>The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
+<p>The site is hosted on GitHub Pages, loads fonts from Google Fonts, and loads the newsletter signup form from Kit. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
 <h2>Changes</h2>
 <p>If we add advertising, affiliate links or other analytics, this page will be updated first and will say what is collected and why.</p>
 </div></section>'''},
