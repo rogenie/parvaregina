@@ -88,6 +88,7 @@ def layout(p):
 </div>
 <p class="legal">Wellness education, not medical advice. We&rsquo;re not doctors; talk to your clinician before starting a supplement or changing your care. Studies can be wrong and science changes; check the date and sources on each article. &middot; &copy; {datetime.date.today().year} Parva Regina, published by {SITE["publisher"]}</p>
 </div></footer>
+<script data-goatcounter="https://parvaregina.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 '''

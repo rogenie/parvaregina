@@ -140,13 +140,15 @@ PAGES = [
   "body":'''<section class="hero small"><div class="wrap narrow"><h1>Privacy policy</h1><p class="lede">Last updated October 28, 2026.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we collect</h2>
-<p>Parva Regina has no accounts or comments and doesn&rsquo;t set its own cookies. We don&rsquo;t sell or share personal information.</p>
+<p>Parva Regina has no accounts or comments and doesn&rsquo;t set cookies. We don&rsquo;t sell or share personal information.</p>
+<h2>Visit counts</h2>
+<p>We count visits with GoatCounter, a privacy-friendly analytics service. It records which page was viewed, the referring site, and general browser, screen size and country information. It uses no cookies, doesn&rsquo;t track you across other sites, and doesn&rsquo;t store your IP address. We use these totals only to see which articles are read.</p>
 <h2>Newsletter</h2>
 <p>If you join the newsletter, your email address is collected and stored by Kit, the service that sends it, under its own privacy policy. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
 <p>The site is hosted on GitHub Pages and loads fonts from Google Fonts. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
 <h2>Changes</h2>
-<p>If we add analytics, advertising or affiliate links, this page will be updated first and will say what is collected and why.</p>
+<p>If we add advertising, affiliate links or other analytics, this page will be updated first and will say what is collected and why.</p>
 </div></section>'''},
  {"path":"/404","title":"Page not found | Parva Regina","h1":"Page not found","noindex":True,
   "desc":"This page doesn't exist.",
