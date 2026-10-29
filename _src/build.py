@@ -78,7 +78,7 @@ def layout(p):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
 <a class="brand" href="/">{CROWN}<span>Parva Regina</span></a>
-<nav aria-label="Main">{nav}<a class="nl" href="/ageless-reset/">Free Guide</a></nav>
+<nav aria-label="Main">{nav}<a class="nl" href="/ageless-reset/">Ageless Reset Download</a></nav>
 </div></header>
 <main id="main">
 {p["body"]}
