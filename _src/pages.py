@@ -21,21 +21,35 @@ EVIDENCE_LADDER = '''<ul class="ticks">
 <li><span class="ev review">Review</span> &nbsp;A summary of many studies. As strong as the studies it pools.</li>
 </ul>'''
 
-def nl_block(campaign, heading="The Little Queen Brief", text="One email a week: the new longevity research that matters for women 35+, what it means, and how strong the evidence is. Free, no spam, unsubscribe anytime."):
+RESET_URL = "/ageless-reset/"
+
+RESET_COVER = ('<div class="reset-cover" aria-hidden="true"><span class="rc-kick">Free guide</span>'
+               '<span class="rc-t1">The 30-Day</span><span class="rc-t2">Ageless</span><span class="rc-t1">Reset</span>'
+               '<span class="rc-rule"></span><span class="rc-sub">Wrinkles &middot; Energy &middot; Hair</span>'
+               '<span class="rc-brand">Parva Regina</span></div>')
+
+def kit_form(campaign, button="Send me the free guide"):
     fid = SITE["kit_form_id"]
     if fid:
-        form = (f'<form class="nl-form" action="https://app.kit.com/forms/{fid}/subscriptions" method="post">'
+        return (f'<form class="nl-form" action="https://app.kit.com/forms/{fid}/subscriptions" method="post">'
                 f'<label class="skip" for="nl-{campaign}">Email address</label>'
                 f'<input id="nl-{campaign}" type="email" name="email_address" placeholder="Your email" required autocomplete="email">'
                 f'<input type="hidden" name="fields[source]" value="{campaign}">'
-                f'<button type="submit">Subscribe</button></form>')
-    elif SITE.get("kit_embed_uid"):
+                f'<button type="submit">{button}</button></form>')
+    if SITE.get("kit_embed_uid"):
         uid, dom = SITE["kit_embed_uid"], SITE["kit_domain"]
-        form = (f'<div class="nl-kit"><script async data-uid="{uid}" src="{dom}/{uid}/index.js"></script>'
-                f'<noscript><p><a class="btn" href="{dom}/{uid}">Subscribe free</a></p></noscript></div>')
-    else:
-        form = f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Launching soon &middot; follow on TikTok meanwhile</a></p>'
-    return f'<div class="nl-band"><p class="eyebrow">Free weekly newsletter</p><h2>{heading}</h2><p>{text}</p>{form}</div>'
+        return (f'<div class="nl-kit"><script async data-uid="{uid}" src="{dom}/{uid}/index.js"></script>'
+                f'<noscript><p><a class="btn" href="{dom}/{uid}">Get the free guide</a></p></noscript></div>')
+    return f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Coming soon &middot; follow on TikTok meanwhile</a></p>'
+
+def nl_block(campaign, heading="Get the free 30-Day Ageless Reset",
+             text="Wrinkles, the 3 p.m. energy crash, and grey or thinning hair often grow from the same roots. This free guide for women 38&ndash;55 shows how they connect, and gives you a simple 30-day plan that works on all three at once."):
+    """Call-to-action band: download the free 30-Day Ageless Reset (delivered by email through Kit)."""
+    return (f'<div class="nl-band reset-band"><div class="reset-grid">{RESET_COVER}<div>'
+            f'<p class="eyebrow">Free download</p><h2>{heading}</h2><p>{text}</p>'
+            f'{kit_form(campaign)}'
+            f'<p class="reset-fine">Enter your email and we&rsquo;ll send the guide straight to your inbox, along with our weekly longevity email. Unsubscribe anytime.</p>'
+            f'</div></div></div>')
 
 def hub(path, name, title, desc, intro, covers):
     lis = "".join(f"<li>{c}</li>" for c in covers)
@@ -58,7 +72,7 @@ PAGES = [
 <p class="eyebrow">Longevity science for women 35+</p>
 <h1>Age on your own terms, <em>with the evidence in hand.</em></h1>
 <p class="lede">New longevity research, evidence checks on what&rsquo;s trending, and the habits with the strongest science for women in their late 30s, 40s and beyond. Every claim links to its study and says how strong the evidence is.</p>
-<p><a class="btn" href="/evidence/">Read the evidence checks</a> &nbsp; <a class="btn ghost" href="/news/">Latest research news</a></p>
+<p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a> &nbsp; <a class="btn ghost" href="/evidence/">Read the evidence checks</a></p>
 </div></section>
 <!--LATEST-->
 <section><div class="wrap">
@@ -88,16 +102,28 @@ PAGES = [
      "The habits with the strongest evidence for healthy aging in women 35+: sleep, strength training, protein, aerobic fitness, bone health and the menopause transition.",
      "The unglamorous habits with the strongest evidence behind them, explained once and well, with what changes for women from the mid-30s on.",
      ["Sleep and deep sleep across the 30s, 40s and 50s","Strength training, muscle and bone density","VO2 max, zone 2 and cardiorespiratory fitness","Protein and nutrition basics with real numbers from official sources","The perimenopause and menopause transition: what&rsquo;s established and what&rsquo;s hype"]),
- {"path":"/newsletter/","title":"The Little Queen Brief: Free Weekly Longevity Newsletter | Parva Regina","h1":"The Little Queen Brief",
-  "desc":"A free weekly email with the new longevity research that matters for women 35+, what it means, and how strong the evidence is.",
-  "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Free weekly newsletter</p><h1>The Little Queen Brief</h1>
-<p class="lede">Every week, the few longevity studies worth your attention, in plain words, each with its evidence label and a link to the source.</p></div></section>
+ {"path":"/ageless-reset/","title":"The 30-Day Ageless Reset: Free Guide for Women 38-55 | Parva Regina","h1":"The 30-Day Ageless Reset",
+  "desc":"Free guide for women 38-55: why wrinkles, the afternoon energy crash and grey or thinning hair often share the same roots, plus a 30-day plan for all three.",
+  "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Free guide for women 38&ndash;55</p><h1>The 30-Day Ageless Reset</h1>
+<p class="lede">The lines that don&rsquo;t leave anymore. The 3 p.m. wall. The extra hair in the drain. They feel like three separate problems, so you&rsquo;ve been fighting them with three shelves of products. This guide shows why they&rsquo;re connected, and what to do about all three at once.</p></div></section>
 <section><div class="wrap narrow prose">
-<h2>What you get</h2>
-<ul class="ticks"><li>The 3 most useful findings of the week, one paragraph each</li><li>An evidence label on every item, so you know what&rsquo;s solid and what&rsquo;s early</li><li>One habit with strong evidence behind it</li><li>No sponsored products and no supplement pitches</li></ul>
-{nl_block("newsletter-page", heading="Join free")}
-<p class="fine">Wellness education, not medical advice. Unsubscribe from any email with one click. See our <a href="/privacy/">privacy policy</a>.</p>
+{nl_block("reset-page", heading="Send me the free guide", text="A 13-page guide you can read in one sitting, with a 30-day checklist and a list to take to your doctor.")}
+<h2>What&rsquo;s inside</h2>
+<ul class="ticks">
+<li><b>Why it feels like it happened overnight:</b> what changes in your skin&rsquo;s collagen around menopause, and why creams on the surface can&rsquo;t reach it</li>
+<li><b>The afternoon crash, explained:</b> how sleep, blood sugar and stress feed your energy, your skin and your hair at the same time</li>
+<li><b>Grey and thinning hair:</b> the checks worth asking your doctor about before you buy another supplement</li>
+<li><b>Three fronts, 30 days:</b> a short list of habits for skin, energy and hair, with the evidence behind each</li>
+<li><b>A week-by-week checklist</b> so you add one thing at a time and keep what you&rsquo;ve built</li>
+<li><b>An appointment checklist</b> to take to your doctor, so you don&rsquo;t get told it&rsquo;s &ldquo;just aging&rdquo;</li>
+</ul>
+<h2>Who it&rsquo;s for</h2>
+<p>Women in their late 30s, 40s and 50s who are noticing changes in their skin, energy or hair and are tired of guessing. No crash diet, no 14-product routine, and nothing to buy.</p>
+<p class="fine">Wellness education, not medical advice. Talk to your clinician before starting new skincare actives, supplements, exercise or medications. Signing up also subscribes you to our weekly email; unsubscribe from any email with one click. See our <a href="/privacy/">privacy policy</a>.</p>
 </div></section>'''},
+ {"path":"/newsletter/","title":"The 30-Day Ageless Reset | Parva Regina","h1":"The 30-Day Ageless Reset","noindex":True,"redirect":"/ageless-reset/",
+  "desc":"This page has moved to the free 30-Day Ageless Reset guide.",
+  "body":'''<section class="hero small"><div class="wrap narrow"><h1>This page has moved</h1><p class="lede"><a href="/ageless-reset/">Get the free 30-Day Ageless Reset &rarr;</a></p></div></section>'''},
  {"path":"/about/","title":"About Parva Regina","h1":"About Parva Regina",
   "desc":"Who publishes Parva Regina, how articles are researched and written, and what the site is and isn't.",
   "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">About</p><h1>About Parva Regina</h1>
@@ -143,17 +169,17 @@ PAGES = [
 <!--CORRECTIONS-->
 </div></section>'''},
  {"path":"/privacy/","title":"Privacy Policy | Parva Regina","h1":"Privacy policy",
-  "desc":"How Parva Regina handles information when you visit the site or join the newsletter.",
-  "body":'''<section class="hero small"><div class="wrap narrow"><h1>Privacy policy</h1><p class="lede">Last updated October 28, 2026.</p></div></section>
+  "desc":"How Parva Regina handles information when you visit the site or sign up for the free guide.",
+  "body":'''<section class="hero small"><div class="wrap narrow"><h1>Privacy policy</h1><p class="lede">Last updated October 29, 2026.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we collect</h2>
 <p>Parva Regina has no accounts or comments and doesn&rsquo;t set cookies. We don&rsquo;t sell or share personal information.</p>
 <h2>Visit counts</h2>
 <p>We count visits with GoatCounter, a privacy-friendly analytics service. It records which page was viewed, the referring site, and general browser, screen size and country information. It uses no cookies, doesn&rsquo;t track you across other sites, and doesn&rsquo;t store your IP address. We use these totals only to see which articles are read.</p>
-<h2>Newsletter</h2>
-<p>If you join the newsletter, your email address is collected and stored by Kit, the service that sends it, under its own privacy policy. You can unsubscribe from any email.</p>
+<h2>Free guide and email list</h2>
+<p>If you sign up for the free 30-Day Ageless Reset, your email address is collected and stored by Kit, the service that sends the guide and our weekly email, under its own privacy policy. You can unsubscribe from any email.</p>
 <h2>Services that load with the site</h2>
-<p>The site is hosted on GitHub Pages, loads fonts from Google Fonts, and loads the newsletter signup form from Kit. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
+<p>The site is hosted on GitHub Pages, loads fonts from Google Fonts, and loads the free-guide signup form from Kit. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
 <h2>Changes</h2>
 <p>If we add advertising, affiliate links or other analytics, this page will be updated first and will say what is collected and why.</p>
 </div></section>'''},

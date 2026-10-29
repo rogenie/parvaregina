@@ -122,3 +122,16 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
 
 .nl-kit{margin-top:14px;max-width:560px}
 .nl-kit .formkit-form{margin:0!important;max-width:100%!important}
+
+/* 30-Day Ageless Reset band */
+.reset-grid{display:grid;grid-template-columns:150px 1fr;gap:28px;align-items:center}
+.reset-cover{display:flex;flex-direction:column;justify-content:center;aspect-ratio:8.5/11;background:#F7F1EA;border-radius:6px;padding:14px 12px;box-shadow:0 10px 24px rgba(0,0,0,.28);border-bottom:22px solid #4A2B3B;transform:rotate(-3deg)}
+.reset-cover span{display:block;line-height:1.05}
+.rc-kick{font:600 .5rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#C08478;margin-bottom:8px}
+.rc-t1{font:600 1.15rem var(--serif);color:#4A2B3B}
+.rc-t2{font:italic 600 1.3rem var(--serif);color:#C08478}
+.rc-rule{width:34px;height:2px;background:#B4935E;margin:8px 0 6px}
+.rc-sub{font:400 .55rem/1.3 var(--sans);color:#3B2F34}
+.rc-brand{font:600 .5rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#B4935E;margin-top:10px}
+.reset-fine{font-size:.82rem;color:#EBCFD8!important;margin:10px 0 0}
+@media (max-width:600px){.reset-grid{grid-template-columns:1fr}.reset-cover{width:120px;margin:0 auto 4px}}

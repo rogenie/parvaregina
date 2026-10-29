@@ -41,6 +41,9 @@ def layout(p):
                    "datePublished":p["published"],"dateModified":p.get("reviewed",p["published"]),"mainEntityOfPage":url})
     nav = "".join(f'<a href="{h}"{" aria-current=\"page\"" if p["path"].startswith(h) else ""}>{esc(n)}</a>' for h,n in SITE["nav"])
     robots = '<meta name="robots" content="noindex">' if p.get("noindex") else '<meta name="robots" content="max-image-preview:large">'
+    if p.get("redirect"):
+        url = SITE["url"] + p["redirect"]
+        robots += f'<meta http-equiv="refresh" content="0; url={p["redirect"]}">'
     og = p.get("og_image", "/assets/og/default.png")
     return f'''<!doctype html>
 <html lang="en">
@@ -75,14 +78,14 @@ def layout(p):
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
 <a class="brand" href="/">{CROWN}<span>Parva Regina</span></a>
-<nav aria-label="Main">{nav}<a class="nl" href="/newsletter/">Newsletter</a></nav>
+<nav aria-label="Main">{nav}<a class="nl" href="/ageless-reset/">Free Guide</a></nav>
 </div></header>
 <main id="main">
 {p["body"]}
 </main>
 <footer class="site"><div class="wrap">
 <div class="fgrid">
-<div><b>Parva Regina</b><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/newsletter/">The Little Queen Brief (free)</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
+<div><b>Parva Regina</b><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
 <div><b>Read</b>{"".join(f'<a href="{h}">{esc(n)}</a>' for h,n in SITE["nav"][:3])}</div>
 <div><b>Trust</b><a href="/editorial-policy/">Editorial policy</a><a href="/corrections/">Corrections</a><a href="/about/">About</a><a href="/privacy/">Privacy</a></div>
 </div>
