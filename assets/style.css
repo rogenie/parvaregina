@@ -135,3 +135,15 @@ footer.site b{color:#fff;font:600 1.25rem/1.2 var(--serif);display:block;margin-
 .rc-brand{font:600 .5rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#B4935E;margin-top:10px}
 .reset-fine{font-size:.82rem;color:#EBCFD8!important;margin:10px 0 0}
 @media (max-width:600px){.reset-grid{grid-template-columns:1fr}.reset-cover{width:120px;margin:0 auto 4px}}
+/* Kit embedded form, restyled to match the brand */
+.nl-kit form[data-uid]{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important;max-width:100%!important;width:100%!important;margin:0!important}
+.nl-kit .formkit-background,.nl-kit .formkit-header,.nl-kit .formkit-subheader,.nl-kit .formkit-powered-by-convertkit-container{display:none!important}
+.nl-kit [data-style="clean"],.nl-kit [data-element="column"]{padding:0!important;background:transparent!important}
+.nl-kit .formkit-fields{display:flex!important;flex-wrap:wrap!important;gap:10px!important;margin:0!important}
+.nl-kit .formkit-field{flex:1 1 220px!important;margin:0!important}
+.nl-kit .formkit-input{width:100%!important;padding:12px 18px!important;border-radius:99px!important;border:1px solid var(--gold-soft)!important;font:400 1rem var(--sans)!important;background:#fff!important;color:var(--ink)!important;height:auto!important}
+.nl-kit .formkit-submit{flex:0 0 auto!important;margin:0!important;border-radius:99px!important;background:var(--gold-soft)!important;color:var(--ink)!important;font:600 1rem var(--sans)!important;border:0!important}
+.nl-kit .formkit-submit>span{padding:12px 24px!important}
+.nl-kit .formkit-submit:hover{background:#fff!important}
+.nl-kit .formkit-guarantee{display:none!important}
+.nl-kit .formkit-alert-success{background:#fff!important;color:var(--ink)!important;border-radius:10px!important}
