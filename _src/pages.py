@@ -29,16 +29,16 @@ RESET_URL = "/ageless-reset/"
 # Free downloads, each delivered by its own Kit form. "uid" comes from the form's embed code
 # (data-uid="..."). An offer without a uid falls back to the Ageless Reset.
 OFFERS = {
-  "reset": {"uid": "0ec8af6ff3", "cover": ("The 30-Day", "Ageless", "Reset"), "sub": "Wrinkles &middot; Energy &middot; Hair",
+  "reset": {"form_id": "10112907", "uid": "0ec8af6ff3", "cover": ("The 30-Day", "Ageless", "Reset"), "sub": "Wrinkles &middot; Energy &middot; Hair",
             "heading": "Get the free 30-Day Ageless Reset",
             "text": "Wrinkles, the 3 p.m. energy crash, and grey or thinning hair often grow from the same roots. This free guide for women 38&ndash;55 shows how they connect, and gives you a simple 30-day plan that works on all three at once."},
-  "meal":   {"uid": "e3fe7aed18", "cover": ("The 7-Day", "Ageless", "Meal Plan"), "sub": "Breakfast &middot; Lunch &middot; Dinner",
+  "meal":   {"form_id": "10113137", "uid": "e3fe7aed18", "cover": ("The 7-Day", "Ageless", "Meal Plan"), "sub": "Breakfast &middot; Lunch &middot; Dinner",
             "heading": "Get the free 7-Day Ageless Meal Plan",
             "text": "A week of simple, protein-first meals for women 35+, built from real food you can buy in one shopping trip. Free, straight to your inbox."},
-  "workout":{"uid": "1b1967078b", "cover": ("The 7-Day", "Workout", "Plan"), "sub": "Strength &middot; Cardio &middot; Mobility",
+  "workout":{"form_id": "10113141", "uid": "1b1967078b", "cover": ("The 7-Day", "Workout", "Plan"), "sub": "Strength &middot; Cardio &middot; Mobility",
             "heading": "Get the free 7-Day Workout Plan",
             "text": "A week of workouts for women 35+ that build strength and protect your bones, with an easier option for every move. Free, straight to your inbox."},
-  "tracker":{"uid": "094868d97b", "cover": ("The Midlife", "Tracker", "Guide"), "sub": "Sleep &middot; Food &middot; Labs",
+  "tracker":{"form_id": "10113132", "uid": "094868d97b", "cover": ("The Midlife", "Tracker", "Guide"), "sub": "Sleep &middot; Food &middot; Labs",
             "heading": "Get the free Midlife Tracker Guide",
             "text": "What&rsquo;s worth tracking after 35 &mdash; sleep, food, workouts and labs &mdash; and how to make sense of the numbers. Free, straight to your inbox."},
 }
@@ -60,13 +60,16 @@ def cover(key):
 
 RESET_COVER = cover("reset")
 
-def kit_form(campaign, uid=None):
-    uid = uid or SITE.get("kit_embed_uid")
-    if uid:
-        dom = SITE["kit_domain"]
-        return (f'<div class="nl-kit"><script async data-uid="{uid}" src="{dom}/{uid}/index.js"></script>'
-                f'<noscript><p><a class="btn" href="{dom}/{uid}">Download free</a></p></noscript></div>')
-    return f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Coming soon &middot; follow on TikTok meanwhile</a></p>'
+def kit_form(campaign, form_id=None, button="Download"):
+    """Plain HTML signup form that posts straight to Kit: no Kit script, cookies or visitor IDs on our pages.
+    Works without JavaScript (Kit shows its confirmation page); with JavaScript it confirms inline."""
+    if not form_id:
+        return f'<p><a class="btn" href="{SITE["tiktok"]}" target="_blank" rel="noopener">Coming soon &middot; follow on TikTok meanwhile</a></p>'
+    return (f'<form class="nl-form pr-form" action="https://app.kit.com/forms/{form_id}/subscriptions" method="post">'
+            f'<label class="skip" for="em-{campaign}">Email address</label>'
+            f'<input id="em-{campaign}" type="email" name="email_address" placeholder="Your email" required autocomplete="email" inputmode="email">'
+            f'<button type="submit">{button}</button></form>'
+            f'<p class="pr-msg" tabindex="-1" hidden><b>Check your inbox.</b> Your download is on its way. If you don&rsquo;t see it in a few minutes, look in Promotions or Spam.</p>')
 
 def nl_block(campaign, anchor="", heading=None, text=None, offer="reset"):
     """Download band for one of OFFERS (each delivered by email through its own Kit form)."""
@@ -75,8 +78,8 @@ def nl_block(campaign, anchor="", heading=None, text=None, offer="reset"):
     o = OFFERS[offer]
     return (f'<div class="nl-band reset-band"{f' id="{anchor}"' if anchor else ""}><div class="reset-grid">{cover(offer)}<div>'
             f'<p class="eyebrow">Free download</p><h2>{heading or o["heading"]}</h2><p>{text or o["text"]}</p>'
-            f'{kit_form(campaign, o["uid"])}'
-            f'<p class="reset-fine">Enter your email and we&rsquo;ll send it straight to your inbox, along with our weekly longevity email. Unsubscribe anytime.</p>'
+            f'{kit_form(campaign, o.get("form_id"))}'
+            f'<p class="reset-fine">We&rsquo;ll email you the download and our weekly longevity email. Unsubscribe anytime. We never sell or share your email. <a href="/privacy/">Privacy policy</a></p>'
             f'</div></div></div>')
 
 def hub(path, name, title, desc, intro, covers):
@@ -225,20 +228,74 @@ PAGES = [
 <section><div class="wrap narrow prose">
 <!--CORRECTIONS-->
 </div></section>'''},
- {"path":"/privacy/","title":"Privacy Policy | Parva Regina","h1":"Privacy policy",
-  "desc":"How Parva Regina handles information when you visit the site or sign up for the free guide.",
-  "body":'''<section class="hero small"><div class="wrap narrow"><h1>Privacy policy</h1><p class="lede">Last updated October 29, 2026.</p></div></section>
+ {"path":"/privacy/","title":"Privacy & Cookies Policy | Parva Regina","h1":"Privacy & cookies",
+  "desc":"What Parva Regina collects, why, who helps us, your choices and your California privacy rights. We don't sell or share personal information or use ad trackers.",
+  "body":'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Privacy</p><h1>Privacy &amp; cookies</h1><p class="lede">Effective October 29, 2026. In short: we collect your email only if you give it to us, we don&rsquo;t sell or share personal information, and we don&rsquo;t use advertising cookies or tracking pixels.</p></div></section>
 <section><div class="wrap narrow prose">
+<h2>Who we are</h2>
+<p>Parva Regina (parvaregina.com) is published by 9nth Dimension Inc., based in California. &ldquo;We&rdquo; and &ldquo;us&rdquo; in this policy mean 9nth Dimension Inc.</p>
+
 <h2>What we collect</h2>
-<p>Parva Regina has no accounts or comments and doesn&rsquo;t set cookies. We don&rsquo;t sell or share personal information.</p>
-<h2>Visit counts</h2>
-<p>We count visits with GoatCounter, a privacy-friendly analytics service. It records which page was viewed, the referring site, and general browser, screen size and country information. It uses no cookies, doesn&rsquo;t track you across other sites, and doesn&rsquo;t store your IP address. We use these totals only to see which articles are read.</p>
-<h2>Free guide and email list</h2>
-<p>If you sign up for the free 30-Day Ageless Reset, your email address is collected and stored by Kit, the service that sends the guide and our weekly email, under its own privacy policy. You can unsubscribe from any email.</p>
-<h2>Services that load with the site</h2>
-<p>The site is hosted on GitHub Pages, loads fonts from Google Fonts, and loads the free-guide signup form from Kit. Like any web server, these services receive your IP address and basic browser information when you load a page, under their own privacy policies.</p>
+<table>
+<tr><th>What</th><th>Where it comes from</th><th>Why we use it</th></tr>
+<tr><td><b>Your email address</b>, and which download you asked for</td><td>You, when you sign up for a free guide</td><td>To send the download and our weekly longevity email</td></tr>
+<tr><td><b>Email activity</b>, such as whether an email was opened or a link clicked</td><td>Our email service, Kit</td><td>To see which emails are useful and keep the list healthy</td></tr>
+<tr><td><b>Anonymous visit counts</b>: page viewed, referring site, browser type, screen size and country</td><td>Your browser, through GoatCounter</td><td>To see which articles people read</td></tr>
+<tr><td><b>Basic connection data</b>, such as IP address and browser type</td><td>Your browser, received by our web host</td><td>To deliver the site and keep it secure</td></tr>
+</table>
+<p>We don&rsquo;t ask for your name, address, phone number, health conditions or payment details, and we don&rsquo;t create profiles of visitors. The topic of a guide you download (for example, a meal plan) tells us your interest, not anything about your health, and we don&rsquo;t use it for advertising.</p>
+
+<h2>Cookies, pixels and tracking</h2>
+<ul>
+<li><b>No cookies.</b> Parva Regina doesn&rsquo;t set cookies.</li>
+<li><b>No advertising or social media pixels.</b> We don&rsquo;t use the Meta (Facebook) pixel, TikTok pixel, Google Analytics, Google Ads tags, session recording or any similar tool.</li>
+<li><b>Privacy-friendly visit counts.</b> GoatCounter counts page views without cookies, doesn&rsquo;t store your IP address, and doesn&rsquo;t track you across other websites.</li>
+<li><b>Signup forms load nothing until you use them.</b> Our forms are plain forms on our own pages. Your email is sent to Kit only when you press the button.</li>
+<li><b>Fonts and images</b> are served from our own site.</li>
+</ul>
+<p>If we ever add a tool that sets cookies or tracks visitors for advertising, we&rsquo;ll update this page first and ask for your consent before it runs.</p>
+
+<h2>Who helps us (service providers)</h2>
+<p>These companies process data only to provide their service to us, under contracts or terms that restrict their use of it:</p>
+<ul>
+<li><b>Kit</b> (Kit.com): sends our emails and stores the subscriber list.</li>
+<li><b>GoatCounter</b>: anonymous visit counts.</li>
+<li><b>GitHub Pages</b>: hosts the website.</li>
+</ul>
+<p>We may also disclose information if the law requires it, or to protect our rights or the safety of others.</p>
+
+<h2>We don&rsquo;t sell or share personal information</h2>
+<p>We have not sold or &ldquo;shared&rdquo; (for cross-context behavioral advertising) personal information in the past 12 months, and we don&rsquo;t do so now. We don&rsquo;t knowingly collect personal information from anyone under 16.</p>
+
+<h2>Do Not Track and Global Privacy Control</h2>
+<p>Because we don&rsquo;t track visitors across sites or sell or share personal information, your browser&rsquo;s Do Not Track or Global Privacy Control signal doesn&rsquo;t change anything on our site: you already get the same treatment those signals ask for. We treat both signals as a valid opt-out request.</p>
+
+<h2>How long we keep data</h2>
+<p>We keep your email address until you unsubscribe or ask us to delete it. After you unsubscribe, Kit may keep your address on a suppression list so you aren&rsquo;t emailed again. Visit counts are kept in aggregate.</p>
+
+<h2>Your choices</h2>
+<ul>
+<li><b>Unsubscribe</b> with one click from the link at the bottom of any email.</li>
+<li><b>Ask to see, correct or delete</b> your information by replying to any of our emails with your request.</li>
+</ul>
+
+<h2 id="california">Your California privacy rights</h2>
+<p>If you live in California, you have the right to:</p>
+<ul>
+<li><b>Know</b> what personal information we collect, use and disclose (described above), and get a copy of yours</li>
+<li><b>Delete</b> personal information we hold about you</li>
+<li><b>Correct</b> inaccurate personal information</li>
+<li><b>Opt out of the sale or sharing</b> of personal information (we don&rsquo;t sell or share it)</li>
+<li><b>Limit the use of sensitive personal information</b> (we don&rsquo;t collect it)</li>
+<li><b>Not be discriminated against</b> for using these rights</li>
+</ul>
+<p>To make a request, reply to any of our emails, or email us using the address in our email footer. We&rsquo;ll confirm your request by matching the email address you used, and respond within 45 days. You can use an authorized agent; we may ask them for proof that you authorized them. Under California&rsquo;s &ldquo;Shine the Light&rdquo; law, you may also ask whether we disclosed personal information to third parties for their direct marketing; we don&rsquo;t.</p>
+
+<h2>Security</h2>
+<p>The site is served only over encrypted HTTPS. No method of transmission or storage is perfectly secure, but we limit what we collect so there is little to protect.</p>
+
 <h2>Changes</h2>
-<p>If we add advertising, affiliate links or other analytics, this page will be updated first and will say what is collected and why.</p>
+<p>If we change this policy, we&rsquo;ll update the effective date at the top. If a change is significant, such as adding cookies or advertising tools, we&rsquo;ll tell subscribers by email before it takes effect.</p>
 </div></section>'''},
  {"path":"/404","title":"Page not found | Parva Regina","h1":"Page not found","noindex":True,
   "desc":"This page doesn't exist.",

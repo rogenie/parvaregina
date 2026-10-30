@@ -1,3 +1,8 @@
+@font-face{font-family:"Lora";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/lora-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Lora";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/lora-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Lora";font-style:italic;font-weight:500 600;font-display:swap;src:url(/assets/fonts/lora-latin-500-italic.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/inter-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600 700;font-display:swap;src:url(/assets/fonts/inter-latin-600-normal.woff2) format("woff2")}
 /* Parva Regina — evidence-based longevity for women 35+ */
 :root{
   --ink:#3A2530;        /* deep rosewood: body text */
@@ -230,3 +235,9 @@ header .nl:hover{background:var(--gold-soft);color:var(--berry)}
 .about-logo{display:block;width:300px;max-width:80%;height:auto;margin:0 0 18px}
 @media (max-width:700px){.brand img{height:22px}}
 @media (max-width:420px){.nl-long{display:none}.brand img{height:20px}}
+
+.pr-msg{background:#fff;color:var(--ink)!important;border-radius:12px;padding:14px 16px;margin-top:12px}
+.pr-msg b{color:var(--plum)}
+.reset-fine a{color:#fff}
+.nl-form button[disabled]{opacity:.7}
+@media (max-width:700px){.nl-form input[type=email],.nl-form button{flex:1 1 100%;min-height:48px;font-size:1rem}}
