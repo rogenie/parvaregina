@@ -94,5 +94,17 @@
    "status": "todo"
   }
  ],
- "runs": []
+ "runs": [
+  {
+   "date": "2026-11-01",
+   "at": "2026-11-01T18:55:31-08:00",
+   "result": "published",
+   "path": "/skin/red-light-therapy-skin-over-40/",
+   "facts_checked": 31,
+   "removed": 6,
+   "live_verified": false,
+   "social_caption": true,
+   "note": "Catch-up for Oct 30 (scheduled runs failed); published from an interactive session. Controlled-trial papers couldn't be opened this run, so the article covers the evidence that could be confirmed."
+  }
+ ]
 }
