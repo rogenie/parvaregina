@@ -19,6 +19,7 @@ def share_box(path, h1):
     u = quote(url, safe=""); t = quote(unescape(h1), safe="")
     links = [
         ("Facebook", f"https://www.facebook.com/sharer/sharer.php?u={u}"),
+        ("LinkedIn", f"https://www.linkedin.com/sharing/share-offsite/?url={u}"),
         ("Pinterest", f"https://pinterest.com/pin/create/button/?url={u}&amp;description={t}"),
         ("X", f"https://twitter.com/intent/tweet?url={u}&amp;text={t}"),
         ("Email", f"mailto:?subject={t}&amp;body={u}"),
