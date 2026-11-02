@@ -174,4 +174,66 @@ article("/news/menopause-physiological-cliff-study/", "/news/", "Latest Research
  [("Pridham G, Hayut Y, Lavi-Shoseyov N, et al. Population-scale reconstruction of menopause dynamics reveals a physiological cliff at the final menstrual period. Nature Medicine, 2026. doi:10.1038/s41591-026-04614-0", "https://www.nature.com/articles/s41591-026-04614-0"),
   ("Nature Portfolio press release on the study, October 13, 2026", "https://www.natureasia.com/en/info/press-releases/detail/9458"),
   ("ScienceAlert: coverage including comments from independent experts, October 13, 2026", "https://sciencealert.com/bones-liver-and-blood-fats-all-shift-abruptly-at-menopause-huge-study-finds")]),
+article("/skin/red-light-therapy-skin-over-40/", "/skin/", "Skin",
+ "Red Light Therapy for Skin Over 40: What the Evidence Shows",
+ "Red light therapy for skin over 40: what the evidence shows",
+ "Do LED masks smooth wrinkles after 40? What the studies behind red light therapy found, what FDA clearance means, and how to use a mask safely.",
+ "2026-11-01",
+ "LED masks are now sold for home use on promises of firmer skin and fewer lines. Before you buy one, here&rsquo;s what the studies behind red light therapy for skin actually show.",
+ "Red and near-infrared light may modestly improve fine lines and firmness, but most of the studies behind today&rsquo;s at-home masks are small, short and paid for by the companies that sell them, with no comparison group. <b>FDA clearance means a mask is considered safe and similar to older devices, not that it was proven to work in people.</b>",
+ "review",
+ [("Best evidence", "Reviews of small clinical studies, plus company-funded studies of specific masks that had no control group"),
+  ("Women included?", "Yes. Recent mask studies enrolled mostly or only women aged roughly 41 to 70"),
+  ("What was tested", "Red light (about 630&ndash;660 nm), often combined with near-infrared (830 nm and above), for 10&ndash;21 minutes, two to five times a week, over 1&ndash;3 months"),
+  ("Bottom line", "Low risk when used as directed, possibly a small benefit, and much less proven than the marketing suggests")],
+ """<h2>What red light therapy for skin is supposed to do</h2>
+<p>The technique is called photobiomodulation: shining low-power red or near-infrared light on the skin. The leading theory is that the light is absorbed by an enzyme in mitochondria (cytochrome c oxidase), nudging cells to make more energy, and that skin cells called fibroblasts respond by making more collagen.</p>
+<p>A 2024 review in the <i>International Journal of Molecular Sciences</i> describes red light as roughly 620 to 700 nanometers and near-infrared as 700 nanometers and up, with longer wavelengths reaching deeper into the skin. The same review notes that <b>there are still no standard recommendations</b> for how much light, how often, or for how long.</p>
+
+<h2>What the studies behind LED masks found</h2>
+<p>The studies most often quoted in mask marketing look impressive on paper. Look closely at how they were designed.</p>
+<p><b>A luxury-brand mask study (2023).</b> Twenty volunteers aged 45 to 70 used a red-light mask (630 nanometers) for 12 minutes twice a week for three months. Crow&rsquo;s-feet wrinkle depth was reported as 38% lower by the end. But there was no comparison group, participants kept using their own skincare and makeup, and the authors included staff of the cosmetics brand that sells the mask and the chief executive of the company that makes it. The authors themselves list the uncontrolled skincare as a limitation.</p>
+<p><b>A multi-wavelength mask study (2026).</b> Thirty-three women aged 41 to 55 used a face mask and a neck mask combining red and near-infrared light (633, 830 and 1,072 nanometers) for 10 minutes, five days a week, for eight weeks; 31 finished. A dermatologist graded fine lines and wrinkles on the face about 6% better, and measured wrinkle depth was about 9% lower. Again, there was no control group, and the study was funded by the device maker, whose innovation manager was the lead author. The authors note that without a control group, expectations may explain part of the result.</p>
+<p><b>Why that matters:</b> skin often looks better simply because people in a study are paying attention to it, moisturizing and protecting it from the sun. Without a group using a sham (fake) mask, there&rsquo;s no way to know how much of the change came from the light.</p>
+
+<h2>Are there controlled trials of red light for wrinkles?</h2>
+<p>Some exist, and researchers are running more rigorous ones. For example, a team in Brazil published the plan for a randomized, double-blind trial in 108 women aged 45 to 60, all past menopause, comparing two schedules of a red-light (660 nanometer) mask against a sham mask that made the same sound with the light off. That kind of design is what the field needs.</p>
+<p>The 2024 review above reports that in the clinical studies it covered, red combined with near-infrared light improved wrinkles, smoothness and firmness. It also points out that treatment schedules varied widely and that protocols haven&rsquo;t been standardized. <b>The honest summary: a plausible, modest effect, from studies that are mostly small and short.</b></p>
+
+<h2>What FDA clearance for an LED mask means</h2>
+<p>Many masks advertise that they&rsquo;re &ldquo;FDA cleared.&rdquo; Clearance is not the same as approval. Most at-home LED masks are cleared through the 510(k) process, which asks whether a device is substantially equivalent to one already on the market.</p>
+<p>One popular mask cleared in June 2026 for over-the-counter treatment of full-face wrinkles is a good example. Its FDA summary states that clinical performance testing was not needed: clearance rested on comparison with earlier devices and on lab testing for electrical, light and battery safety. Its clearance also covers only lighter to medium skin tones (Fitzpatrick types I to IV).</p>
+<p>FDA&rsquo;s own draft guidance for these devices, issued in January 2023, recommends that companies run clinical studies for new devices, ideally with sham or other blinded controls.</p>
+
+<h2>Is red light therapy safe? Eyes come first</h2>
+<ul>
+<li><b>Your eyes:</b> FDA&rsquo;s draft guidance says light therapy devices can pose a risk of eye damage and recommends that instructions call for safety eyewear when the output requires it. Use the eye protection that comes with the device and never look into the LEDs.</li>
+<li><b>Long-term use:</b> the same guidance suggests labels say that the long-term effects of prolonged use are unknown.</li>
+<li><b>Cancer:</b> a 2023 systematic review in <i>Aesthetic Surgery Journal</i> looked at 57 papers, including 7 clinical trials, and concluded that current evidence suggests the treatment is safe for skin rejuvenation from a cancer standpoint. Those trials weren&rsquo;t designed to study cancer, so the evidence is limited.</li>
+<li><b>Who should check first:</b> FDA&rsquo;s suggested labeling includes warnings about use during pregnancy and over cancerous lesions. If you have a skin condition or a history of skin cancer, ask your clinician first.</li>
+</ul>
+
+<h2>Studies at a glance</h2>
+<table>
+<tr><th>Study</th><th>Who</th><th>Light and schedule</th><th>Control group?</th><th>Reported result</th></tr>
+<tr><td>Luxury-brand mask, 2023</td><td>20 volunteers, aged 45&ndash;70</td><td>630 nm; 12 min, twice weekly, 3 months</td><td>No</td><td>Crow&rsquo;s-feet depth about 38% lower</td></tr>
+<tr><td>Multi-wavelength mask, 2026</td><td>33 women, aged 41&ndash;55 (31 finished)</td><td>633, 830, 1,072 nm; 10 min, 5 days a week, 8 weeks</td><td>No</td><td>Graded lines about 6% better; wrinkle depth about 9% lower</td></tr>
+<tr><td>Brazilian trial plan, 2023</td><td>108 postmenopausal women, aged 45&ndash;60</td><td>660 nm; 21 min sessions, 4 weeks</td><td>Yes (sham mask)</td><td>Protocol only; no results in that paper</td></tr>
+</table>
+
+<h2>The honest bottom line</h2>
+<ul class="ticks">
+<li><b>If you already own a mask:</b> it&rsquo;s low risk when used as directed with eye protection. Expect subtle changes at most, and judge it by photos in the same light over two to three months.</li>
+<li><b>If you&rsquo;re deciding whether to buy one:</b> the evidence for a visible difference is weaker than the ads suggest, and &ldquo;FDA cleared&rdquo; doesn&rsquo;t mean proven.</li>
+<li><b>If you have darker skin:</b> check the clearance; some masks are cleared only for skin types I to IV.</li>
+<li>For in-office options with stronger evidence and more downtime, see our <a href="/procedures/">Procedures</a> section, and browse everything we&rsquo;ve checked in <a href="/skin/">Skin</a>.</li>
+</ul>
+<p>Related: <a href="/skin/collagen-supplements-skin-evidence/">collagen supplements for skin</a> and <a href="/skin/facial-lymphatic-drainage-evidence/">facial lymphatic drainage</a>.</p>""",
+ [("Couturaud V, Le Fur M, Pelletier M, Granotier F. Reverse skin aging signs by red light photobiomodulation. Skin Research and Technology, 2023;29(7):e13391", "https://pmc.ncbi.nlm.nih.gov/articles/PMC10311288/"),
+  ("Bradbury E, Langton AK. Multi-Wavelength LED Photobiomodulation Improves Photoaged Skin of the Face, Neck, and D&eacute;collet&eacute;. Cosmetics, 2026;13(5):276", "https://www.mdpi.com/2079-9284/13/5/276"),
+  ("Comparison of the effects of 2 frequencies of application of photobiomodulation on facial rejuvenation: controlled, randomized, and double-blind clinical trial (protocol). Medicine, 2023;102(5):e32514", "https://pmc.ncbi.nlm.nih.gov/articles/PMC9902007/"),
+  ("U.S. FDA. 510(k) clearance K260715 and summary for an over-the-counter LED light therapy mask, June 3, 2026", "https://www.accessdata.fda.gov/cdrh_docs/pdf26/K260715.pdf"),
+  ("U.S. FDA. Photobiomodulation (PBM) Devices: Premarket Notification [510(k)] Submissions. Draft guidance, January 2023", "https://www.fda.gov/media/164417/download"),
+  ("Hern&aacute;ndez-Bule ML, Naharro-Rodr&iacute;guez J, Bacci S, Fern&aacute;ndez-Guarino M. Unlocking the Power of Light on the Skin: A Comprehensive Review on Photobiomodulation. International Journal of Molecular Sciences, 2024;25(8):4483", "https://www.mdpi.com/1422-0067/25/8/4483"),
+  ("Glass GE. Photobiomodulation: A Systematic Review of the Oncologic Safety of Low-Level Light Therapy for Aesthetic Skin Rejuvenation. Aesthetic Surgery Journal, 2023;43(5):NP357&ndash;NP371", "https://academic.oup.com/asj/article/43/5/NP357/7018419")]),
 ]

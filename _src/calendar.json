@@ -20,15 +20,17 @@
    "url": "https://parvaregina.com/news/menopause-physiological-cliff-study/"
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-11-01",
    "hub": "skin",
    "path": "/skin/red-light-therapy-skin-over-40/",
-   "title": "Red light therapy for skin over 40: what the trials show",
-   "status": "todo",
+   "title": "Red light therapy for skin over 40: what the evidence shows",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "Controlled trials of red/near-infrared LED for wrinkles and skin (e.g. Wunsch & Matuschka 2014, Photomed Laser Surg; PMID 24286286), vs. uncontrolled industry studies (e.g. Skin Res Technol 2023, Dior/Lucibel mask, PMC10311288: 20 people, no control group, manufacturer authors). FDA clears some OTC LED masks as Class II for full-face wrinkles (e.g. K214103, 21 CFR 878.4810): clearance is not proof of large effects. Wavelengths tested (630-850 nm), session schedules, eye safety."
-   }
+   },
+   "url": "https://parvaregina.com/skin/red-light-therapy-skin-over-40/",
+   "note": "Scheduled Oct 30; the scheduled runs failed, so published on Nov 1 from an interactive session."
   },
   {
    "date": "2026-11-02",

@@ -1,5 +1,5 @@
 {
- "built": "2026-10-29",
+ "built": "2026-11-01",
  "cadence": "Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity, led by Skin, Supplements, Bones & Strength and Sleep & Foundations. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
  "items": [
   {
@@ -17,9 +17,11 @@
    "url": "https://parvaregina.com/news/menopause-physiological-cliff-study/"
   },
   {
-   "date": "2026-10-30",
+   "date": "2026-11-01",
    "hub": "skin",
-   "status": "todo"
+   "status": "written",
+   "title": "Red light therapy for skin over 40: what the evidence shows",
+   "url": "https://parvaregina.com/skin/red-light-therapy-skin-over-40/"
   },
   {
    "date": "2026-11-02",
