@@ -237,4 +237,88 @@ article("/skin/red-light-therapy-skin-over-40/", "/skin/", "Skin",
   ("U.S. FDA. Photobiomodulation (PBM) Devices: Premarket Notification [510(k)] Submissions. Draft guidance, January 2023", "https://www.fda.gov/media/164417/download"),
   ("Hern&aacute;ndez-Bule ML, Naharro-Rodr&iacute;guez J, Bacci S, Fern&aacute;ndez-Guarino M. Unlocking the Power of Light on the Skin: A Comprehensive Review on Photobiomodulation. International Journal of Molecular Sciences, 2024;25(8):4483", "https://www.mdpi.com/1422-0067/25/8/4483"),
   ("Glass GE. Photobiomodulation: A Systematic Review of the Oncologic Safety of Low-Level Light Therapy for Aesthetic Skin Rejuvenation. Aesthetic Surgery Journal, 2023;43(5):NP357&ndash;NP371", "https://academic.oup.com/asj/article/43/5/NP357/7018419")]),
+article("/fitness/vo2-max-women/", "/fitness/", "Fitness",
+ "VO2 Max for Women: Why It Matters and How to Raise It",
+ "VO2 max for women: why it matters and how to raise it",
+ "What VO2 max is, how it changes with age in women, what the mortality research shows, and what trials in women found raises it.",
+ "2026-11-04",
+ "VO2 max has become the longevity number of the moment, showing up on smartwatches. Here&rsquo;s what it actually measures, why researchers care about it, and what trials in midlife and older women found about raising it.",
+ "VO2 max is the most oxygen your body can use during all-out exercise, a measure of cardiorespiratory fitness. In large studies, fitter adults, women included, die at lower rates than less fit adults of the same age and sex. <b>Trials in midlife and older women show regular aerobic exercise raises it, with more exercise bringing bigger gains; interval training raised it too.</b>",
+ "human-trial",
+ [("Best evidence", "Randomized trials in women: a 6-month trial of 464 postmenopausal women (2007) and a 2026 review of 19 trials in middle-aged and older women. The link to longevity comes from observational studies, such as one of 122,007 adults (2018)"),
+  ("Women included?", "Yes. The main trials studied women only; women were about 41% of the large mortality study"),
+  ("Protocol tested", "About 72 to 192 minutes a week of moderate exercise for 6 months; interval training in other trials"),
+  ("Bottom line", "Higher fitness is linked to a longer life. Moving more raises it, and harder intervals are one more way to do it")],
+ """<h2>What is VO2 max?</h2>
+<p>VO2 max is the most oxygen your body can take in and use during hard exercise. It&rsquo;s usually written in milliliters of oxygen per kilogram of body weight per minute (mL/kg/min). It reflects how well your heart, lungs, blood and muscles work together.</p>
+<p>The most accurate test is done on a treadmill or bike in a lab, wearing a mask that measures your breathing while the effort gets harder until you can&rsquo;t continue. Most other numbers you see, including the one on your watch, are estimates.</p>
+
+<h2>Why VO2 max matters for women: the mortality research</h2>
+<p>The study most often cited followed 122,007 adults who took a treadmill test at the Cleveland Clinic between 1991 and 2014. About 41% were women, and the average age was 53. Researchers grouped people by fitness compared with others of the same age and sex, then tracked deaths over a median of 8.4 years. It was published in <i>JAMA Network Open</i> in 2018.</p>
+<ul>
+<li>People in the lowest fitness group had about 5 times the risk of death of those in the top group (the top 2.3%), after adjusting for other factors.</li>
+<li>For comparison, in the same analysis smoking was linked to about 1.4 times the risk, and diabetes about 1.4 times.</li>
+<li>In women, the difference between the &ldquo;high&rdquo; and &ldquo;elite&rdquo; fitness groups wasn&rsquo;t statistically significant.</li>
+</ul>
+<p><b>This is an association, not proof that raising your VO2 max will lengthen your life.</b> Everyone in it was having a treadmill test at a hospital, and fitter people may differ in many other ways that the adjustments can&rsquo;t fully capture.</p>
+
+<h2>How VO2 max changes with age in women</h2>
+<p>A US registry of 7,783 lab treadmill tests (3,172 of them in women), collected in 2014 and 2015, set reference values by age. For women, the middle value (50th percentile) was:</p>
+<table>
+<tr><th>Age</th><th>Middle VO2 max for women (mL/kg/min)</th></tr>
+<tr><td>30&ndash;39</td><td>30.2</td></tr>
+<tr><td>40&ndash;49</td><td>26.7</td></tr>
+<tr><td>50&ndash;59</td><td>23.4</td></tr>
+<tr><td>60&ndash;69</td><td>20.0</td></tr>
+</table>
+<p>Across the adult years, women&rsquo;s values were about 10% lower each decade. These are snapshots of different women at different ages, not the same women followed over time. The menopause years bring other abrupt body changes too (see <a href="/news/menopause-physiological-cliff-study/">our report on a study of a million women</a>).</p>
+
+<h2>How to raise VO2 max: what trials in women found</h2>
+<h3>More moderate exercise, more gain</h3>
+<p>The DREW trial, published in <i>JAMA</i> in 2007, randomly assigned 464 inactive postmenopausal women in the Dallas area (ages 45 to 75, average 57, all overweight or with obesity and raised blood pressure) to no exercise or one of three exercise amounts for 6 months. The exercise groups worked at a moderate pace, set at about half of each woman&rsquo;s own peak capacity.</p>
+<ul>
+<li>About 72 minutes a week: fitness up about 4% compared with the control group.</li>
+<li>About 136 minutes a week: up about 6%.</li>
+<li>About 192 minutes a week: up about 8%.</li>
+</ul>
+<p><b>Even the smallest amount, well under the official 150 minutes, raised fitness, and more brought more.</b></p>
+
+<h3>Do intervals work better?</h3>
+<p>High-intensity interval training (HIIT) alternates hard bursts with easier recovery. A 2026 review in <i>Frontiers in Physiology</i> pooled 19 randomized trials with 646 women aged about 44 to 81, focused on women around and after menopause. In the 8 trials (168 women) that measured VO2 max, HIIT raised it more than the comparison groups, which included no exercise and steady moderate exercise. Trials that measured a closely related number, VO2 peak, didn&rsquo;t show a clear effect. On its own, it did little for everyday physical function such as strength or getting up from a chair.</p>
+<p>A small Spanish trial shows what this looks like in practice. It randomized 54 women aged 55 to 85 (average about 68) to hour-long sessions twice a week of either high-intensity interval circuits or steady moderate training, or to no training, for 18 weeks; 41 finished. Compared with the no-training group, estimated VO2 max was about 3.4 mL/kg/min higher with the interval circuits and 1.9 higher with moderate training. The difference between the two training groups wasn&rsquo;t statistically significant, and VO2 max was estimated with an equation, not measured.</p>
+<p>In a 2023 review of 29 trials in mostly younger adults (807 people, average age about 34), HIIT came out slightly ahead of steady exercise for fitness, but the authors called the clinical importance of the difference limited.</p>
+
+<h3>What about &ldquo;zone 2&rdquo;?</h3>
+<p>&ldquo;Zone 2&rdquo; usually means a steady pace where you can still talk. There&rsquo;s no single agreed definition, and none of the trials described here tested it under that name. The closest evidence here is DREW&rsquo;s moderate pace, which did raise fitness.</p>
+
+<h2>Studies at a glance</h2>
+<table>
+<tr><th>Study</th><th>Who</th><th>What was tested</th><th>Length</th><th>Main result</th></tr>
+<tr><td>Mandsager et al., 2018</td><td>122,007 adults, ~41% women, avg. 53</td><td>Treadmill fitness vs. death (observational)</td><td>Median 8.4 years</td><td>Lowest fitness: ~5x risk vs. top group</td></tr>
+<tr><td>DREW (Church et al., 2007)</td><td>464 postmenopausal women, avg. 57</td><td>~72, 136 or 192 min/week moderate exercise</td><td>6 months</td><td>Fitness up ~4%, 6%, 8% vs. control</td></tr>
+<tr><td>Cai et al., 2026 (review)</td><td>646 women in 19 trials, ages ~44&ndash;81</td><td>HIIT vs. various controls</td><td>Varied</td><td>VO2 max improved; little effect on function</td></tr>
+<tr><td>Ballesta-Garc&iacute;a et al., 2020</td><td>54 women, avg. ~68</td><td>Interval circuits vs. moderate training, 2x/week</td><td>18 weeks</td><td>Both improved; no significant difference</td></tr>
+</table>
+
+<h2>How to estimate your VO2 max</h2>
+<p>A lab test is the most accurate, but most people rely on a watch. A 2025 review of 13 small studies (273 people, about a third of them women) found that in most of the studies reporting an error figure, watch estimates were within 10% of lab values, while one study found an average error of about 16%, with the watch reading low. Two studies found watches tended to overestimate in less-fit people and underestimate in very fit ones. The review was done by a single author, and none of the studies tested the newest watch models.</p>
+<p><b>Use a watch number to watch your own trend, not as a diagnosis.</b> More on device accuracy lives in <a href="/health-trackers/">Health Trackers</a>.</p>
+
+<h2>What this means for you</h2>
+<ul class="ticks">
+<li><b>Start with the official baseline.</b> US guidelines (HHS) call for 150 to 300 minutes a week of moderate activity, such as brisk walking, or 75 to 150 minutes of vigorous activity, such as running, or a mix, plus muscle-strengthening work on 2 or more days.</li>
+<li><b>Any amount counts.</b> In DREW, about 72 minutes a week still moved the needle.</li>
+<li><b>Intervals are one more option.</b> Interval sessions raised VO2 max in trials of midlife and older women, but steady exercise worked too.</li>
+<li><b>Keep lifting.</b> Cardio doesn&rsquo;t replace <a href="/bones/strength-training-bone-density-menopause/">strength training for bone and muscle</a>.</li>
+</ul>
+<p>If you have a heart condition, another health condition or an injury, or haven&rsquo;t been active, check with your clinician before starting harder exercise. Find more routines in <a href="/fitness/">Fitness</a> and the basics in <a href="/foundations/">Sleep &amp; Foundations</a>.</p>""",
+ [("Mandsager K, Harb S, Cremer P, Phelan D, Nissen SE, Jaber W. Association of Cardiorespiratory Fitness With Long-term Mortality Among Adults Undergoing Exercise Treadmill Testing. JAMA Network Open, 2018;1(6)", "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2707428"),
+  ("Church TS, Earnest CP, Skinner JS, Blair SN. Effects of Different Doses of Physical Activity on Cardiorespiratory Fitness Among Sedentary, Overweight or Obese Postmenopausal Women With Elevated Blood Pressure: A Randomized Controlled Trial. JAMA, 2007;297(19):2081&ndash;2091", "https://jamanetwork.com/journals/jama/fullarticle/1108370"),
+  ("Cai L, Guo J, Zhang R, et al. Effects of high intensity interval training (HIIT) on cardiopulmonary fitness and physical function in middle-aged and elderly women: a systematic review and meta-analysis. Frontiers in Physiology, 2026;17", "https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2026.1778052/full"),
+  ("Ballesta-Garc&iacute;a I, Mart&iacute;nez-Gonz&aacute;lez-Moro I, Ramos-Campo DJ, Carrasco-Poyatos M. High-Intensity Interval Circuit Training Versus Moderate-Intensity Continuous Training on Cardiorespiratory Fitness in Middle-Aged and Older Women: A Randomized Controlled Trial. IJERPH, 2020;17(5):1805", "https://www.mdpi.com/1660-4601/17/5/1805"),
+  ("Guo Z, Li M, Cai J, et al. Effect of High-Intensity Interval Training vs. Moderate-Intensity Continuous Training on Fat Loss and Cardiorespiratory Fitness in the Young and Middle-Aged. IJERPH, 2023;20(6):4741", "https://www.mdpi.com/1660-4601/20/6/4741"),
+  ("Kaminsky LA, Arena R, Myers J. Reference Standards for Cardiorespiratory Fitness Measured With Cardiopulmonary Exercise Testing: Data From the FRIEND Registry. Mayo Clinic Proceedings, 2015;90(11):1515&ndash;1523", "https://www.mayoclinicproceedings.org/article/S0025-6196(15)00642-4/pdf"),
+  ("&#381;eleznik Me&#382;an L. Accuracy of wearables for determining the maximal oxygen uptake and lactate threshold: a qualitative systematic review. Frontiers in Sports and Active Living, 2025;7:1707991", "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2025.1707991/full"),
+  ("U.S. Department of Health and Human Services. Physical Activity Guidelines for Americans, 2nd edition: Executive Summary", "https://odphp.health.gov/sites/default/files/2019-10/PAG_ExecutiveSummary.pdf"),
+  ("CDC. What You Can Do to Meet Physical Activity Recommendations", "https://www.cdc.gov/physical-activity-basics/guidelines/index.html")]),
 ]

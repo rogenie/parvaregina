@@ -33,15 +33,17 @@
    "note": "Scheduled Oct 30; the scheduled runs failed, so published on Nov 1 from an interactive session."
   },
   {
-   "date": "2026-11-02",
+   "date": "2026-11-04",
    "hub": "fitness",
    "path": "/fitness/vo2-max-women/",
    "title": "VO2 max for women: why it matters and how to raise it",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "What VO2 max is, the cohort evidence linking fitness to mortality, how it changes with age in women, training that raises it (intervals and zone 2) per trials, how to estimate it, official activity guidelines (HHS)."
-   }
+   },
+   "url": "https://parvaregina.com/fitness/vo2-max-women/",
+   "note": "Scheduled Nov 2; scheduled runs on Nov 2-4 could not push to the repo, so caught up on Nov 4 from an interactive session."
   },
   {
    "date": "2026-11-06",
