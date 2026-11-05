@@ -9,5 +9,16 @@
   "live_verified": false,
   "social_caption": true,
   "note": "Catch-up for Oct 30 (scheduled runs failed); published from an interactive session. Controlled-trial papers couldn't be opened this run, so the article covers the evidence that could be confirmed."
+ },
+ {
+  "date": "2026-11-04",
+  "at": "2026-11-04T18:40:00-08:00",
+  "result": "published",
+  "path": "/fitness/vo2-max-women/",
+  "facts_checked": 38,
+  "removed": 1,
+  "live_verified": true,
+  "social_caption": true,
+  "note": "Catch-up for Nov 2 (scheduled runs on Nov 2-4 could not push to the repo); published from an interactive session. Removed an unconfirmed claim about our own search for zone 2 trials; added that VO2 peak trials showed no clear effect."
  }
 ]
