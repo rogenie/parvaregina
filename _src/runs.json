@@ -20,5 +20,16 @@
   "live_verified": true,
   "social_caption": true,
   "note": "Catch-up for Nov 2 (scheduled runs on Nov 2-4 could not push to the repo); published from an interactive session. Removed an unconfirmed claim about our own search for zone 2 trials; added that VO2 peak trials showed no clear effect."
+ },
+ {
+  "date": "2026-11-06",
+  "at": "2026-11-06T06:20:00-08:00",
+  "result": "published",
+  "path": "/supplements/urolithin-a-evidence/",
+  "facts_checked": 42,
+  "removed": 4,
+  "live_verified": false,
+  "social_caption": true,
+  "note": "On schedule. PMC pages returned a browser check, so trials were read on JAMA, ScienceDirect, Nature and Frontiers; the 2025 immune trial couldn't be opened and was left out. Live page not yet in search, so not fetched."
  }
 ]
