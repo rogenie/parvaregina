@@ -321,4 +321,83 @@ article("/fitness/vo2-max-women/", "/fitness/", "Fitness",
   ("&#381;eleznik Me&#382;an L. Accuracy of wearables for determining the maximal oxygen uptake and lactate threshold: a qualitative systematic review. Frontiers in Sports and Active Living, 2025;7:1707991", "https://www.frontiersin.org/journals/sports-and-active-living/articles/10.3389/fspor.2025.1707991/full"),
   ("U.S. Department of Health and Human Services. Physical Activity Guidelines for Americans, 2nd edition: Executive Summary", "https://odphp.health.gov/sites/default/files/2019-10/PAG_ExecutiveSummary.pdf"),
   ("CDC. What You Can Do to Meet Physical Activity Recommendations", "https://www.cdc.gov/physical-activity-basics/guidelines/index.html")]),
+article("/supplements/urolithin-a-evidence/", "/supplements/", "Supplements",
+ "Urolithin A: What the Human Trials Show",
+ "Urolithin A: what the human trials actually show",
+ "Does urolithin A help muscle and mitochondria? What the human trials found, who was studied, the doses tested and what is still animal-only.",
+ "2026-11-06",
+ "Urolithin A is sold as a way to renew your mitochondria, the energy factories inside your cells. The most striking results come from worms and mice. Here&rsquo;s what has actually been tested in people, and what it found.",
+ "A handful of small, company-sponsored trials, mostly in women, found that urolithin A was well tolerated and shifted some blood and muscle markers linked to mitochondria. <b>On the outcomes you&rsquo;d feel, like walking distance and overall strength, the results are mixed and mostly not better than placebo.</b> The lifespan findings come from worms, not people.",
+ "human-trial",
+ [("Best evidence", "Two 4-month randomized, placebo-controlled trials (66 and 88 adults, both 2022) and a 2026 meta-analysis of 5 trials (236 people)"),
+  ("Women included?", "Yes. Women were about 76% of the older-adult trial and 64% of the midlife trial; the athlete trials studied men only"),
+  ("Dose tested", "500 mg or 1,000 mg a day for 4 weeks to 4 months"),
+  ("Bottom line", "Well tolerated in short trials; marker changes are real but functional benefits are unproven")],
+ """<h2>What is urolithin A?</h2>
+<p>Urolithin A is a compound made by gut bacteria from dietary compounds called ellagitannins. Not everyone&rsquo;s gut bacteria make it in the same amounts, which is one reason companies sell it already made.</p>
+<p>The interest comes from mitophagy: the cell&rsquo;s way of clearing out worn-out mitochondria. <b>In worms, urolithin A extended lifespan; in rodents, it improved exercise capacity and muscle function.</b> Those are animal results. They explain why people are studying it. They don&rsquo;t tell you what it does in a 45-year-old woman.</p>
+
+<h2>Urolithin A human trials: the first safety study</h2>
+<p>The first study in people, published in <i>Nature Metabolism</i> in 2019, tested single doses and then 4 weeks of 500 mg or 1,000 mg a day in healthy, sedentary older adults. Urolithin A reached the blood at every dose and had a favorable safety profile. After 4 weeks, it changed blood levels of acylcarnitines (fat-burning byproducts) and the activity of mitochondrial genes in muscle.</p>
+<p>That&rsquo;s a molecular signal, not a measure of strength or energy. The study was sponsored by Amazentis, the company that makes a commercial urolithin A product.</p>
+
+<h2>Does urolithin A improve muscle endurance in older adults?</h2>
+<p>A trial in <i>JAMA Network Open</i> (2022) randomized 66 adults aged 65 to 90 in Seattle, average age about 72. <b>Fifty were women (about 76%)</b>, and all were White. Half took 1,000 mg of urolithin A daily for 4 months; half took a placebo. Neither participants nor researchers knew who got which.</p>
+<ul>
+<li><b>Walking (a main outcome):</b> no significant difference. The urolithin A group walked about 61 meters farther on a 6-minute walk test, but the placebo group improved too, by about 43 meters.</li>
+<li><b>Muscle energy production (the other main outcome):</b> no effect on peak energy output in a hand muscle.</li>
+<li><b>Muscle endurance:</b> at 2 months, the urolithin A group could do more repeated contractions with a hand muscle and a leg muscle than placebo. By 4 months the difference was no longer significant, because the placebo group had caught up.</li>
+<li><b>Blood markers:</b> acylcarnitines and several ceramides (fats linked to metabolic health) fell from baseline in the urolithin A group.</li>
+<li><b>Safety:</b> side effects were similar in both groups, with no serious adverse events.</li>
+</ul>
+<p>Several authors were affiliated with Amazentis, which supplied the capsules.</p>
+
+<h2>What about women in midlife?</h2>
+<p>The trial closest to this site&rsquo;s readers, published in <i>Cell Reports Medicine</i> in 2022, randomized 88 sedentary, overweight adults (BMI 25 to 34.9) aged about 40 to 65, average age in the low 50s. <b>Fifty-six were women (about 64%).</b> They took a placebo, 500 mg or 1,000 mg of urolithin A daily for 4 months.</p>
+<ul>
+<li><b>Main outcome, peak cycling power:</b> no significant difference from placebo.</li>
+<li><b>Hamstring strength:</b> rose about 12% on 500 mg and about 10% on 1,000 mg, a significant difference from placebo, whose strength fell. Thigh (quadriceps) strength and grip strength didn&rsquo;t differ.</li>
+<li><b>Aerobic fitness:</b> peak oxygen use rose about 10% on 1,000 mg, but the difference from placebo fell just short of significance.</li>
+<li><b>Walking:</b> the 1,000 mg group walked about 33 meters farther in 6 minutes, but this wasn&rsquo;t significantly different from placebo.</li>
+<li><b>Inflammation:</b> C-reactive protein, a blood marker of inflammation, fell on 1,000 mg.</li>
+<li><b>Safety:</b> described as well tolerated; most muscle-related side effects were linked to the biopsy procedure.</li>
+</ul>
+<p>The lead and senior authors were affiliated with Amazentis, which supplied the product. Lean muscle mass didn&rsquo;t change compared with placebo.</p>
+
+<h2>What does the meta-analysis of urolithin A trials say?</h2>
+<p>A 2026 review in <i>Frontiers in Nutrition</i>, by authors who reported no conflicts of interest, pooled the randomized trials of urolithin A and muscle: 5 trials, 236 people. Three of the five studied young male athletes or runners, so the evidence in women rests on the two trials above.</p>
+<ul>
+<li>Only the 6-minute walk could be combined, from two trials: about 17 meters farther with urolithin A, a difference that wasn&rsquo;t statistically significant. The authors rated certainty as low.</li>
+<li>Strength results were mixed: a few measures improved in single trials, while bench press and squat strength didn&rsquo;t differ from placebo.</li>
+<li><b>The trials were small and short (4 weeks to 4 months), and long-term safety is unknown.</b> The authors called the findings hypothesis-generating and said larger, longer trials are needed.</li>
+</ul>
+
+<h2>Urolithin A doses tested, and in whom</h2>
+<table>
+<tr><th>Study</th><th>Who</th><th>Dose</th><th>Length</th><th>Main result</th></tr>
+<tr><td>Andreux et al., 2019</td><td>Healthy sedentary older adults</td><td>Single doses; then 500 or 1,000 mg/day</td><td>4 weeks</td><td>Safe; mitochondrial markers changed</td></tr>
+<tr><td>Liu et al., 2022</td><td>66 adults 65&ndash;90, 76% women</td><td>1,000 mg/day</td><td>4 months</td><td>Walking not better than placebo; early endurance gain</td></tr>
+<tr><td>Singh et al., 2022</td><td>88 adults ~40&ndash;65, 64% women</td><td>500 or 1,000 mg/day</td><td>4 months</td><td>Hamstring strength up; main outcome not met</td></tr>
+<tr><td>Dao et al., 2026 (review)</td><td>236 people in 5 trials</td><td>500&ndash;1,000 mg/day</td><td>4 weeks&ndash;4 months</td><td>Walking gain not significant; low certainty</td></tr>
+</table>
+<p>These are the amounts studies tested, not recommendations. Talk to your clinician before starting any supplement.</p>
+
+<h2>Is urolithin A FDA-approved?</h2>
+<p>No. In 2018, Amazentis notified the FDA that it considers urolithin A &ldquo;generally recognized as safe&rdquo; (GRAS) as an ingredient in foods such as protein shakes, nutrition bars and yogurts, at up to 500 or 1,000 mg per serving. On December 20, 2018, the FDA replied that it had no questions about that conclusion.</p>
+<p><b>A GRAS &ldquo;no questions&rdquo; letter is about safety as a food ingredient. It isn&rsquo;t an approval, and it says nothing about whether urolithin A works.</b></p>
+
+<h2>The honest bottom line</h2>
+<ul class="ticks">
+<li><b>If your goal is muscle or strength:</b> the trials show scattered gains on some measures and no difference on most. <a href="/bones/strength-training-bone-density-menopause/">Strength training</a> has far stronger evidence.</li>
+<li><b>If your goal is energy or fitness:</b> aerobic gains didn&rsquo;t clearly beat placebo. Regular cardio has much stronger evidence for helping you <a href="/fitness/vo2-max-women/">raise VO2 max</a>.</li>
+<li><b>If your goal is longevity:</b> the lifespan data are from worms. None of the human trials measured lifespan.</li>
+</ul>
+<p>All three trials described above involved researchers from the company that makes a commercial urolithin A product, and none lasted longer than 4 months. Talk to your clinician before starting it, especially if you&rsquo;re pregnant, nursing, take medication or manage a health condition.</p>
+<p>More evidence checks: <a href="/supplements/creatine-for-women-over-40/">creatine for women over 40</a> and the full <a href="/supplements/">Supplements</a> hub. For the basics, see <a href="/foundations/">Sleep &amp; Foundations</a>.</p>""",
+ [("Liu S, et al. Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial. JAMA Network Open, 2022;5(1):e2144279", "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788244"),
+  ("Singh A, et al. Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults. Cell Reports Medicine, 2022", "https://www.sciencedirect.com/science/article/pii/S2666379122001586"),
+  ("Andreux PA, et al. The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans. Nature Metabolism, 2019;1:595&ndash;603", "https://www.nature.com/articles/s42255-019-0073-4"),
+  ("Dao T, Nguyen TT, Gariani K, Kim HJ, Ryu D. Effects of Urolithin A supplementation on muscle health outcomes in humans from randomized controlled trials. Frontiers in Nutrition, 2026;13", "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1834344/full"),
+  ("U.S. Food and Drug Administration. GRAS Notice No. 791: Urolithin A", "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=791&set=grasnotices"),
+  ("U.S. Food and Drug Administration. Agency Response Letter, GRAS Notice No. GRN 000791", "https://www.fda.gov/media/120300/download")]),
 ]

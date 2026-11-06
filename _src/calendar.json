@@ -50,11 +50,12 @@
    "hub": "supplements",
    "path": "/supplements/urolithin-a-evidence/",
    "title": "Urolithin A: what the human trials show",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "The human RCTs (muscle endurance, mitochondrial markers), who was studied (sex, age), doses tested, what is animal-only, regulatory status (FDA GRAS notice if any)."
-   }
+   },
+   "url": "https://parvaregina.com/supplements/urolithin-a-evidence/"
   },
   {
    "date": "2026-11-09",
