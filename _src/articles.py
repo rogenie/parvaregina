@@ -48,7 +48,7 @@ def article(path, hub, hub_name, title, h1, desc, published, intro, quick, evide
 <p class="eyebrow"><a href="{hub}">{hub_name}</a></p>
 <h1>{h1}</h1>
 <p class="lede">{intro}</p>
-<p class="byline">By the <a href="/about/">Parva Regina Research Desk</a> &middot; Checked against sources {_d(published)} &middot; <a href="/editorial-policy/">How we work</a></p>
+<p class="byline">By the <a href="/about/">ÆTAS Research Desk</a> &middot; Checked against sources {_d(published)} &middot; <a href="/editorial-policy/">How we work</a></p>
 </div></section>
 <section><div class="wrap narrow prose">
 <div class="callout quick"><b>Quick answer.</b> {quick}</div>

@@ -1,4 +1,4 @@
-# Parva Regina topic scout runbook
+# ÆTAS topic scout runbook
 
 A weekly scheduled run (Sunday afternoon, Pacific) follows this file. It finds the week's new longevity research that matters for women about 35-50, puts the best item on the calendar as a Wednesday news article, keeps the evergreen queue full, drafts that week's newsletter, and sends the owner a short digest.
 
@@ -13,7 +13,7 @@ The publisher (`_src/PUBLISHING.md`) writes and fact-checks each article on its 
 
 ## Trend check (Sunday and Wednesday runs)
 
-Goal: when women 35-50 are suddenly searching or watching something about aging, Parva Regina publishes the evidence-based answer that week. The Sunday run does this check as well as the full scout; the Wednesday run does only this check.
+Goal: when women 35-50 are suddenly searching or watching something about aging, ÆTAS publishes the evidence-based answer that week. The Sunday run does this check as well as the full scout; the Wednesday run does only this check.
 
 **Where to look (last 7 days):**
 - Google Trends: search `trends.google.com` for rising topics in health, skin, menopause and supplements; also WebSearch phrases like "trending wellness 2026", "viral skincare trend", "menopause TikTok trend", "longevity supplement news this week".
@@ -33,7 +33,7 @@ Goal: when women 35-50 are suddenly searching or watching something about aging,
 - Trend items use `"kind": "trend"` and the section that fits: `"hub": "supplements"`, `"skin"`, `"hair"`, `"procedures"`, `"fitness"`, `"meal-plans"`, `"bones"`, `"health-trackers"` or `"foundations"` (any other habit), and a brief with: `"trend"` (what people are searching or watching, and where you saw it), `"sources"` (the URLs that showed the rise), plus the usual `"angle"` and the key studies to find.
 - At most 2 trend swaps per week. If nothing qualifies, change nothing; that's a normal result.
 
-**Report:** Wednesday runs send one push notification titled "Parva Regina: trending this week": what's trending (2-4 items, one line each), whether one was swapped in and for which date, and which evergreen item moved where. If nothing qualified, say so in one line. Sunday runs add a "Trending" line to their usual digest instead of sending a second notification.
+**Report:** Wednesday runs send one push notification titled "ÆTAS: trending this week": what's trending (2-4 items, one line each), whether one was swapped in and for which date, and which evergreen item moved where. If nothing qualified, say so in one line. Sunday runs add a "Trending" line to their usual digest instead of sending a second notification.
 
 Wednesday-only runs: run `python3 _src/build.py`, then commit `_src/calendar.json` and `status.json` with author `Rogenie Cordero <rogenie@gmail.com>` and message `Trend: <date swapped>`, push to `main`. Don't touch the newsletter on Wednesdays. If nothing changed, don't commit.
 
@@ -48,7 +48,7 @@ One search per source, restricted to the domain:
 | Regulators and guidelines | fda.gov, uspreventiveservicestaskforce.org, cdc.gov, ods.od.nih.gov |
 | Trials | clinicaltrials.gov (new results on aging, menopause, supplements) |
 
-Good search phrases: "menopause study", "perimenopause trial", "women aging study", "healthspan women", "postmenopausal randomized trial", "biological age", plus any topic trending on the Parva Regina TikTok (red light, creatine, magnesium, NAD, collagen, zone 2, VO2 max, senolytics, lymphatic).
+Good search phrases: "menopause study", "perimenopause trial", "women aging study", "healthspan women", "postmenopausal randomized trial", "biological age", plus any topic trending on the ÆTAS TikTok (red light, creatine, magnesium, NAD, collagen, zone 2, VO2 max, senolytics, lymphatic).
 
 ## Keep an item only if all are true
 
@@ -67,7 +67,7 @@ Add to `_src/calendar.json` `items`, kept in date order:
 {"date": "YYYY-MM-DD", "hub": "news", "path": "/news/<slug>/", "title": "<under 60 characters, plain>", "status": "todo", "kind": "news",
  "brief": {"study": "<paper title, journal, date>", "source": "<URL the search returned>", "evidence": "human-trial | human-obs | animal | cell | review",
            "who": "<participants>", "finding": "<one line>", "angle": "<what the article explains, incl. limits and what it means for readers>",
-           "links": ["<2-3 Parva Regina paths>"]}}
+           "links": ["<2-3 ÆTAS paths>"]}}
 ```
 
 Evergreen items use `"hub"` set to one of `"fitness"`, `"meal-plans"`, `"bones"`, `"foundations"`, `"skin"`, `"hair"`, `"procedures"`, `"supplements"` or `"health-trackers"` (with `"path": "/<hub>/<slug>/"`), `"kind": "evergreen"`, and a `brief.angle` naming the key sources to find.
@@ -86,12 +86,12 @@ Hormone therapy and long-term health: what trials show (WHI and after) · Vitami
 
 ## Newsletter draft
 
-Write `_src/newsletter/<next Monday's date>.md`: "The Little Queen Brief". Subject line under 50 characters; a 1-line opener; the 3 most useful findings of the past week (published articles and other kept items), each a short paragraph with its evidence label and a link to the article or source; one "habit with strong evidence" line linking a Body-section article (Fitness, Meal Plans, Bones & Strength or Sleep & Foundations); sign-off "The Parva Regina Research Desk". Same "Never" rules as `PUBLISHING.md`. Commit it with the calendar.
+Write `_src/newsletter/<next Monday's date>.md`: "The ÆTAS Brief". Subject line under 50 characters; a 1-line opener; the 3 most useful findings of the past week (published articles and other kept items), each a short paragraph with its evidence label and a link to the article or source; one "habit with strong evidence" line linking a Body-section article (Fitness, Meal Plans, Bones & Strength or Sleep & Foundations); sign-off "The ÆTAS Research Desk". Same "Never" rules as `PUBLISHING.md`. Commit it with the calendar.
 
 ## Commit and report
 
 1. Run `python3 _src/build.py`, then commit `_src/calendar.json`, `_src/newsletter/`, `status.json` (and `_src/TOPICS.md` if you removed evergreen ideas) with author `Rogenie Cordero <rogenie@gmail.com>` and message `Topics: <dates added>`, push to `main`.
-2. Send one push notification titled "Parva Regina: this week in longevity research": the 3-5 most notable findings you saw (kept or not), one line each; which became articles and when; and the newsletter subject line plus a note that the draft is in `_src/newsletter/`. If nothing qualified or a search or push failed, say so.
+2. Send one push notification titled "ÆTAS: this week in longevity research": the 3-5 most notable findings you saw (kept or not), one line each; which became articles and when; and the newsletter subject line plus a note that the draft is in `_src/newsletter/`. If nothing qualified or a search or push failed, say so.
 
 ## Never
 

@@ -1,4 +1,4 @@
-# Parva Regina publishing runbook
+# ÆTAS publishing runbook
 
 Scheduled runs (Mon/Wed/Fri) follow this file to publish articles on parvaregina.com. Publishing is fully automatic by the owner's choice: nothing waits for human review, so every run must pass every check below before anything goes live. When a check fails, the article does not publish.
 
@@ -31,8 +31,8 @@ Allowed as sources: peer-reviewed papers (PubMed, PubMed Central, Europe PMC, th
 - **H2s:** put the search phrase or a close variant in at least two H2s. Phrase some H2s as questions people search.
 - **Every study described** gets: who (number, sex, age), design, how long, what was measured, what was found. Say plainly when women weren't included or were a minority.
 - **Tables** for doses and multiple studies. A "What this means for you" or "The honest bottom line" section near the end.
-- **Links:** at least 3 internal links to Parva Regina articles or hubs. Link freely to planned calendar paths; the build turns links to unpublished articles into plain text.
-- **Byline:** set by the helper ("Parva Regina Research Desk"). Never put a person's name on an article.
+- **Links:** at least 3 internal links to ÆTAS articles or hubs. Link freely to planned calendar paths; the build turns links to unpublished articles into plain text.
+- **Byline:** set by the helper ("ÆTAS Research Desk"). Never put a person's name on an article.
 
 ### Kinds of articles
 
@@ -75,7 +75,7 @@ Sections are grouped in the menu as **Body** (Fitness, Meal Plans, Bones & Stren
 2. Set the calendar item's status to `published` and add `"url": "https://parvaregina.com<path>"`.
 3. Commit with author `Rogenie Cordero <rogenie@gmail.com>` and message `Publish: <title>`, then push to `main`.
 4. Verify: fetch the live page once (after a search has returned it, or skip if the fetch is refused) and set `live_verified` accordingly. GitHub Pages usually deploys within a few minutes.
-5. Write a social caption for the Parva Regina social engine and save it as `_src/social/<date>-<slug>.md` in the same commit: a hook line naming the reader's question, 3 short takeaways with the evidence label, a soft line pointing to the article ("Full article: link in bio"), and the line "(Wellness education, not medical advice.)". Same "Never" rules, no first-person experience. Don't post it anywhere.
+5. Write a social caption for the ÆTAS social engine and save it as `_src/social/<date>-<slug>.md` in the same commit: a hook line naming the reader's question, 3 short takeaways with the evidence label, a soft line pointing to the article ("Full article: link in bio"), and the line "(Wellness education, not medical advice.)". Same "Never" rules, no first-person experience. Don't post it anywhere.
 6. Append a run record (see "Run log"), run `python3 _src/build.py` again so `status.json` includes it, commit `Run log: <date>` and push.
 7. Finish with a short summary: title, live URL, facts checked, anything removed, and the social caption.
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the static Parva Regina site from _src/ into the repo root.
+"""Builds the static ÆTAS site from _src/ into the repo root.
 Run from the repo root:  python3 _src/build.py
 Jekyll ignores folders starting with "_", so _src is not published."""
 import os, json, html, datetime, sys, re
@@ -75,17 +75,17 @@ def layout(p):
 <link rel="icon" href="/assets/brand/favicon-32.png?v={_v("assets/brand/favicon-32.png")}" sizes="32x32" type="image/png">
 <link rel="icon" href="/assets/brand/icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<meta name="apple-mobile-web-app-title" content="Parva Regina">
+<meta name="apple-mobile-web-app-title" content="ÆTAS">
 <link rel="preload" href="/assets/fonts/lora-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/style.css?v={_v("assets/style.css")}">
-<link rel="alternate" type="application/rss+xml" title="Parva Regina" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="ÆTAS" href="/feed.xml">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="wrap bar">
-<a class="brand" href="/" aria-label="Parva Regina home"><img src="/assets/brand/lockup-light.png" alt="Parva Regina" width="1000" height="117"></a>
+<a class="brand" href="/" aria-label="ÆTAS home"><img src="/assets/brand/lockup-light.png" alt="ÆTAS" width="1000" height="195"></a>
 <nav aria-label="Main">{nav}</nav>
 <a class="nl" href="/ageless-reset/"><span class="nl-long">Ageless Reset </span>Download</a>
 </div></header>
@@ -94,11 +94,11 @@ def layout(p):
 </main>
 <footer class="site"><div class="wrap">
 <div class="fgrid">
-<div><img class="flogo" src="/assets/brand/logo-light.png" alt="Parva Regina: longevity for women" width="900" height="289" loading="lazy"><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
+<div><img class="flogo" src="/assets/brand/logo-light.png" alt="ÆTAS: longevity for women" width="900" height="414" loading="lazy"><p>Evidence-based longevity science for women 35+. Every claim linked to its source.</p><a href="/ageless-reset/">Free guide: The 30-Day Ageless Reset</a><a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a><a href="/feed.xml">RSS feed</a></div>
 {"".join(f'<div><b>{esc(n)}</b>' + "".join(f'<a href="{k}">{kn}</a>' for k, kn in kids) + '</div>' for n, kids in SITE["nav"])}
 <div><b>Trust</b><a href="/editorial-policy/">Editorial policy</a><a href="/corrections/">Corrections</a><a href="/about/">About</a><a href="/privacy/">Privacy &amp; cookies</a><a href="/privacy/#california">Your California privacy rights</a></div>
 </div>
-<p class="legal">Wellness education, not medical advice. We&rsquo;re not doctors; talk to your clinician before starting a supplement or changing your care. Studies can be wrong and science changes; check the date and sources on each article. We don&rsquo;t sell or share your personal information, and we don&rsquo;t use advertising cookies or tracking pixels. &middot; &copy; {datetime.date.today().year} Parva Regina, published by {SITE["publisher"]}</p>
+<p class="legal">Wellness education, not medical advice. We&rsquo;re not doctors; talk to your clinician before starting a supplement or changing your care. Studies can be wrong and science changes; check the date and sources on each article. We don&rsquo;t sell or share your personal information, and we don&rsquo;t use advertising cookies or tracking pixels. &middot; &copy; {datetime.date.today().year} ÆTAS, published by {SITE["publisher"]}</p>
 </div></footer>
 <script>(function(){{var dds=document.querySelectorAll("details.dd");document.addEventListener("click",function(e){{dds.forEach(function(d){{if(!d.contains(e.target))d.removeAttribute("open")}})}});if(window.matchMedia("(hover:hover)").matches){{dds.forEach(function(d){{d.addEventListener("mouseenter",function(){{d.setAttribute("open","")}});d.addEventListener("mouseleave",function(){{d.removeAttribute("open")}})}})}}}})();</script>
 {"" if p.get("redirect") else '<div class="mcta" id="mcta" hidden><a class="mcta-link" href="/ageless-reset/#get"><span class="mcta-k">Free guide</span><span class="mcta-t">The 30-Day Ageless Reset</span></a><a class="mcta-btn" href="/ageless-reset/#get">Download</a><button class="mcta-x" type="button" aria-label="Close">&times;</button></div>'}
@@ -179,7 +179,7 @@ def main():
         f"<description>{esc(plain(a['desc']))}</description></item>" for a in live[:30])
     open(os.path.join(ROOT, "feed.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
-        f"<title>Parva Regina</title><link>{SITE['url']}/</link><description>{esc(SITE['desc'])}</description><language>en-us</language>"
+        f"<title>ÆTAS</title><link>{SITE['url']}/</link><description>{esc(SITE['desc'])}</description><language>en-us</language>"
         + items + "</channel></rss>\n")
     open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE['url']}/sitemap.xml\n")
     written = {a["path"] for a in ARTICLES}

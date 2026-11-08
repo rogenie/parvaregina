@@ -1,8 +1,8 @@
 SITE = {
-  "name": "Parva Regina",
+  "name": "ÆTAS",
   "url": "https://parvaregina.com",
   "desc": "Evidence-based longevity science for women 35+: what the research actually shows about sleep, strength, skin, hormones and supplements.",
-  "author": "Parva Regina Research Desk",
+  "author": "ÆTAS Research Desk",
   "publisher": "9nth Dimension Inc.",
   "tiktok": "https://www.tiktok.com/@parvaregina",
   # Kit form id for the newsletter (a number from the Kit form's embed code). None = signup not live yet.
@@ -56,7 +56,7 @@ def cover(key):
     return (f'<div class="reset-cover" aria-hidden="true"><span class="rc-kick">Free download</span>'
             f'<span class="rc-t1">{t1}</span><span class="rc-t2">{t2}</span><span class="rc-t1">{t3}</span>'
             f'<span class="rc-rule"></span><span class="rc-sub">{OFFERS[key]["sub"]}</span>'
-            f'<span class="rc-brand">Parva Regina</span></div>')
+            f'<span class="rc-brand">ÆTAS</span></div>')
 
 RESET_COVER = cover("reset")
 
@@ -85,7 +85,7 @@ def nl_block(campaign, anchor="", heading=None, text=None, offer="reset"):
 def hub(path, name, title, desc, intro, covers):
     lis = "".join(f"<li>{c}</li>" for c in covers)
     body = f'''<section class="hero small"><div class="wrap">
-<p class="eyebrow">Parva Regina</p><h1>{name}</h1><p class="lede">{intro}</p></div></section>
+<p class="eyebrow">ÆTAS</p><h1>{name}</h1><p class="lede">{intro}</p></div></section>
 <section><div class="wrap">
 <!--HUB_ARTICLES-->
 </div></section>
@@ -97,11 +97,11 @@ def hub(path, name, title, desc, intro, covers):
     return {"path":path,"title":title,"desc":desc,"h1":name,"body":body}
 
 PAGES = [
- {"path":"/","title":"Parva Regina | Longevity Science for Women 35+, Without the Hype","h1":"Parva Regina",
+ {"path":"/","title":"ÆTAS | Longevity Science for Women 35+: Proof, Not Promises","h1":"ÆTAS",
   "desc":"What longevity research actually shows for women 35+: new studies, evidence checks on trending supplements and protocols, and the habits with the strongest science.",
   "body":f'''<section class="hero"><div class="wrap">
 <p class="eyebrow">Longevity science for women 35+</p>
-<h1>Age on your own terms, <em>with the evidence in hand.</em></h1>
+<h1>Proof, <em>not promises.</em></h1>
 <p class="lede">New longevity research, evidence checks on what&rsquo;s trending, and the habits with the strongest science for women in their late 30s, 40s and beyond. Every claim links to its study and says how strong the evidence is.</p>
 <p><a class="btn" href="/ageless-reset/">Get the free 30-Day Ageless Reset</a><a class="btn ghost" href="/news/">Read the latest research</a></p>
 </div></section>
@@ -121,47 +121,47 @@ PAGES = [
 <p><a href="/editorial-policy/">Our editorial policy</a></p>
 {nl_block("home")}
 </div></section>'''},
- hub("/news/","Latest Research","Latest Longevity Research for Women 35+: New Aging Studies, Explained | Parva Regina",
+ hub("/news/","Latest Research","Latest Longevity Research for Women 35+: New Aging Studies, Explained | ÆTAS",
      "New longevity and aging research explained for women 35+: what each study tested, who was in it, how strong the evidence is, and what it means for you.",
      "New research on aging, explained the day it matters: what was tested, who was studied, how strong the result is, and what changes for you (often, nothing yet).",
      ["New human trials on sleep, exercise, nutrition and supplements","Menopause and perimenopause research with longevity implications","Aging biomarkers and &ldquo;biological age&rdquo; tests, and how far to trust them","Big lab or animal findings, labeled clearly as early"]),
- hub("/fitness/","Fitness","Fitness for Women 35+: Strength, Cardio and Daily Routines | Parva Regina",
+ hub("/fitness/","Fitness","Fitness for Women 35+: Strength, Cardio and Daily Routines | ÆTAS",
      "Strength training, cardio and daily workout routines for women 35+, built on exercise research and official physical activity guidelines.",
      "Muscle, bone and heart fitness are some of the best-studied tools for aging well. Here&rsquo;s how to train for them from your mid-30s on, with routines you can actually fit into a week.",
      ["Strength training for muscle and bone, including around menopause","VO2 max, zone 2 and cardio that fits a busy week","Daily routines you can do at home in 20 minutes","How much activity official guidelines recommend, and how to build up to it"]),
- hub("/meal-plans/","Meal Plans","Meal Plans for Women 35+: 7-Day Plans and Protein-First Recipes | Parva Regina",
+ hub("/meal-plans/","Meal Plans","Meal Plans for Women 35+: 7-Day Plans and Protein-First Recipes | ÆTAS",
      "Simple 7-day meal plans and protein-first recipes for women 35+, with nutrition numbers from official sources like USDA FoodData Central.",
      "Simple, realistic weeks of eating built around protein, fiber and plants, with the numbers checked against official nutrition data. No crash diets.",
      ["7-day meal plans you can shop for in one trip","Protein-first breakfasts and easy lunches","How much protein, fiber and calcium official sources recommend","What the research says about popular eating patterns for women in midlife"]),
- hub("/health-trackers/","Health Trackers","Health Trackers for Women 35+: Sleep, Macros, Workouts and Labs | Parva Regina",
+ hub("/health-trackers/","Health Trackers","Health Trackers for Women 35+: Sleep, Macros, Workouts and Labs | ÆTAS",
      "What's worth tracking after 35: sleep, steps, macros, workouts and lab results, how accurate wearables are, and what the numbers mean.",
      "Sleep scores, step counts, macros, heart rate, lab results. Here&rsquo;s what&rsquo;s worth measuring from your mid-30s on, how accurate the tools are, and what to ask your doctor about.",
      ["Sleep and wearable data: what the numbers mean and how accurate they are","Tracking macros and protein without obsessing","Workout logs, steps and heart-rate zones","Lab tests worth discussing with your doctor, and &ldquo;biological age&rdquo; tests"]),
- hub("/supplements/","Supplements","Supplements for Women 35+: What the Research Actually Shows | Parva Regina",
+ hub("/supplements/","Supplements","Supplements for Women 35+: What the Research Actually Shows | ÆTAS",
      "Do longevity supplements work for women 35+? Evidence checks on creatine, magnesium, NMN, urolithin A, collagen and more: what human trials found.",
      "The supplement is everywhere. Here&rsquo;s what the human trials show, whether women were studied, the dose that was tested, and the honest bottom line.",
      ["Creatine, magnesium, NMN and NAD+, urolithin A, fisetin and other longevity supplements","Head-to-head comparisons, like magnesium glycinate vs. threonate","Whether women were included in the studies, and what dose was tested","What to ask your doctor or pharmacist before you start"]),
- hub("/skin/","Skin","Skin After 35: Wrinkles, Collagen and What Works | Parva Regina",
+ hub("/skin/","Skin","Skin After 35: Wrinkles, Collagen and What Works | ÆTAS",
      "What actually helps skin after 35: collagen loss, wrinkles, sunscreen, retinoids, red light and skincare trends, checked against the research.",
      "Lines that don&rsquo;t leave anymore, thinner skin, a duller complexion. Here&rsquo;s what&rsquo;s happening from your mid-30s on, and what the evidence says actually helps.",
      ["Collagen loss around menopause, and why it can feel sudden","Sunscreen, retinoids and the skincare with the strongest evidence","Red light therapy, facial massage and other trending tools","Collagen and other &ldquo;beauty from within&rdquo; supplements"]),
- hub("/hair/","Hair","Hair After 35: Thinning, Shedding and Grey Hair | Parva Regina",
+ hub("/hair/","Hair","Hair After 35: Thinning, Shedding and Grey Hair | ÆTAS",
      "Thinning, shedding and grey hair in women 35+: common causes, the checks worth asking your doctor about, and treatments with real evidence.",
      "A wider part, more hair in the drain, greys coming back faster. Here&rsquo;s what the research says about why it happens in midlife and what helps.",
      ["Hair thinning around perimenopause and menopause","Shedding: iron, thyroid, stress and the labs worth asking about","Grey hair: what&rsquo;s genetic and what isn&rsquo;t","Treatments with evidence, and supplements that rarely help"]),
- hub("/procedures/","Procedures","Beauty Procedures After 35: What the Evidence Shows | Parva Regina",
+ hub("/procedures/","Procedures","Beauty Procedures After 35: What the Evidence Shows | ÆTAS",
      "Lasers, microneedling, injectables, peels and in-office treatments for women 35+: what the studies show, the risks, and questions to ask before you book.",
      "Before you book: what the studies show for popular in-office treatments, how long results last, the risks, and the questions to ask a board-certified provider.",
      ["Lasers, light treatments and microneedling","Injectables and fillers: what&rsquo;s known about results and risks","Chemical peels and prescription-strength options","How to choose a qualified provider and what to ask"]),
- hub("/bones/","Bones &amp; Strength","Bone Health for Women 35+: Strength, Density and Menopause | Parva Regina",
+ hub("/bones/","Bones &amp; Strength","Bone Health for Women 35+: Strength, Density and Menopause | ÆTAS",
      "Protecting bone and muscle from your mid-30s on: strength and impact training, bone density around menopause, calcium, vitamin D and screening.",
      "Bone and muscle are easier to keep than to rebuild. Here&rsquo;s what the research shows about protecting both, before and after menopause.",
      ["Strength and impact training for bone density","What changes around menopause, and when to ask about a bone-density scan","Calcium, vitamin D and protein from food","Balance and fall prevention"]),
- hub("/foundations/","Sleep &amp; Foundations","Sleep and Longevity Foundations for Women 35+ | Parva Regina",
+ hub("/foundations/","Sleep &amp; Foundations","Sleep and Longevity Foundations for Women 35+ | ÆTAS",
      "The habits with the strongest evidence for healthy aging in women 35+: sleep, strength training, protein, aerobic fitness, bone health and the menopause transition.",
      "The unglamorous habits with the strongest evidence behind them, explained once and well, with what changes for women from the mid-30s on.",
      ["Sleep and deep sleep across the 30s, 40s and 50s","Strength training, muscle and bone density","VO2 max, zone 2 and cardiorespiratory fitness","Protein and nutrition basics with real numbers from official sources","The perimenopause and menopause transition: what&rsquo;s established and what&rsquo;s hype"]),
- {"path":"/ageless-reset/","title":"The 30-Day Ageless Reset: Free Guide for Women 38-55 | Parva Regina","h1":"The 30-Day Ageless Reset",
+ {"path":"/ageless-reset/","title":"The 30-Day Ageless Reset: Free Guide for Women 38-55 | ÆTAS","h1":"The 30-Day Ageless Reset",
   "desc":"Free guide for women 38-55: why wrinkles, the afternoon energy crash and grey or thinning hair often share the same roots, plus a 30-day plan for all three.",
   "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Free guide for women 38&ndash;55</p><h1>The 30-Day Ageless Reset</h1>
 <p class="lede">The lines that don&rsquo;t leave anymore. The 3 p.m. wall. The extra hair in the drain. They feel like three separate problems, so you&rsquo;ve been fighting them with three shelves of products. This guide shows why they&rsquo;re connected, and what to do about all three at once.</p>
@@ -181,27 +181,27 @@ PAGES = [
 <p>Women in their late 30s, 40s and 50s who are noticing changes in their skin, energy or hair and are tired of guessing. No crash diet, no 14-product routine, and nothing to buy.</p>
 <p class="fine">Wellness education, not medical advice. Talk to your clinician before starting new skincare actives, supplements, exercise or medications. Signing up also subscribes you to our weekly email; unsubscribe from any email with one click. See our <a href="/privacy/">privacy policy</a>.</p>
 </div></section>'''},
- {"path":"/newsletter/","title":"The 30-Day Ageless Reset | Parva Regina","h1":"The 30-Day Ageless Reset","noindex":True,"redirect":"/ageless-reset/",
+ {"path":"/newsletter/","title":"The 30-Day Ageless Reset | ÆTAS","h1":"The 30-Day Ageless Reset","noindex":True,"redirect":"/ageless-reset/",
   "desc":"This page has moved to the free 30-Day Ageless Reset guide.",
   "body":'''<section class="hero small"><div class="wrap narrow"><h1>This page has moved</h1><p class="lede"><a href="/ageless-reset/">Get the free 30-Day Ageless Reset &rarr;</a></p></div></section>'''},
- {"path":"/about/","title":"About Parva Regina","h1":"About Parva Regina",
-  "desc":"Who publishes Parva Regina, how articles are researched and written, and what the site is and isn't.",
-  "body":f'''<section class="hero small"><div class="wrap narrow"><img class="about-logo" src="/assets/brand/logo-dark.png" alt="Parva Regina: longevity for women" width="900" height="289"><h1>About Parva Regina</h1>
-<p class="lede"><i>Parva regina</i> is Latin for &ldquo;little queen.&rdquo; It&rsquo;s a reminder that aging well is something you rule over, one well-informed decision at a time.</p></div></section>
+ {"path":"/about/","title":"About ÆTAS","h1":"About ÆTAS",
+  "desc":"Who publishes ÆTAS, how articles are researched and written, and what the site is and isn't.",
+  "body":f'''<section class="hero small"><div class="wrap narrow"><img class="about-logo" src="/assets/brand/logo-dark.png" alt="ÆTAS: longevity for women" width="900" height="414"><h1>About ÆTAS</h1>
+<p class="lede"><i>Aetas</i> is Latin for &ldquo;age&rdquo;: a lifetime, or a season of life. We treat midlife as a season to measure and improve, not one to fear. Proof, not promises.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>What we do</h2>
 <p>We follow longevity and aging research and explain it for women from their mid-30s on: what a study tested, who was in it, how strong the result is, and whether it changes anything you do. We also run evidence checks on the supplements, devices and protocols that trend online.</p>
 <h2>How articles are made</h2>
-<p>Articles are researched and written by the Parva Regina Research Desk using AI, under a published <a href="/editorial-policy/">editorial policy</a>. Every factual claim must trace to a source we link: a peer-reviewed study, a clinical trial registry, or a government health agency such as the NIH or FDA. We label every study by evidence type, and we don&rsquo;t publish an article whose key claim we can&rsquo;t source. Mistakes get fixed and logged on our <a href="/corrections/">corrections page</a>.</p>
+<p>Articles are researched and written by the ÆTAS Research Desk using AI, under a published <a href="/editorial-policy/">editorial policy</a>. Every factual claim must trace to a source we link: a peer-reviewed study, a clinical trial registry, or a government health agency such as the NIH or FDA. We label every study by evidence type, and we don&rsquo;t publish an article whose key claim we can&rsquo;t source. Mistakes get fixed and logged on our <a href="/corrections/">corrections page</a>.</p>
 <h2>What we&rsquo;re not</h2>
 <p>We&rsquo;re not doctors, and nothing here is medical advice for your situation. Talk to your clinician before starting a supplement, changing a medication, or trying a new protocol, especially if you&rsquo;re pregnant, nursing, or managing a health condition.</p>
 <h2>Who publishes it</h2>
-<p>Parva Regina is published by 9nth Dimension Inc. We don&rsquo;t accept payment for coverage. If we ever add affiliate links, every page that has them will say so at the top.</p>
+<p>ÆTAS is published by 9nth Dimension Inc. We don&rsquo;t accept payment for coverage. If we ever add affiliate links, every page that has them will say so at the top.</p>
 <p>Find us on <a href="{SITE["tiktok"]}" target="_blank" rel="noopener">TikTok @parvaregina</a>.</p>
 </div></section>'''},
- {"path":"/editorial-policy/","title":"Editorial Policy | Parva Regina","h1":"Editorial policy",
-  "desc":"How Parva Regina researches, writes, labels and corrects its longevity articles, including how AI is used.",
-  "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">How we work</p><h1>Editorial policy</h1><p class="lede">The rules every Parva Regina article follows before it goes live.</p></div></section>
+ {"path":"/editorial-policy/","title":"Editorial Policy | ÆTAS","h1":"Editorial policy",
+  "desc":"How ÆTAS researches, writes, labels and corrects its longevity articles, including how AI is used.",
+  "body":f'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">How we work</p><h1>Editorial policy</h1><p class="lede">The rules every ÆTAS article follows before it goes live.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>Sources</h2>
 <p>We rely on primary sources: peer-reviewed papers (usually found through PubMed), trial registries such as ClinicalTrials.gov, and government health agencies such as the National Institutes of Health, the National Institute on Aging and the FDA. News coverage can point us to a study, but the study itself is the source. Preprints that haven&rsquo;t been peer reviewed are labeled as such.</p>
@@ -222,18 +222,18 @@ PAGES = [
 <h2>Corrections</h2>
 <p>When we get something wrong, we fix it, note the change at the bottom of the article, and log it on the <a href="/corrections/">corrections page</a>.</p>
 </div></section>'''},
- {"path":"/corrections/","title":"Corrections | Parva Regina","h1":"Corrections",
-  "desc":"A log of corrections and material updates to Parva Regina articles.",
+ {"path":"/corrections/","title":"Corrections | ÆTAS","h1":"Corrections",
+  "desc":"A log of corrections and material updates to ÆTAS articles.",
   "body":'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Accountability</p><h1>Corrections</h1><p class="lede">When we fix an error of fact in an article, we log it here with the date.</p></div></section>
 <section><div class="wrap narrow prose">
 <!--CORRECTIONS-->
 </div></section>'''},
- {"path":"/privacy/","title":"Privacy & Cookies Policy | Parva Regina","h1":"Privacy & cookies",
-  "desc":"What Parva Regina collects, why, who helps us, your choices and your California privacy rights. We don't sell or share personal information or use ad trackers.",
+ {"path":"/privacy/","title":"Privacy & Cookies Policy | ÆTAS","h1":"Privacy & cookies",
+  "desc":"What ÆTAS collects, why, who helps us, your choices and your California privacy rights. We don't sell or share personal information or use ad trackers.",
   "body":'''<section class="hero small"><div class="wrap narrow"><p class="eyebrow">Privacy</p><h1>Privacy &amp; cookies</h1><p class="lede">Effective October 29, 2026. In short: we collect your email only if you give it to us, we don&rsquo;t sell or share personal information, and we don&rsquo;t use advertising cookies or tracking pixels.</p></div></section>
 <section><div class="wrap narrow prose">
 <h2>Who we are</h2>
-<p>Parva Regina (parvaregina.com) is published by 9nth Dimension Inc., based in California. &ldquo;We&rdquo; and &ldquo;us&rdquo; in this policy mean 9nth Dimension Inc.</p>
+<p>ÆTAS (parvaregina.com) is published by 9nth Dimension Inc., based in California. &ldquo;We&rdquo; and &ldquo;us&rdquo; in this policy mean 9nth Dimension Inc.</p>
 
 <h2>What we collect</h2>
 <table>
@@ -247,7 +247,7 @@ PAGES = [
 
 <h2>Cookies, pixels and tracking</h2>
 <ul>
-<li><b>No cookies.</b> Parva Regina doesn&rsquo;t set cookies.</li>
+<li><b>No cookies.</b> ÆTAS doesn&rsquo;t set cookies.</li>
 <li><b>No advertising or social media pixels.</b> We don&rsquo;t use the Meta (Facebook) pixel, TikTok pixel, Google Analytics, Google Ads tags, session recording or any similar tool.</li>
 <li><b>Privacy-friendly visit counts.</b> GoatCounter counts page views without cookies, doesn&rsquo;t store your IP address, and doesn&rsquo;t track you across other websites.</li>
 <li><b>Signup forms load nothing until you use them.</b> Our forms are plain forms on our own pages. Your email is sent to Kit only when you press the button.</li>
@@ -297,13 +297,13 @@ PAGES = [
 <h2>Changes</h2>
 <p>If we change this policy, we&rsquo;ll update the effective date at the top. If a change is significant, such as adding cookies or advertising tools, we&rsquo;ll tell subscribers by email before it takes effect.</p>
 </div></section>'''},
- {"path":"/404","title":"Page not found | Parva Regina","h1":"Page not found","noindex":True,
+ {"path":"/404","title":"Page not found | ÆTAS","h1":"Page not found","noindex":True,
   "desc":"This page doesn't exist.",
   "body":'''<section class="hero small"><div class="wrap"><h1>Page not found</h1><p class="lede">That page doesn&rsquo;t exist, or it has moved.</p><a class="btn" href="/">Go to the home page</a></div></section>'''},
- {"path":"/evidence/","title":"Supplements | Parva Regina","h1":"Supplements","noindex":True,"redirect":"/supplements/",
+ {"path":"/evidence/","title":"Supplements | ÆTAS","h1":"Supplements","noindex":True,"redirect":"/supplements/",
   "desc":"This section has moved to Supplements.",
   "body":'''<section class="hero small"><div class="wrap narrow"><h1>This section has moved</h1><p class="lede"><a href="/supplements/">Go to Supplements &rarr;</a></p></div></section>'''},
- {"path":"/evidence/creatine-for-women-over-40/","title":"Creatine for Women Over 40 | Parva Regina","h1":"Creatine for women over 40","noindex":True,"redirect":"/supplements/creatine-for-women-over-40/",
+ {"path":"/evidence/creatine-for-women-over-40/","title":"Creatine for Women Over 40 | ÆTAS","h1":"Creatine for women over 40","noindex":True,"redirect":"/supplements/creatine-for-women-over-40/",
   "desc":"This article has moved.",
   "body":'''<section class="hero small"><div class="wrap narrow"><h1>This article has moved</h1><p class="lede"><a href="/supplements/creatine-for-women-over-40/">Read it here &rarr;</a></p></div></section>'''},
 ]
