@@ -45,7 +45,7 @@ def layout(p):
         items = "".join(f'<a href="{k}"{" aria-current=\"page\"" if p["path"].startswith(k) else ""}>{kn}</a>' for k, kn in kids)
         nav += (f'<details class="dd{" on" if on else ""}"><summary>{esc(n)}</summary>'
                 f'<div class="dd-menu">{items}</div></details>')
-    robots = '<meta name="robots" content="noindex">' if p.get("noindex") else '<meta name="robots" content="max-image-preview:large">'
+    robots = ('<meta name="robots" content="noindex, follow">' if p.get("noindex") == "follow" else '<meta name="robots" content="noindex">') if p.get("noindex") else '<meta name="robots" content="max-image-preview:large">'
     if p.get("redirect"):
         url = SITE["url"] + p["redirect"]
         robots += f'<meta http-equiv="refresh" content="0; url={p["redirect"]}"><script>location.replace("{p["redirect"]}"+location.search+location.hash)</script>'
@@ -139,6 +139,7 @@ def main():
         p = dict(p)
         if "<!--HUB_ARTICLES-->" in p["body"]:
             mine = [a for a in live if a["hub"] == p["path"]]
+            if not mine: p["noindex"] = "follow"  # empty section: keep out of Google until its first article
             p["body"] = p["body"].replace("<!--HUB_ARTICLES-->", card_list(mine) if mine else ('<p class="muted">The first articles in this section are on their way. In the meantime, here&rsquo;s what&rsquo;s new:</p>' + card_list(live[:3])))
         if "<!--LATEST-->" in p["body"]:
             p["body"] = p["body"].replace("<!--LATEST-->", ('<section><div class="wrap"><h2>Latest</h2>' + card_list(live[:6]) + '</div></section>') if live else "")
@@ -150,7 +151,7 @@ def main():
     og_dir = os.path.join(ROOT, "assets", "og")
     make_card(os.path.join(og_dir, "default.png"), "Longevity science for women 35+, without the hype")
     for p in pages:
-        if p["path"] not in ("/", "/404") and not p.get("noindex"):
+        if p["path"] not in ("/", "/404") and p.get("noindex") in (None, False, "follow"):
             img = "page-" + p["path"].strip("/").replace("/", "-") + ".png"
             if make_card(os.path.join(og_dir, img), p["h1"]) or os.path.exists(os.path.join(og_dir, img)):
                 p["og_image"] = "/assets/og/" + img
