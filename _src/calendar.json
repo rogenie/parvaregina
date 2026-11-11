@@ -58,15 +58,17 @@
    "url": "https://parvaregina.com/supplements/urolithin-a-evidence/"
   },
   {
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "hub": "bones",
    "path": "/bones/strength-training-bone-density-menopause/",
    "title": "Strength training for bone density around menopause",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "Bone loss around menopause (NIH/NIAMS), trials of resistance and impact training in postmenopausal women (e.g. LIFTMOR), what to look for, safety and when to get a DEXA scan per USPSTF."
-   }
+   },
+   "url": "https://parvaregina.com/bones/strength-training-bone-density-menopause/",
+   "note": "Catch-up for Nov 9 (no run published it); published Nov 10."
   },
   {
    "date": "2026-11-13",

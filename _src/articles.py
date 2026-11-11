@@ -400,4 +400,90 @@ article("/supplements/urolithin-a-evidence/", "/supplements/", "Supplements",
   ("Dao T, Nguyen TT, Gariani K, Kim HJ, Ryu D. Effects of Urolithin A supplementation on muscle health outcomes in humans from randomized controlled trials. Frontiers in Nutrition, 2026;13", "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1834344/full"),
   ("U.S. Food and Drug Administration. GRAS Notice No. 791: Urolithin A", "https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=791&set=grasnotices"),
   ("U.S. Food and Drug Administration. Agency Response Letter, GRAS Notice No. GRN 000791", "https://www.fda.gov/media/120300/download")]),
+article("/bones/strength-training-bone-density-menopause/", "/bones/", "Bones &amp; Strength",
+ "Strength Training for Bone Density Around Menopause",
+ "Strength training for bone density around menopause: what the trials show",
+ "Can lifting weights protect bone density around menopause? What trials like LIFTMOR found, who was studied, safety, and when to ask about a DEXA scan.",
+ "2026-11-10",
+ "Bone loss speeds up around menopause, and &ldquo;lift heavy&rdquo; has become the standard advice for midlife women. Here&rsquo;s what the trials of strength training for bone density actually tested, and what they found.",
+ "In a randomized trial of 101 postmenopausal women with low bone mass, 8 months of supervised, heavy resistance and impact training raised spine and hip bone density slightly, while a low-intensity home program lost ground. <b>The gains were small, a few percent, and the program was supervised and built up gradually.</b> Trials in perimenopausal women are still small and early.",
+ "human-trial",
+ [("Best evidence", "LIFTMOR, an 8-month randomized controlled trial of 101 postmenopausal women with low bone mass (2018)"),
+  ("Women included?", "Yes. Women only; average age 65 in LIFTMOR and about 53 in a 2026 pilot of 40 peri- and early postmenopausal women"),
+  ("Protocol tested", "Twice-weekly, supervised sessions: 5 sets of 5 reps of deadlifts, squats and overhead presses at more than 85% of the most a woman could lift once, plus jumping drops"),
+  ("Bottom line", "Supervised, progressive heavy training modestly improved bone density in women with low bone mass; fracture outcomes weren&rsquo;t measured")],
+ """<h2>Why bone density changes around menopause</h2>
+<p>Bone is living tissue that is constantly broken down and rebuilt. Estrogen helps keep that balance. When estrogen falls, breakdown can outpace rebuilding.</p>
+<p>The National Institute on Aging says women may lose bone quickly for several years around menopause, and that the loss slows but continues afterward. The National Institute of Arthritis and Musculoskeletal and Skin Diseases notes that osteoporosis can start a year or two before menopause. According to the NIA, osteoporosis affects about one in five women over 50.</p>
+<p><b>Your 40s are when the slope starts, often before anything feels different.</b> Our <a href="/news/menopause-physiological-cliff-study/">report on a study of a million women</a> found bone markers among the measures that shift sharply around the final period.</p>
+
+<h2>What is strength training for bone density?</h2>
+<p>Bone responds to load. Exercise that pulls on bone through muscle (lifting) or jolts it on landing (impact) is thought to signal it to rebuild. That&rsquo;s why low-impact and non-weight-bearing activity tends to do little for bone density: a 2025 review in <i>Current Osteoporosis Reports</i> summarized the evidence as showing that walking, cycling and swimming don&rsquo;t produce a positive effect on bone density. They&rsquo;re still good for your heart and mood.</p>
+<p>The same review found that only 4 of 63 exercise trials in postmenopausal women in an earlier meta-analysis used high-intensity loads (more than 80% of the most a person can lift once), and that those produced the largest spine gains. <b>For a long time, most trials simply didn&rsquo;t test heavy lifting.</b></p>
+
+<h2>The LIFTMOR trial: heavy lifting in women with low bone mass</h2>
+<p>LIFTMOR, published in the <i>Journal of Bone and Mineral Research</i> in 2018, was designed to test whether heavy training was both safe and useful for women whose bones were already thin.</p>
+<ul>
+<li><b>Who:</b> 101 postmenopausal women, average age 65, all with low bone mass (a T-score below &minus;1.0; a T-score compares your bone density with a healthy young adult&rsquo;s).</li>
+<li><b>Design:</b> randomized controlled trial, 8 months.</li>
+<li><b>Training group (49 women):</b> two 30-minute supervised sessions a week. Deadlifts, back squats and overhead presses, 5 sets of 5 reps at more than 85% of their one-rep maximum, plus jumping exercises that ended in a landing after dropping from a chin-up bar. Each woman started with a period of technique practice, and the load was increased gradually.</li>
+<li><b>Comparison group (52 women):</b> a low-intensity exercise program done at home.</li>
+</ul>
+<p>What the trial found after 8 months:</p>
+<table>
+<tr><th>Measure</th><th>Heavy training</th><th>Low-intensity home program</th></tr>
+<tr><td>Lumbar spine bone density</td><td>+2.9%</td><td>&minus;1.2%</td></tr>
+<tr><td>Femoral neck (hip) bone density</td><td>+0.3%</td><td>&minus;1.9%</td></tr>
+<tr><td>Femoral neck cortical thickness</td><td>+13.6%</td><td>+6.3%</td></tr>
+<tr><td>Height</td><td>+0.2 cm</td><td>&minus;0.2 cm</td></tr>
+</table>
+<p>The heavy-training group also did better on every test of physical function, including the timed up-and-go, a reaching test and standing up from a chair five times. Women attended 92% of sessions on average. <b>One adverse event was reported: a minor lower-back spasm.</b></p>
+<p>The limits matter. The women were mostly in their 60s, not their 40s. The trial measured bone density and function, not fractures. And every session was supervised.</p>
+
+<h2>Is heavy strength training safe with osteoporosis?</h2>
+<p>That was LIFTMOR&rsquo;s first question. The 2025 review reports that about a third of participants had a prior spinal fracture, and the program didn&rsquo;t increase upper-back rounding, cause new or worsening spinal fractures, or worsen scoliosis.</p>
+<p>The review is clear about the conditions: training was safe and well tolerated when it was supervised by an exercise physiologist or physiotherapist, tailored to each woman, started with technique practice and progressed gradually. <b>Women with a spinal fracture in the past 12 months were excluded, so there&rsquo;s no evidence for them.</b></p>
+
+<h2>What about strength training in perimenopause?</h2>
+<p>Most bone-training trials study women years after menopause. A 2026 pilot from Canada, STOP-EM, published in <i>Bone Reports</i>, looked at the years when loss begins.</p>
+<ul>
+<li><b>Who:</b> 40 women aged 45 to 60, average age about 53; nearly half were perimenopausal. More than half had normal bone density at the start.</li>
+<li><b>Design:</b> randomized, with a waitlist comparison group, 9 months.</li>
+<li><b>Program:</b> twice-weekly, 1-hour supervised sessions. A foundation phase, then a building phase, then phases of 5 sets of 5 reps at 80&ndash;85% of one-rep maximum (deadlift, squat, presses, pull-ups or rows) and drop landings from rising platforms.</li>
+<li><b>Results:</b> spine bone density, lean mass and leg power were higher than in the waitlist group; hip bone density didn&rsquo;t clearly differ. Balance and estimated aerobic fitness didn&rsquo;t clearly differ either.</li>
+</ul>
+<p>This was a feasibility study: it tested whether women could do the program, not whether it works. The authors call for a full trial. <b>It&rsquo;s encouraging, and it&rsquo;s 40 women.</b></p>
+
+<h2>Strength training for bone density: the studies at a glance</h2>
+<table>
+<tr><th>Study</th><th>Women</th><th>Protocol tested</th><th>Length</th><th>Main result</th></tr>
+<tr><td>LIFTMOR (Watson et al., 2018)</td><td>101 postmenopausal, avg. 65, low bone mass</td><td>5&times;5 at &gt;85% 1RM + jumping drops, 2&times;/week, supervised</td><td>8 months</td><td>Spine and hip density up vs. low-intensity program</td></tr>
+<tr><td>STOP-EM (Whitman et al., 2026)</td><td>40 aged 45&ndash;60, peri- and early postmenopausal</td><td>5&times;5 at 80&ndash;85% 1RM + drop landings, 2&times;/week, supervised</td><td>9 months</td><td>Spine density and lean mass higher; feasibility study</td></tr>
+</table>
+<p>These are the programs the studies tested, not a prescription. The general guideline is broader: the Physical Activity Guidelines for Americans, as summarized by the CDC, call for muscle-strengthening activity on at least 2 days a week working all major muscle groups, plus 150 minutes of moderate aerobic activity. Adults 65 and older are also advised to include balance activities.</p>
+
+<h2>When should you get a DEXA scan?</h2>
+<p>A DEXA (or DXA) scan measures bone density and is the screening test the Task Force refers to. The U.S. Preventive Services Task Force updated its guidance on January 14, 2025:</p>
+<ul>
+<li><b>Women 65 and older:</b> screening is recommended (grade B).</li>
+<li><b>Postmenopausal women under 65 at increased risk:</b> screening is also recommended (grade B). The Task Force describes two steps: a clinician checks for risk factors such as low body weight, a parent who broke a hip, smoking or excess alcohol use, then uses a risk tool such as FRAX to decide whether a scan makes sense.</li>
+</ul>
+<p>If you&rsquo;re planning to start lifting and wonder where your bones stand, that&rsquo;s a good question to bring to your clinician.</p>
+
+<h2>What this means for you</h2>
+<ul class="ticks">
+<li><b>Load matters.</b> The trials that moved bone density used heavy, progressive lifting and impact, not light weights or walking alone.</li>
+<li><b>Supervision was part of the treatment.</b> Both programs started with technique practice and built up slowly under a trained professional.</li>
+<li><b>The gains are modest.</b> A few percent at the spine, smaller at the hip, and no trial here measured fractures.</li>
+<li><b>It does more than bone.</b> Strength and physical function improved too, which matters for balance and falls.</li>
+</ul>
+<p>Check with your clinician before starting, especially if you have osteoporosis, a past fracture, a back or joint injury, a health condition, or haven&rsquo;t been active. More on muscle and midlife: <a href="/supplements/creatine-for-women-over-40/">creatine for women over 40</a>, <a href="/fitness/vo2-max-women/">VO2 max for women</a> and <a href="/meal-plans/protein-needs-women-over-40/">protein needs after 40</a>. See the full <a href="/bones/">Bones &amp; Strength</a> hub.</p>""",
+ [("Watson SL, Weeks BK, Weis LJ, Harding AT, Horan SA, Beck BR. High-Intensity Resistance and Impact Training Improves Bone Mineral Density and Physical Function in Postmenopausal Women With Osteopenia and Osteoporosis: The LIFTMOR Randomized Controlled Trial. J Bone Miner Res, 2018;33(2):211&ndash;220", "https://academic.oup.com/jbmr/article/33/2/211/7605709"),
+  ("Whitman PW, et al. Preventing muscle and bone loss in peri-menopausal and early post-menopausal females with heavy strength and impact training: the STOP-EM randomised waitlisted controlled feasibility trial. Bone Reports, 2026;30:101931", "https://pmc.ncbi.nlm.nih.gov/articles/PMC13324662/"),
+  ("Kumar S, Smith C, Clifton-Bligh RJ, Beck BR, Girgis CM. Exercise for Postmenopausal Bone Health &ndash; Can We Raise the Bar? Curr Osteoporos Rep, 2025;23(1):20", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11985624/"),
+  ("U.S. Preventive Services Task Force. Osteoporosis to Prevent Fractures: Screening (final recommendation, January 14, 2025)", "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/osteoporosis-screening"),
+  ("National Institute on Aging. Osteoporosis", "https://www.nia.nih.gov/health/osteoporosis/osteoporosis"),
+  ("National Institute of Arthritis and Musculoskeletal and Skin Diseases. Osteoporosis", "https://www.niams.nih.gov/health-topics/osteoporosis"),
+  ("Centers for Disease Control and Prevention. Adult Activity: An Overview", "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"),
+  ("Centers for Disease Control and Prevention. Older Adult Activity: An Overview", "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html")]),
 ]
