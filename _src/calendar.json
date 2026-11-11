@@ -75,7 +75,7 @@
    "hub": "hair",
    "path": "/hair/female-hair-loss-causes/",
    "title": "Hair loss in women: the most common causes and how to tell them apart",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "Overview hub article. Female pattern hair loss, telogen effluvium, alopecia areata, traction alopecia and scarring alopecias: how each looks and what dermatology sources say distinguishes them. Medical causes worth ruling out (iron/ferritin, thyroid, B12, vitamin D, hormones, medications). When to see a board-certified dermatologist. Link to the ÆTAS Hair articles on each cause as they publish.",
@@ -83,7 +83,8 @@
      "/hair/",
      "/hair/hair-thinning-perimenopause/"
     ]
-   }
+   },
+   "url": "https://parvaregina.com/hair/female-hair-loss-causes/"
   },
   {
    "date": "2026-11-12",

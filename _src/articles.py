@@ -486,4 +486,115 @@ article("/bones/strength-training-bone-density-menopause/", "/bones/", "Bones &a
   ("National Institute of Arthritis and Musculoskeletal and Skin Diseases. Osteoporosis", "https://www.niams.nih.gov/health-topics/osteoporosis"),
   ("Centers for Disease Control and Prevention. Adult Activity: An Overview", "https://www.cdc.gov/physical-activity-basics/guidelines/adults.html"),
   ("Centers for Disease Control and Prevention. Older Adult Activity: An Overview", "https://www.cdc.gov/physical-activity-basics/guidelines/older-adults.html")]),
+article("/hair/female-hair-loss-causes/", "/hair/", "Hair",
+ "Hair Loss in Women: Causes and How to Tell Them Apart",
+ "Hair loss in women: the most common causes and how to tell them apart",
+ "Thinning, shedding or bald patches? The main causes of hair loss in women, how each one looks, and what to ask a dermatologist to check.",
+ "2026-11-11",
+ "Finding more hair in the drain, or a part that looks wider than it used to, is unsettling. &ldquo;Hair loss&rdquo; covers several different conditions, and they look, behave and are treated differently. Here&rsquo;s how dermatology sources tell them apart.",
+ "The most common causes of hair loss in women are female pattern hair loss (gradual thinning over the top of the head), telogen effluvium (sudden, all-over shedding a few months after a stressor), alopecia areata (round bald patches), traction alopecia (from tight hairstyles) and the scarring alopecias. <b>The pattern of loss, how fast it came on and whether the scalp itches or hurts are the biggest clues, and a board-certified dermatologist can confirm which one it is.</b>",
+ "review",
+ [("Best evidence", "Clinical reviews and official health sources (NIH, MedlinePlus), plus a 2022 meta-analysis of 36 observational studies in 10,029 women on iron and hair loss"),
+  ("Women included?", "Yes. Most sources describe women specifically; the iron meta-analysis included only women"),
+  ("Dose or protocol tested", "None. This is an overview of causes and diagnosis, not a treatment study"),
+  ("Bottom line", "Different kinds of hair loss look different. Some are temporary, some are treatable, and the scarring types are worth catching early")],
+ """<h2>Is some shedding normal?</h2>
+<p>Yes. Hair grows in cycles: a long growing phase, then a resting phase, after which the hair falls out and a new one starts. MedlinePlus, the National Library of Medicine&rsquo;s health site, puts normal shedding at roughly 50 to 200 hairs a day.</p>
+<p>It&rsquo;s worth a closer look when shedding is clearly above your usual, your part or ponytail looks thinner, or bare patches appear. <b>The shape of the loss is the first clue to the cause.</b></p>
+
+<h2>Female pattern hair loss: gradual thinning on top</h2>
+<p>Female pattern hair loss (also called androgenetic alopecia) is the most common type. Follicles on the top of the head slowly shrink, so each new hair grows back finer and shorter.</p>
+<ul>
+<li><b>How it looks:</b> thinning over the crown and top of the head, often with a part that widens toward the front in a &ldquo;Christmas tree&rdquo; shape. The front hairline is usually kept. Complete baldness is rare.</li>
+<li><b>How common:</b> a 2018 review in the <i>International Journal of Women&rsquo;s Dermatology</i> reports that about 12% of women show it by age 29, 25% by 49 and 41% by 69.</li>
+</ul>
+<p>A 2022 review in <i>Clinical and Experimental Dermatology</i> notes it commonly shows up around menopause and that most women with it have normal androgen (male-type hormone) levels. It says blood tests usually aren&rsquo;t needed unless the loss is severe or sudden, or there are signs of high androgens, such as facial hair, acne or irregular periods.</p>
+<p>According to MedlinePlus, topical minoxidil is the only medicine the FDA has approved for female pattern hair loss. More on how it changes in midlife: <a href="/hair/hair-thinning-perimenopause/">hair thinning in perimenopause</a> and <a href="/hair/minoxidil-for-women/">minoxidil for women</a>.</p>
+
+<h2>Telogen effluvium: sudden shedding after a stressor</h2>
+<p>Telogen effluvium is a shift of many growing hairs into the resting phase at once. Months later, they shed together.</p>
+<ul>
+<li><b>How it looks:</b> diffuse shedding all over the scalp, often noticed in the shower or on the pillow. There&rsquo;s no bald patch.</li>
+<li><b>Timing:</b> a StatPearls review (NIH&rsquo;s National Library of Medicine) says the trigger usually happens about 3 months before shedding starts, with a range of 1 to 6 months. That delay is why many people don&rsquo;t connect the two.</li>
+<li><b>Common triggers:</b> high fever or a severe infection, childbirth, major surgery, severe emotional stress, crash diets or low protein intake, iron deficiency, an underactive thyroid, and stopping an estrogen-containing medication. MedlinePlus also lists some medicines, including retinoids and beta-blockers.</li>
+</ul>
+<p>MedlinePlus says this shedding can involve half to three-quarters of scalp hair. StatPearls describes the acute form as lasting under 6 months, with full recovery taking several months to a year; a chronic form can last longer. <b>Telogen effluvium is usually temporary once the trigger has passed.</b> See our guide to <a href="/hair/telogen-effluvium/">telogen effluvium</a>.</p>
+
+<h2>Alopecia areata: round bald patches</h2>
+<p>Alopecia areata is an autoimmune condition: the immune system attacks hair follicles and stops growth.</p>
+<ul>
+<li><b>How it looks:</b> small, round, coin-sized bare patches, most often on the scalp, sometimes on the eyebrows or elsewhere. Some people also get small pits in their nails.</li>
+<li><b>How common:</b> MedlinePlus Genetics estimates 1 in every 500 to 1,000 people in the U.S., affecting men and women equally.</li>
+<li><b>Outlook:</b> the follicles aren&rsquo;t permanently damaged, so hair can regrow. The National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS) says that for many people it grows back without treatment, though it can fall out again.</li>
+</ul>
+<p>People with alopecia areata have a higher risk of other autoimmune conditions, including thyroid disease and vitiligo. NIAMS notes that JAK inhibitors are approved for adults with severe disease.</p>
+
+<h2>Traction alopecia: loss from tight hairstyles</h2>
+<p>Traction alopecia comes from long-term pulling on the follicles: tight ponytails, buns, braids, cornrows, weaves and extensions. Women of African descent with tightly curled hair are most often affected.</p>
+<p>It usually shows up as thinning along the front and sides of the hairline, sometimes with a fringe of fine, short hairs left at the edge. <b>Early on it&rsquo;s reversible: switching to looser styles can lead to full regrowth. Years of tension can scar the follicles for good.</b></p>
+
+<h2>Scarring alopecias: the hair loss not to wait on</h2>
+<p>In scarring (cicatricial) alopecias, inflammation destroys follicles and replaces them with scar tissue, so hair in those spots can&rsquo;t regrow. Treatment aims to stop it spreading. Two matter most for women in midlife:</p>
+<ul>
+<li><b>Frontal fibrosing alopecia:</b> a slowly receding band along the front and sides of the hairline. A StatPearls review says it mainly affects postmenopausal women, typically around 60, and the 2022 menopause review links it to the perimenopausal years. Eyebrow loss is common; it was seen in 81% of patients in the original case series and can come before the hairline changes.</li>
+<li><b>Central centrifugal cicatricial alopecia (CCCA):</b> hair loss that starts at the crown and spreads outward. It&rsquo;s the most common scarring alopecia in women of African descent, with an average age of onset of 36, according to StatPearls. Burning, tenderness or itching in the area can occur.</li>
+</ul>
+<p><b>Both sources stress that catching scarring alopecia early is what helps limit permanent loss.</b></p>
+
+<h2>Hair loss in women: how the causes compare</h2>
+<table>
+<tr><th>Cause</th><th>Where</th><th>Onset</th><th>Scalp symptoms</th><th>Can hair regrow?</th></tr>
+<tr><td>Female pattern hair loss</td><td>Top and crown; front hairline kept</td><td>Gradual, over years</td><td>Usually none</td><td>Progressive; treatment can slow it</td></tr>
+<tr><td>Telogen effluvium</td><td>All over</td><td>Sudden, 1&ndash;6 months after a trigger</td><td>Usually none</td><td>Usually yes</td></tr>
+<tr><td>Alopecia areata</td><td>Round patches; eyebrows possible</td><td>Over weeks</td><td>Usually none; nail pits possible</td><td>Often yes; may recur</td></tr>
+<tr><td>Traction alopecia</td><td>Front and sides of hairline</td><td>Gradual</td><td>Sometimes redness at the hairline</td><td>Yes if caught early; can become permanent</td></tr>
+<tr><td>Scarring alopecias (FFA, CCCA)</td><td>Hairline band (FFA) or crown (CCCA)</td><td>Gradual</td><td>CCCA: sometimes burning, itching or tenderness</td><td>No in scarred areas</td></tr>
+</table>
+<p>More than one can happen at once, such as shedding after an illness on top of pattern thinning.</p>
+
+<h2>What medical causes of hair loss should be ruled out?</h2>
+<p>Several health issues can cause or worsen shedding. These are the ones the sources name:</p>
+<ul>
+<li><b>Thyroid disease.</b> Both MedlinePlus and StatPearls list it; StatPearls suggests a TSH blood test when there are symptoms of an underactive thyroid, such as tiredness, weight gain or feeling cold.</li>
+<li><b>Low iron.</b> A 2022 meta-analysis in <i>Skin Appendage Disorders</i> pooled 36 observational studies of 10,029 women and found that women with non-scarring hair loss had lower ferritin (stored iron) on average than women without it. Iron-deficiency anemia wasn&rsquo;t more common. These studies show a link, not that iron causes or fixes the loss. StatPearls adds that a normal ferritin doesn&rsquo;t fully rule out iron deficiency. More: <a href="/hair/iron-ferritin-hair-loss/">iron, ferritin and hair loss</a>.</li>
+<li><b>Hormones.</b> Signs of high androgens (facial hair, acne, irregular periods) point toward conditions like PCOS. Childbirth, starting or stopping estrogen-containing birth control, and menopause can all affect shedding.</li>
+<li><b>Vitamin D.</b> The 2018 review cites a single study linking low vitamin D with shedding and pattern thinning; the evidence is thin.</li>
+<li><b>Other conditions.</b> MedlinePlus also lists lupus and scalp infections.</li>
+</ul>
+<p>Don&rsquo;t stop or change any medication because of hair loss; ask the clinician who prescribed it.</p>
+
+<h2>When to see a dermatologist about hair loss</h2>
+<p>MedlinePlus advises contacting a provider if you notice:</p>
+<ul class="ticks">
+<li>Hair loss in an unusual pattern, or loss that&rsquo;s fast</li>
+<li>Pain, itching, redness or scaling on the scalp</li>
+<li>Acne, new facial hair or changes in your periods along with the hair loss</li>
+<li>Bald patches, including on the eyebrows</li>
+<li>Tiredness, weight gain, muscle weakness or feeling cold</li>
+</ul>
+<p>A dermatologist usually starts with your history and a close look at the scalp. They may do a gentle pull test, order blood tests, or, less often, take a small biopsy. <b>Any receding hairline, eyebrow loss or scalp symptoms are reasons not to wait.</b></p>
+
+<h2>The honest bottom line</h2>
+<p>Most hair loss in women is gradual pattern thinning or temporary shedding after a stressor. Patches, a receding hairline, eyebrow loss, or an itchy or sore scalp point to other causes worth a prompt visit.</p>
+<p>Questions to bring to a board-certified dermatologist:</p>
+<ul>
+<li>Which type of hair loss is this, and do I need a biopsy to be sure?</li>
+<li>Could something in the last six months have triggered shedding?</li>
+<li>Which blood tests make sense for me, such as thyroid or iron studies?</li>
+<li>Is there any sign of scarring?</li>
+<li>Which treatments have FDA approval or trial evidence for my type, and what are their side effects?</li>
+</ul>
+<p>Explore the full <a href="/hair/">Hair</a> hub and our <a href="/news/menopause-physiological-cliff-study/">report on how the body shifts around menopause</a>.</p>""",
+ [("Fabbrocini G, Cantelli M, Masar&agrave; A, Annunziata MC, Marasca C, Cacciapuoti S. Female pattern hair loss: A clinical, pathophysiologic, and therapeutic review. Int J Womens Dermatol, 2018;4(4):203&ndash;211", "https://www.sciencedirect.com/science/article/pii/S2352647518300224"),
+  ("Kamp E, Ashraf M, Musbahi E, DeGiovanni C. Menopause, skin and common dermatoses. Part 1: hair disorders. Clin Exp Dermatol, 2022;47(12):2110&ndash;2116", "https://academic.oup.com/ced/article/47/12/2110/6966259"),
+  ("Treister-Goltzman Y, Yarza S, Peleg R. Iron Deficiency and Nonscarring Alopecia in Women: Systematic Review and Meta-Analysis. Skin Appendage Disord, 2022;8(2):83&ndash;92", "https://karger.com/sad/article/8/2/83/826740/Iron-Deficiency-and-Nonscarring-Alopecia-in-Women"),
+  ("Hughes EC, Syed HA, Saleh D. Telogen Effluvium. StatPearls, NCBI Bookshelf (updated May 1, 2024)", "https://www.ncbi.nlm.nih.gov/sites/books/NBK430848/"),
+  ("Syed HA, Kaliyadan F. Traction Alopecia. StatPearls, NCBI Bookshelf (updated May 4, 2025)", "https://www.ncbi.nlm.nih.gov/sites/books/NBK470434/"),
+  ("Syed HA, Idoudi S. Frontal Fibrosing Alopecia. StatPearls, NCBI Bookshelf (updated June 7, 2024)", "https://www.ncbi.nlm.nih.gov/sites/books/NBK519001/"),
+  ("Gabros S, Sathe NC, Masood S. Central Centrifugal Cicatricial Alopecia. StatPearls, NCBI Bookshelf (updated March 13, 2024)", "https://www.ncbi.nlm.nih.gov/sites/books/NBK559187/"),
+  ("National Institute of Arthritis and Musculoskeletal and Skin Diseases. Alopecia Areata: Diagnosis, Treatment, and Steps to Take", "https://www.niams.nih.gov/health-topics/alopecia-areata/diagnosis-treatment-and-steps-to-take"),
+  ("MedlinePlus Genetics. Alopecia areata", "https://medlineplus.gov/genetics/condition/alopecia-areata/"),
+  ("MedlinePlus Medical Encyclopedia. Hair loss", "https://medlineplus.gov/ency/article/003246.htm"),
+  ("MedlinePlus Medical Encyclopedia. Female pattern baldness", "https://medlineplus.gov/ency/article/001173.htm")]),
+
 ]
