@@ -42,5 +42,16 @@
   "live_verified": false,
   "social_caption": true,
   "note": "Catch-up for Nov 9 (missed run). PubMed and the SWAN BMD paper returned a browser check, so LIFTMOR was read on the journal site and specific menopause bone-loss rates were left out. Live page not yet in search, so not fetched."
+ },
+ {
+  "date": "2026-11-11",
+  "at": "2026-11-11T06:05:33-08:00",
+  "result": "published",
+  "path": "/hair/female-hair-loss-causes/",
+  "facts_checked": 46,
+  "removed": 4,
+  "live_verified": false,
+  "social_caption": true,
+  "note": "On-time run. PMC returned a browser check and the Karger differential-diagnosis paper and NIAMS overview page failed to load, so those were not cited; B12 left out (no source opened); ferritin mean difference omitted (unit inconsistency in the paper). Live page not yet in search, so not fetched."
  }
 ]
