@@ -31,5 +31,16 @@
   "live_verified": false,
   "social_caption": true,
   "note": "On schedule. PMC pages returned a browser check, so trials were read on JAMA, ScienceDirect, Nature and Frontiers; the 2025 immune trial couldn't be opened and was left out. Live page not yet in search, so not fetched."
+ },
+ {
+  "date": "2026-11-10",
+  "at": "2026-11-10T18:38:30-08:00",
+  "result": "published",
+  "path": "/bones/strength-training-bone-density-menopause/",
+  "facts_checked": 44,
+  "removed": 6,
+  "live_verified": false,
+  "social_caption": true,
+  "note": "Catch-up for Nov 9 (missed run). PubMed and the SWAN BMD paper returned a browser check, so LIFTMOR was read on the journal site and specific menopause bone-loss rates were left out. Live page not yet in search, so not fetched."
  }
 ]
