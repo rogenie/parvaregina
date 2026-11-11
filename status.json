@@ -1,6 +1,6 @@
 {
  "built": "2026-11-10",
- "cadence": "Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity, led by Skin, Supplements, Bones & Strength and Sleep & Foundations. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "cadence": "Daily. Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity. Wed: research news when the scout finds one. Every other day, and any Mon/Wed/Fri left open: a Hair article (_src/TOPICS.md, \"Daily Hair\").",
  "items": [
   {
    "date": "2026-10-28",
@@ -45,8 +45,28 @@
    "url": "https://parvaregina.com/bones/strength-training-bone-density-menopause/"
   },
   {
+   "date": "2026-11-11",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-12",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
    "date": "2026-11-13",
    "hub": "supplements",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-14",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-15",
+   "hub": "hair",
    "status": "todo"
   },
   {
@@ -55,7 +75,32 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-17",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-18",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-19",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
    "date": "2026-11-20",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-21",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-22",
    "hub": "hair",
    "status": "todo"
   },
@@ -65,8 +110,33 @@
    "status": "todo"
   },
   {
+   "date": "2026-11-24",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-25",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-26",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
    "date": "2026-11-27",
    "hub": "skin",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-28",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-11-29",
+   "hub": "hair",
    "status": "todo"
   },
   {
@@ -75,8 +145,33 @@
    "status": "todo"
   },
   {
+   "date": "2026-12-01",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-02",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-03",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
    "date": "2026-12-04",
    "hub": "procedures",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-05",
+   "hub": "hair",
+   "status": "todo"
+  },
+  {
+   "date": "2026-12-06",
+   "hub": "hair",
    "status": "todo"
   },
   {

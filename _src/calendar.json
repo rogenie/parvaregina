@@ -1,5 +1,5 @@
 {
- "cadence": "Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity, led by Skin, Supplements, Bones & Strength and Sleep & Foundations. Wed: research news chosen by the weekly scout (_src/TOPICS.md).",
+ "cadence": "Daily. Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity. Wed: research news when the scout finds one. Every other day, and any Mon/Wed/Fri left open: a Hair article (_src/TOPICS.md, \"Daily Hair\").",
  "items": [
   {
    "date": "2026-10-28",
@@ -71,6 +71,36 @@
    "note": "Catch-up for Nov 9 (no run published it); published Nov 10."
   },
   {
+   "date": "2026-11-11",
+   "hub": "hair",
+   "path": "/hair/female-hair-loss-causes/",
+   "title": "Hair loss in women: the most common causes and how to tell them apart",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Overview hub article. Female pattern hair loss, telogen effluvium, alopecia areata, traction alopecia and scarring alopecias: how each looks and what dermatology sources say distinguishes them. Medical causes worth ruling out (iron/ferritin, thyroid, B12, vitamin D, hormones, medications). When to see a board-certified dermatologist. Link to the ÆTAS Hair articles on each cause as they publish.",
+    "links": [
+     "/hair/",
+     "/hair/hair-thinning-perimenopause/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "hub": "hair",
+   "path": "/hair/rosemary-oil-hair-growth/",
+   "title": "Rosemary oil for hair growth: what the one trial really found",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The 2015 randomized trial comparing rosemary oil with 2% minoxidil (Panahi et al., SKINmed): who was studied (men with androgenetic alopecia), duration, outcomes and limits. Any trials in women. Lab and animal work separated from human data. Skin irritation and patch-testing per safety sources. No DIY recipes or dilutions.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-13",
    "hub": "supplements",
    "path": "/supplements/nmn-nad-supplements-women/",
@@ -79,6 +109,36 @@
    "kind": "evergreen",
    "brief": {
     "angle": "Human RCTs of NMN and NR, including the trial in postmenopausal prediabetic women; what improved and what didn't; FDA's position on NMN as a supplement; mouse vs human gap."
+   }
+  },
+  {
+   "date": "2026-11-14",
+   "hub": "hair",
+   "path": "/hair/minoxidil-for-women/",
+   "title": "Minoxidil for women: topical vs oral, what the trials show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "FDA status of topical minoxidil for women (labeling), the randomized trials and reviews in female pattern hair loss, the shedding phase, and what's known about low-dose oral minoxidil (off-label) from trials and reviews: side effects (hair on face, dizziness, fluid). Report tested doses only; no dose recommendations.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-15",
+   "hub": "hair",
+   "path": "/hair/iron-ferritin-hair-loss/",
+   "title": "Iron, ferritin and hair loss: what your labs mean",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "How iron deficiency is linked to hair shedding in women, what ferritin measures, what studies found about ferritin levels in women with hair loss, and why thresholds differ between sources. NIH ODS on iron; risks of iron overload from supplementing without testing. Questions to ask your doctor.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
    }
   },
   {
@@ -93,6 +153,51 @@
    }
   },
   {
+   "date": "2026-11-17",
+   "hub": "hair",
+   "path": "/hair/telogen-effluvium/",
+   "title": "Telogen effluvium: sudden hair shedding after stress, illness or surgery",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "What telogen effluvium is (hair cycle), common triggers (illness, fever, surgery, childbirth, crash dieting, some medications), typical timing and recovery per dermatology sources, chronic telogen effluvium, and how it differs from female pattern hair loss. When to see a dermatologist.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "hub": "hair",
+   "path": "/hair/biotin-for-hair/",
+   "title": "Biotin for hair: does it work, and the lab-test warning",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Evidence for biotin in people without deficiency (reviews), how rare deficiency is (NIH ODS), and the FDA safety communication that biotin can interfere with lab tests including troponin and thyroid tests. Say plainly what the evidence does and doesn't show.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "hub": "hair",
+   "path": "/hair/thyroid-hair-loss/",
+   "title": "Thyroid and hair loss: which tests to ask about",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "How hypothyroidism and hyperthyroidism affect hair (NIH/NIDDK, ATA sources), how common thyroid disease is in women, typical tests (TSH, free T4) and why hair often takes months to recover after treatment. No treatment advice.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-20",
    "hub": "hair",
    "path": "/hair/hair-thinning-perimenopause/",
@@ -101,6 +206,36 @@
    "kind": "evergreen",
    "brief": {
     "angle": "Female pattern hair loss vs. telogen effluvium; how hormones change around menopause; the medical causes worth ruling out (iron/ferritin, thyroid, B12, vitamin D) per NIH and dermatology society sources; topical minoxidil (FDA-approved for women) and the trial evidence; what's known about oral minoxidil, spironolactone, PRP and low-level light from trials; biotin and 'hair vitamins' (NIH ODS; FDA warning on biotin interfering with lab tests). When to see a dermatologist."
+   }
+  },
+  {
+   "date": "2026-11-21",
+   "hub": "hair",
+   "path": "/hair/spironolactone-hair-loss-women/",
+   "title": "Spironolactone for female pattern hair loss: the evidence",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Off-label use, how it works (anti-androgen), what studies and reviews found, side effects, why it's not used in pregnancy, monitoring per sources. Prescription only; questions to ask a dermatologist. No dose recommendations.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-22",
+   "hub": "hair",
+   "path": "/hair/pumpkin-seed-oil-hair/",
+   "title": "Pumpkin seed oil for hair: what the study showed",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The 2014 randomized placebo-controlled trial (Cho et al.) in men: design, product tested (a supplement containing pumpkin seed oil), results and limits; any evidence in women. Separate supplement studies from topical claims.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
    }
   },
   {
@@ -115,6 +250,51 @@
    }
   },
   {
+   "date": "2026-11-24",
+   "hub": "hair",
+   "path": "/hair/low-level-laser-therapy-hair/",
+   "title": "Laser caps and combs (LLLT) for hair loss: do they work?",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "FDA clearance status of low-level laser devices for hair (510(k), what clearance means), the sham-controlled trials in women, reviews and meta-analyses, realistic results and time frame, eye safety. No brand recommendations.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "hub": "hair",
+   "path": "/hair/prp-hair-loss-women/",
+   "title": "PRP for hair loss in women: what studies show",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "What platelet-rich plasma is, the randomized and split-scalp trials and reviews in female pattern hair loss, lack of standard protocols, side effects, that it's not FDA-approved for hair, questions for a board-certified dermatologist. No prices or providers.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "hub": "hair",
+   "path": "/hair/saw-palmetto-hair-women/",
+   "title": "Saw palmetto for women's hair loss: what the evidence says",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Human trials and reviews (mostly in men), the small amount of data in women, NIH NCCIH safety information, hormonal effects and interactions, why it isn't for pregnancy. Say plainly what's unknown.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
    "date": "2026-11-27",
    "hub": "skin",
    "path": "/skin/collagen-supplements-skin-evidence/",
@@ -123,6 +303,36 @@
    "kind": "evergreen",
    "brief": {
     "angle": "Meta-analyses of oral collagen peptides on skin elasticity/hydration, industry funding caveat, doses tested, women studied, what's unknown."
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "hub": "hair",
+   "path": "/hair/vitamin-d-hair-loss/",
+   "title": "Vitamin D and hair loss: is there a link?",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Observational studies linking low vitamin D with hair loss types, what trials of supplementation show (or don't), NIH ODS on testing and upper limits. Correlation vs causation stated plainly.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "hub": "hair",
+   "path": "/hair/peppermint-oil-hair/",
+   "title": "Peppermint oil for hair growth: mice, not women",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The 2014 mouse study (Oh et al.) behind the claims, absence of human trials, irritation risk of essential oils. Clear bottom line.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
    }
   },
   {
@@ -137,6 +347,51 @@
    }
   },
   {
+   "date": "2026-12-01",
+   "hub": "hair",
+   "path": "/hair/caffeine-shampoo-hair-loss/",
+   "title": "Caffeine shampoo and hair loss: lab results vs real scalps",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Lab studies on hair follicles, the human studies of caffeine topicals (including any comparison with minoxidil), how long a shampoo stays on the scalp, and the honest bottom line.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-02",
+   "hub": "hair",
+   "path": "/hair/collagen-for-hair/",
+   "title": "Collagen supplements for hair: is there any evidence?",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Human trials of collagen supplements that measured hair (vs skin), study funding, and what's plausible vs proven. Link to the ÆTAS collagen-for-skin article.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-03",
+   "hub": "hair",
+   "path": "/hair/zinc-hair-loss/",
+   "title": "Zinc and hair loss: deficiency, testing and too much zinc",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "Studies on zinc levels in hair loss, NIH ODS on deficiency and upper limits, copper deficiency from excess zinc. No dose recommendations.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
    "date": "2026-12-04",
    "hub": "procedures",
    "path": "/procedures/microneedling-skin-over-40/",
@@ -145,6 +400,36 @@
    "kind": "evergreen",
    "brief": {
     "angle": "What microneedling does (controlled skin injury, collagen remodeling), the controlled trials and reviews for wrinkles, texture and acne scars; in-office vs at-home rollers (FDA classifies microneedling devices; at-home use and infection risk); with or without PRP or radiofrequency; downtime, side effects and who should avoid it (active acne, keloids, isotretinoin) per AAD and FDA sources; questions to ask a board-certified dermatologist. No prices, providers or brands."
+   }
+  },
+  {
+   "date": "2026-12-05",
+   "hub": "hair",
+   "path": "/hair/onion-juice-hair/",
+   "title": "Onion juice for hair: the small study behind the trend",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The 2002 study in alopecia areata (Sharquie and Al-Obaidi): design, size, limits; nothing in female pattern hair loss; skin irritation. Clear bottom line.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
+   }
+  },
+  {
+   "date": "2026-12-06",
+   "hub": "hair",
+   "path": "/hair/omega-3-hair-women/",
+   "title": "Omega-3 for hair: what the trials found",
+   "status": "todo",
+   "kind": "evergreen",
+   "brief": {
+    "angle": "The 2015 randomized trial of an omega-3/6 and antioxidant supplement in women (Le Floc'h et al.): design, product, funding, outcomes; other evidence; NIH ODS on omega-3 safety.",
+    "links": [
+     "/hair/",
+     "/hair/female-hair-loss-causes/"
+    ]
    }
   },
   {
