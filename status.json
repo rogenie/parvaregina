@@ -256,6 +256,28 @@
    "live_verified": false,
    "social_caption": true,
    "note": "On-time run. PMC returned a browser check and the Karger differential-diagnosis paper and NIAMS overview page failed to load, so those were not cited; B12 left out (no source opened); ferritin mean difference omitted (unit inconsistency in the paper). Live page not yet in search, so not fetched."
+  },
+  {
+   "date": "2026-11-13",
+   "at": "2026-11-13T06:10:34-08:00",
+   "result": "published",
+   "path": "/hair/rosemary-oil-hair-growth/",
+   "facts_checked": 38,
+   "removed": 5,
+   "live_verified": false,
+   "social_caption": true,
+   "note": "Catch-up for Nov 12 (missed run). Panahi 2015 read via PubMed abstract and two reviews; PubMed then returned a browser check, so the Murata mouse paper and rosemary contact-dermatitis case reports couldn't be opened and were not cited (lab work described only via the 2024 review). First push got a 503, succeeded on retry. Live page not yet in search, so not fetched."
+  },
+  {
+   "date": "2026-11-13",
+   "at": "2026-11-13T06:10:34-08:00",
+   "result": "published",
+   "path": "/supplements/nmn-nad-supplements-women/",
+   "facts_checked": 52,
+   "removed": 7,
+   "live_verified": false,
+   "social_caption": true,
+   "note": "On schedule. Science, Nature and PMC pages failed or returned a browser check, so the Yoshino trial was read via NIH Research Matters, WashU and the 2023 J Gerontol review; Martens 2018 via the review and CU Boulder release. FDA status confirmed from the Sept 29 and Dec 2, 2025 FDA letters. Live page not yet in search, so not fetched."
   }
  ]
 }
