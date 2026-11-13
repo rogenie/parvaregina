@@ -108,11 +108,12 @@
    "hub": "supplements",
    "path": "/supplements/nmn-nad-supplements-women/",
    "title": "NMN and NAD+ supplements: what human trials show",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "Human RCTs of NMN and NR, including the trial in postmenopausal prediabetic women; what improved and what didn't; FDA's position on NMN as a supplement; mouse vs human gap."
-   }
+   },
+   "url": "https://parvaregina.com/supplements/nmn-nad-supplements-women/"
   },
   {
    "date": "2026-11-14",

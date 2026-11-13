@@ -684,4 +684,82 @@ article("/hair/rosemary-oil-hair-growth/", "/hair/", "Hair",
   ("Patel M, Tuli N, Patel N, Merja A. A Clinical Evaluation of the Safety, Efficacy, and Tolerability of a Rosemary Redensyl Hair Growth Serum in Healthy Female Subjects. Cureus, 2025;17(1):e77066", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11800316/"),
   ("EFSA Panel on Additives and Products or Substances used in Animal Feed (FEEDAP). Safety and efficacy of a feed additive consisting of an essential oil derived from Salvia rosmarinus (rosemary oil). EFSA Journal, 2025;23(10):e9685", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531593/")]),
 
+
+article("/supplements/nmn-nad-supplements-women/", "/supplements/", "Supplements",
+ "NMN and NAD+ Supplements: What Human Trials Show",
+ "NMN and NAD+ supplements: what human trials show",
+ "Do NMN and NR supplements work? What human trials found, including one in postmenopausal women, where they fell short, and where the FDA stands.",
+ "2026-11-13",
+ "NMN and NR are sold as ways to raise NAD+, a molecule your cells need to make energy. The excitement comes largely from mice. Here&rsquo;s what has happened when people, including women after menopause, actually took them.",
+ "Human trials show NMN and NR reliably raise NAD+ levels in blood, but <b>measurable health benefits have been small, inconsistent and mostly short-term.</b> The best-known trial in women, 25 postmenopausal women with prediabetes, found better insulin sensitivity in muscle after 10 weeks of NMN, with no change in body fat, blood pressure, blood sugar or cholesterol.",
+ "human-trial",
+ [("Best evidence", "Small randomized, placebo-controlled trials, usually 40 people or fewer and a few weeks to 3 months long; the key women-only trial had 25 participants (2021)"),
+  ("Women included?", "Some. One randomized trial enrolled only postmenopausal women; several others studied only men"),
+  ("Dose tested", "Most NMN trials tested 250 to 1,200 mg a day; most NR trials 1,000 to 2,000 mg a day"),
+  ("Bottom line", "They raise NAD+ in blood. Whether that improves health in people is still unproven")],
+ """<h2>What are NMN, NR and NAD+?</h2>
+<p>NAD+ (nicotinamide adenine dinucleotide) is a helper molecule cells need to turn food into energy. NMN (nicotinamide mononucleotide) and NR (nicotinamide riboside) are building blocks, or precursors, the body can convert into NAD+.</p>
+<p>In mice, raising NAD+ improved many measures of aging. A 2023 review of the human trials in the <i>Journals of Gerontology</i> points out that mouse studies often used higher doses for longer than human trials, and that <b>many human trials haven&rsquo;t shown clinically meaningful benefits.</b></p>
+
+<h2>The NMN trial in postmenopausal women</h2>
+<p>The trial most relevant to ÆTAS readers was published in <i>Science</i> in 2021 by a team at Washington University in St. Louis, with funding in part from two NIH institutes.</p>
+<ul>
+<li><b>Who:</b> 25 postmenopausal women aged roughly 55 to 75 who were overweight or had obesity and had prediabetes.</li>
+<li><b>Design:</b> randomized, double-blind and placebo-controlled. 13 took NMN and 12 took a placebo.</li>
+<li><b>Dose and length:</b> 250 mg of NMN a day for 10 weeks.</li>
+<li><b>What was measured:</b> insulin sensitivity using a gold-standard test (a &ldquo;clamp&rdquo; study), plus body composition, blood pressure, blood fats and muscle samples.</li>
+</ul>
+<p><b>What improved:</b> muscle&rsquo;s ability to take up sugar in response to insulin rose about 25% with NMN, according to NIH&rsquo;s summary of the study, with no such change on placebo. NAD+ rose in blood cells.</p>
+<p><b>What didn&rsquo;t change:</b> body fat, blood pressure, blood sugar and insulin levels, cholesterol and other blood fats, and the liver&rsquo;s response to insulin. NAD+ in muscle itself didn&rsquo;t rise.</p>
+<p>The study&rsquo;s senior author told NIH it was too early to make clinical recommendations from these results. <b>It&rsquo;s one small, 10-week trial with a lab measure as its main result, not evidence that NMN lowers anyone&rsquo;s diabetes risk.</b></p>
+
+<h2>What other NMN trials found</h2>
+<p>The 2023 review summarizes about a dozen NMN trials. Most were small and short. A few examples:</p>
+<table>
+<tr><th>Trial</th><th>Who</th><th>NMN tested</th><th>Length</th><th>Result</th></tr>
+<tr><td>Yoshino (2021)</td><td>25 postmenopausal women with prediabetes</td><td>250 mg/day</td><td>10 weeks</td><td>Muscle insulin sensitivity up; body fat, blood pressure, glucose, lipids unchanged</td></tr>
+<tr><td>Igarashi</td><td>42 men aged 65+</td><td>250 mg/day</td><td>12 weeks</td><td>Walking speed and grip strength improved; muscle mass unchanged</td></tr>
+<tr><td>Yi</td><td>80 adults aged 40&ndash;65</td><td>300, 600 or 900 mg/day</td><td>60 days</td><td>Blood NAD+ rose; 600 and 900 mg groups walked farther in 6 minutes; insulin sensitivity unchanged</td></tr>
+<tr><td>Kim</td><td>108 adults aged 65+</td><td>250 mg/day</td><td>12 weeks</td><td>Sleep, fatigue and physical performance no different from placebo</td></tr>
+<tr><td>Morita</td><td>17 postmenopausal women aged 50&ndash;80</td><td>300 mg/day</td><td>8 weeks</td><td>No placebo group, so results can&rsquo;t be separated from chance or other changes</td></tr>
+</table>
+
+<h2>Do NR supplements work better?</h2>
+<p>NR has its own set of trials, with similar results: NAD+ goes up, health measures mostly don&rsquo;t move.</p>
+<ul>
+<li><b>Healthy older adults (2018, <i>Nature Communications</i>):</b> 24 lean, healthy men and women aged 55 to 79 took NR (500 mg twice a day) and a placebo for 6 weeks each, in random order. NAD+ in blood cells rose about 60%. Blood pressure and artery stiffness trended down, but not significantly once the researchers accounted for testing many outcomes. The maker of the NR supplied the capsules and some funding.</li>
+<li><b>Men with obesity (2018, <i>American Journal of Clinical Nutrition</i>):</b> 40 sedentary men aged 40 to 70 took 2,000 mg of NR a day or a placebo for 12 weeks. NR didn&rsquo;t improve insulin sensitivity, blood sugar or body composition. The authors noted the results may not apply to women.</li>
+<li><b>Older men (reviewed 2023):</b> in 12 men aged 70 to 80 taking NR for 3 weeks, NAD+ in muscle didn&rsquo;t change, and neither did muscle function or strength, though some inflammation markers in blood fell.</li>
+</ul>
+
+<h2>Are NMN and NAD+ supplements safe?</h2>
+<p>In the trials so far, both were generally well tolerated. The 2023 review reports NR given at up to 2,000 mg a day for up to 20 weeks, and NMN at up to 2,000 mg a day for 4 weeks, without serious safety problems. In the 12-week trial in men with obesity, minor effects such as itching, sweating, bloating and stool changes were reported by 4 people on NR and 2 on placebo.</p>
+<p><b>&ldquo;Safe in short trials&rdquo; isn&rsquo;t the same as safe for years.</b> The trials so far have lasted weeks to a few months, not years. Talk to your clinician before starting either, especially if you take medication or manage a health condition.</p>
+
+<h2>Is NMN legal to sell as a supplement? What the FDA says</h2>
+<p>NMN&rsquo;s status has flipped:</p>
+<ul>
+<li><b>November 2022:</b> the FDA took the position that NMN could not be sold as a dietary supplement, because it had been studied as a drug first.</li>
+<li><b>March 2023:</b> the Natural Products Association and the Alliance for Natural Health USA petitioned the FDA to reverse that.</li>
+<li><b>September 29, 2025:</b> the FDA concluded that NMN is not excluded from the definition of a dietary supplement, because there was evidence it had been sold as one in the US before the drug research began.</li>
+</ul>
+<p><b>This was a legal decision, not a safety or effectiveness review.</b> The FDA&rsquo;s letter says NMN&rsquo;s status doesn&rsquo;t turn on safety, and earlier FDA responses on NMN were not findings that it is safe.</p>
+
+<h2>The honest bottom line on NMN and NR</h2>
+<p>NMN and NR do what they claim at the most basic level: they raise NAD+ in blood. <b>What hasn&rsquo;t been shown is that this makes people healthier in ways they&rsquo;d feel or that would matter long-term.</b> The positive results are small, scattered and often not repeated, and most trials lasted a few weeks.</p>
+<ul>
+<li><b>Blood sugar:</b> one small trial in postmenopausal women with prediabetes found better muscle insulin sensitivity; a larger NR trial in men found no change.</li>
+<li><b>Muscle and strength:</b> mixed. Some trials found small gains in walking or grip, others none. Strength training has far better evidence; see <a href="/bones/strength-training-bone-density-menopause/">strength training for bone density around menopause</a>.</li>
+<li><b>Fitness and heart:</b> no consistent benefit. Our guide to <a href="/fitness/vo2-max-women/">VO2 max for women</a> covers what does move cardiovascular fitness.</li>
+</ul>
+<p>Questions to ask your clinician: Is there any reason this could interact with my medications? Would I be better served by checking blood sugar, cholesterol or blood pressure first? For comparison, see our evidence checks on <a href="/supplements/urolithin-a-evidence/">urolithin A</a> and <a href="/supplements/creatine-for-women-over-40/">creatine for women over 40</a>, or browse all <a href="/supplements/">Supplements</a>.</p>""",
+ [("Yoshino M, Yoshino J, Kayser BD, et al. Nicotinamide mononucleotide increases muscle insulin sensitivity in prediabetic women. Science, 2021;372(6547):1224&ndash;1229 (NCT03151239)", "https://profiles.wustl.edu/en/publications/nicotinamide-mononucleotide-increases-muscle-insulin-sensitivity-/"),
+  ("Dollerup OL, Christensen B, Svart M, et al. A randomized placebo-controlled clinical trial of nicotinamide riboside in obese men: safety, insulin-sensitivity, and lipid-mobilizing effects. Am J Clin Nutr, 2018;108(2):343&ndash;353", "https://www.sciencedirect.com/science/article/pii/S0002916522029409"),
+  ("Freeberg KA, Udovich CC, Martens CR, Seals DR, Craighead DH. Dietary Supplementation With NAD+-Boosting Compounds in Humans: Current Knowledge and Future Directions. J Gerontol A Biol Sci Med Sci, 2023;78(12):2435&ndash;2448", "https://academic.oup.com/biomedgerontology/article/78/12/2435/7126788"),
+  ("NIH Research Matters. Supplement improves glucose metabolism in women&rsquo;s muscle (May 11, 2021)", "https://www.nih.gov/news-events/nih-research-matters/supplement-improves-glucose-metabolism-womens-muscle"),
+  ("U.S. Food and Drug Administration. Response to citizen petition FDA-2023-P-0872 on the regulatory status of NMN (September 29, 2025)", "https://downloads.regulations.gov/FDA-2023-P-0872-2754/attachment_1.pdf"),
+  ("U.S. Food and Drug Administration. Letter on NMN new dietary ingredient notifications NDIN 1240 and 1247 (December 2, 2025)", "https://downloads.regulations.gov/FDA-2022-S-0023-0068/attachment_1.pdf"),
+  ("University of Colorado Boulder (press release). A pill that staves off aging? It&rsquo;s on the horizon (March 28, 2018), on Martens et al., Nature Communications 2018", "https://www.colorado.edu/today/2018/03/28/pill-staves-aging-its-horizon")]),
+
+
 ]
