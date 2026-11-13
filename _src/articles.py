@@ -597,4 +597,91 @@ article("/hair/female-hair-loss-causes/", "/hair/", "Hair",
   ("MedlinePlus Medical Encyclopedia. Hair loss", "https://medlineplus.gov/ency/article/003246.htm"),
   ("MedlinePlus Medical Encyclopedia. Female pattern baldness", "https://medlineplus.gov/ency/article/001173.htm")]),
 
+article("/hair/rosemary-oil-hair-growth/", "/hair/", "Hair",
+ "Rosemary Oil for Hair Growth: What the Trial Found",
+ "Rosemary oil for hair growth: what the one trial really found",
+ "Does rosemary oil regrow hair? The one randomized trial studied men, not women. What it found, what's missing, and what to know about skin reactions.",
+ "2026-11-13",
+ "Rosemary oil is one of the most shared hair-growth tips online, usually with a claim that it works as well as minoxidil. That claim traces back to a single trial. Here&rsquo;s what that trial did, who was in it, and what it can and can&rsquo;t tell a woman with thinning hair.",
+ "One randomized trial from 2015 found that men with pattern hair loss who used rosemary oil for 6 months gained a similar amount of hair as men using 2% minoxidil. <b>There is no randomized trial of rosemary oil alone in women, and the one trial had no placebo group, so it can&rsquo;t show how much rosemary itself did.</b>",
+ "human-trial",
+ [("Best evidence", "One randomized, single-blind trial of 100 people with androgenetic alopecia (2015), comparing rosemary oil with 2% minoxidil"),
+  ("Women included?", "No. The trial enrolled men aged 18&ndash;49. The only study in women tested a multi-ingredient serum, with no control group, and was funded by its maker"),
+  ("Protocol tested", "Topical rosemary oil vs. topical 2% minoxidil for 6 months"),
+  ("Bottom line", "An early, men-only result with no placebo comparison. Not enough to know whether rosemary oil helps women&rsquo;s hair loss")],
+ """<h2>Where the &ldquo;rosemary oil works like minoxidil&rdquo; claim comes from</h2>
+<p>Almost every rosemary-for-hair post points to one paper: a randomized trial by Panahi and colleagues, published in the dermatology journal <i>SKINmed</i> in 2015. It compared rosemary oil with minoxidil, the drug in many over-the-counter hair regrowth products.</p>
+<p>Dermatology reviews from 2024 and 2025 point to this same trial as the human evidence for rosemary oil in pattern hair loss. <b>So the claim rests on one study.</b></p>
+
+<h2>What the rosemary oil trial actually tested</h2>
+<ul>
+<li><b>Who:</b> 100 people with androgenetic alopecia (pattern hair loss). A 2024 review describes them as men aged 18 to 49. No women were included.</li>
+<li><b>Design:</b> randomized and single-blind. 50 people used rosemary oil and 50 used 2% minoxidil on the scalp.</li>
+<li><b>How long:</b> 6 months, with check-ins at 3 and 6 months.</li>
+<li><b>What was measured:</b> hair counts from standardized close-up scalp photos, plus dryness, greasiness, dandruff and itching.</li>
+</ul>
+
+<h2>What did the rosemary oil trial find?</h2>
+<p>At 3 months, neither group had a meaningful change in hair count. At 6 months, both groups had significantly more hair than at the start, and <b>the two groups didn&rsquo;t differ from each other.</b></p>
+<p>Dryness, greasiness and dandruff didn&rsquo;t change in either group. Scalp itching rose in both groups compared with the start, and it was more common with minoxidil than with rosemary oil at both check-ins.</p>
+<p>The authors concluded that rosemary oil showed evidence of benefit for pattern hair loss. That&rsquo;s the source of the &ldquo;as good as minoxidil&rdquo; headline.</p>
+
+<h2>Why one trial isn&rsquo;t enough</h2>
+<p>The result is interesting, but it has real limits:</p>
+<ul>
+<li><b>No placebo group.</b> Both groups got an active treatment. Without a group using a plain oil or nothing, there&rsquo;s no way to tell how much of the gain came from rosemary itself.</li>
+<li><b>Only men.</b> Pattern hair loss in women tends to look and behave differently from men&rsquo;s, so results in men aged 18 to 49 may not carry over.</li>
+<li><b>One small study, never repeated.</b> A 2025 review in the <i>International Journal of Trichology</i> notes it&rsquo;s a single study and doesn&rsquo;t call its results conclusive.</li>
+<li><b>&ldquo;No difference&rdquo; isn&rsquo;t the same as &ldquo;equal.&rdquo;</b> A trial of 100 people can miss a real gap between two treatments.</li>
+</ul>
+<p>A 2024 review in <i>Clinical, Cosmetic and Investigational Dermatology</i> that leaned positive on rosemary still concluded that more studies are needed before its benefits can be confirmed.</p>
+
+<h2>Is there any rosemary oil study in women?</h2>
+<p>Not of rosemary oil on its own. The closest is a 2025 study in <i>Cureus</i> of a hair serum that contained rosemary oil among about ten ingredients, including caffeine, biotin, tea tree oil and several branded plant extracts.</p>
+<ul>
+<li><b>Who:</b> 32 healthy women aged 20 to 45 (average about 38) with self-reported thinning and some grey hair; 30 finished.</li>
+<li><b>Design:</b> open-label and single-arm. Everyone used the serum, there was no comparison group, and participants knew what they were using.</li>
+<li><b>How long:</b> 120 days, once a day.</li>
+<li><b>Found:</b> the authors reported gains in hair growth rate, density and thickness, and less shedding.</li>
+<li><b>Funding:</b> the study was paid for by the company that makes the serum, and one author works for and holds stock in that company.</li>
+</ul>
+<p><b>With a mix of ingredients and no control group, this study can&rsquo;t say whether rosemary did anything.</b></p>
+
+<h2>Lab and animal studies: promising, but not proof</h2>
+<p>Much of the interest in rosemary comes from lab and mouse work, not people. The 2024 review describes experiments in which rosemary leaf <i>extract</i> (a different product from the essential oil sold for hair) blocked 5-alpha-reductase, the enzyme that makes DHT, a hormone involved in pattern hair loss. It names a compound called 12-methoxycarnosic acid as the most active.</p>
+<p>That&rsquo;s a reasonable idea to test, but enzyme results in a dish and hair regrowth in mice don&rsquo;t tell us what a scalp oil does for a woman. <b>Treat this as a reason for better trials, not as evidence for people.</b></p>
+
+<h2>Rosemary oil safety: irritation and skin allergy</h2>
+<p>&ldquo;Natural&rdquo; doesn&rsquo;t mean gentle on skin.</p>
+<ul>
+<li>In the 2015 trial, scalp itching increased from the start in the rosemary group, though less than with minoxidil.</li>
+<li>In the 2025 women&rsquo;s serum study, 2 of the participants reported scalp irritation on the first day.</li>
+<li>In a 2025 safety opinion on rosemary oil as an animal feed additive, the European Food Safety Authority&rsquo;s scientific panel said the oil should be considered an irritant to skin and eyes and a skin sensitiser, meaning it can trigger an allergic skin reaction in some people.</li>
+</ul>
+<p>If your scalp gets red, itchy, burning or flaky after using any product, stop and check with a dermatologist.</p>
+
+<h2>How rosemary oil compares with the evidence for other options</h2>
+<table>
+<tr><th>Study</th><th>Who</th><th>Design</th><th>Length</th><th>Result</th></tr>
+<tr><td>Panahi et al., <i>SKINmed</i> 2015</td><td>100 men, 18&ndash;49, pattern hair loss</td><td>Randomized, single-blind; rosemary oil vs. 2% minoxidil; no placebo</td><td>6 months</td><td>Hair counts rose in both groups at 6 months; no difference between groups</td></tr>
+<tr><td>Patel et al., <i>Cureus</i> 2025</td><td>30 women, 20&ndash;45</td><td>Open-label, single-arm; multi-ingredient serum; maker-funded</td><td>120 days</td><td>Authors reported gains; can&rsquo;t isolate rosemary</td></tr>
+<tr><td>Lab and mouse studies (reviewed 2024)</td><td>Cells and mice</td><td>Rosemary leaf extract, not oil</td><td>&mdash;</td><td>Blocked the DHT-making enzyme; not tested this way in people</td></tr>
+</table>
+
+<h2>What this means for you</h2>
+<p>Rosemary oil has one encouraging, small trial behind it, and that trial studied men and lacked a placebo group. <b>For women, there&rsquo;s no good evidence yet either way.</b> It&rsquo;s also not a substitute for finding out why your hair is thinning, since some causes, like low iron, thyroid problems or scarring hair loss, need their own care. Start with our guide to <a href="/hair/female-hair-loss-causes/">the causes of hair loss in women</a> and our <a href="/news/menopause-physiological-cliff-study/">report on how the body shifts around menopause</a>.</p>
+<p>Questions to bring to a board-certified dermatologist:</p>
+<ul>
+<li>What type of hair loss do I have, and what&rsquo;s likely causing it?</li>
+<li>Which treatments have FDA approval or trial evidence for my type? (See <a href="/hair/minoxidil-for-women/">minoxidil for women</a>.)</li>
+<li>Could a scalp oil or serum irritate my skin or interact with anything I already use?</li>
+<li>How long should I give any treatment before judging whether it&rsquo;s working?</li>
+</ul>
+<p>More evidence checks on popular natural remedies are coming in our <a href="/hair/">Hair</a> hub, including <a href="/hair/pumpkin-seed-oil-hair/">pumpkin seed oil</a> and <a href="/hair/peppermint-oil-hair/">peppermint oil</a>.</p>""",
+ [("Panahi Y, et al. Rosemary oil vs minoxidil 2% for the treatment of androgenetic alopecia: a randomized comparative trial. SKINmed, 2015;13(1):15&ndash;21", "https://pubmed.ncbi.nlm.nih.gov/25842469/"),
+  ("Bin Rubaian NF, Alzamami HFA, Amir BA. An Overview of Commonly Used Natural Alternatives for the Treatment of Androgenetic Alopecia, with Special Emphasis on Rosemary Oil. Clin Cosmet Investig Dermatol, 2024;17:2495&ndash;2503", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11549889/"),
+  ("Bikash C. Topical Alternatives for Hair Loss: Beyond the Conventional. Int J Trichology, 2025;17(1):13&ndash;19", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12251978/"),
+  ("Patel M, Tuli N, Patel N, Merja A. A Clinical Evaluation of the Safety, Efficacy, and Tolerability of a Rosemary Redensyl Hair Growth Serum in Healthy Female Subjects. Cureus, 2025;17(1):e77066", "https://pmc.ncbi.nlm.nih.gov/articles/PMC11800316/"),
+  ("EFSA Panel on Additives and Products or Substances used in Animal Feed (FEEDAP). Safety and efficacy of a feed additive consisting of an essential oil derived from Salvia rosmarinus (rosemary oil). EFSA Journal, 2025;23(10):e9685", "https://pmc.ncbi.nlm.nih.gov/articles/PMC12531593/")]),
+
 ]

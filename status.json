@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11",
+ "built": "2026-11-13",
  "cadence": "Daily. Mon/Fri: evergreen and trending articles across Body, Beauty and Longevity. Wed: research news when the scout finds one. Every other day, and any Mon/Wed/Fri left open: a Hair article (_src/TOPICS.md, \"Daily Hair\").",
  "items": [
   {
@@ -52,9 +52,11 @@
    "url": "https://parvaregina.com/hair/female-hair-loss-causes/"
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "hub": "hair",
-   "status": "todo"
+   "status": "written",
+   "title": "Rosemary oil for hair growth: what the one trial really found",
+   "url": "https://parvaregina.com/hair/rosemary-oil-hair-growth/"
   },
   {
    "date": "2026-11-13",

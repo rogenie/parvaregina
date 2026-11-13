@@ -87,11 +87,11 @@
    "url": "https://parvaregina.com/hair/female-hair-loss-causes/"
   },
   {
-   "date": "2026-11-12",
+   "date": "2026-11-13",
    "hub": "hair",
    "path": "/hair/rosemary-oil-hair-growth/",
    "title": "Rosemary oil for hair growth: what the one trial really found",
-   "status": "todo",
+   "status": "published",
    "kind": "evergreen",
    "brief": {
     "angle": "The 2015 randomized trial comparing rosemary oil with 2% minoxidil (Panahi et al., SKINmed): who was studied (men with androgenetic alopecia), duration, outcomes and limits. Any trials in women. Lab and animal work separated from human data. Skin irritation and patch-testing per safety sources. No DIY recipes or dilutions.",
@@ -99,7 +99,9 @@
      "/hair/",
      "/hair/female-hair-loss-causes/"
     ]
-   }
+   },
+   "url": "https://parvaregina.com/hair/rosemary-oil-hair-growth/",
+   "note": "Catch-up: originally dated 2026-11-12 (missed run); published 2026-11-13."
   },
   {
    "date": "2026-11-13",
