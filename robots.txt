@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://parvaregina.com/sitemap.xml

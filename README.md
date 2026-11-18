@@ -1,4 +1,4 @@
 # parvaregina.com
 
-Static site for ÆTAS, evidence-based longevity science for women 35+.
-Build: `python3 _src/build.py` (needs Pillow). Runbooks: `_src/PUBLISHING.md`, `_src/TOPICS.md`.
+Emptied on 2026-11-17. The previous site moved to https://aetasliveforever.com (repo rogenie/aetasliveforever-site), which keeps its full history.
+This domain is reserved for a new project.
